@@ -81,6 +81,11 @@ This file contains the common styles of this theme.
 @import "../css/flaticon-set-carfixing.css";
 @import "../css/utility-classes.css";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|family=Raleway:400,200,300,500,600,700,800,900|family=Titillium+Web:400,200,300,600,700,900);
+
+/* Font Family */
+@font-face { font-family: RotisExtraBold; src: url('./assets/fnts/Rotis_Sans_Serif_Std_75_Extra_Bold.otf"');}
+@font-face { font-family: RotisLight; src: url('./assets/fnts/Rotis_Sans_Serif_Std_45_Light.otf"');}
+
 /*
  * Typography.less
  * -----------------------------------------------
@@ -113,7 +118,7 @@ body {
   line-height: 1.7;
   color: #666666;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: RotisLight, 'Open Sans', sans-serif;
   background-color: #fff;
 }
 a {
@@ -163,7 +168,7 @@ h1,
 h2,
 .h1,
 .h2 {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-weight: 700;
   line-height: 1.42857143;
   color: #333333;
@@ -229,6 +234,9 @@ h6 a,
 .h6 a {
   color: #333333;
 }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6, span {
+  font-family: RotisLight, 'Open Sans', sans-serif;
+}
 /* -------- Body Text ---------- */
 p,
 pre,
@@ -252,6 +260,12 @@ form {
 }
 .font-titillium {
   font-family: 'Titillium Web', sans-serif;
+}
+.font-RotisExtraBold {
+  font-family: RotisExtraBold, sans-serif;
+}
+.font-RotisLight {
+  font-family: RotisLight, sans-serif;
 }
 /* breadcrumb */
 .breadcrumb {
@@ -3219,7 +3233,7 @@ textarea {
   color: #c0c0c0;
   content: "\f005\f005\f005\f005\f005";
   float: left;
-  font-family: fontawesome;
+  font-family: RotisLight, fontawesome;
   left: 0;
   letter-spacing: 2px;
   position: absolute;
@@ -5105,7 +5119,7 @@ blockquote p {
 }
 .toggle-map span:after {
   content: "\f107";
-  font-family: fontawesome;
+  font-family: RotisLight, fontawesome;
   margin-left: 10px;
 }
 .toggle-map.open span:after {
