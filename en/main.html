@@ -35,6 +35,41 @@
 <!-- CSS | Theme Color -->
 <link href="./assets/css/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
 
+<style>
+  @font-face {
+  font-family: "arabiya-norm";
+  src: url("https://arabicfonts.net/fonts/alarabiya-font-normal") format("truetype");
+  }
+  :root {
+  --green: #127529;
+  --blue: #2264dc;
+  --btn-color: #182b52;
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+  width: 11px;
+  transform: all 0.5s;
+  }
+  ::-webkit-scrollbar-track {
+  background: var(--btn-color);
+  }
+  ::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 50px;
+  height: 70px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+  transition: 0.3s ease-in-out;
+  }
+</style>
+
 <!-- external javascripts -->
 <script src="https://fcitweb.kau.edu.sa/center/assetseng/js/jquery-2.2.4.min.js"></script>
 <script src="https://fcitweb.kau.edu.sa/center/assetseng/js/jquery-ui.min.js"></script>
@@ -107,7 +142,7 @@
                 data-splitin="none" 
                 data-splitout="none" 
                 data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700; text-shadow: 1px 1px 8px black;">Biomedical Engineering
+                style="z-index: 7; white-space: nowrap; font-family:'Cairo'; font-weight:700; text-shadow: 1px 1px 8px black;">Biomedical Engineering
               </div>
 
               <!-- LAYER NR. 2 -->
@@ -671,7 +706,7 @@
           </h5>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="./assets/imgs/mbrs/chair/2023.jpg" data-wow-duration="1s" data-wow-delay="0.3s" style="background-image: url(&quot;./assets/imgs/mbrs/chair/2023.jpg&quot;); min-height: 100% ; visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+      <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="./assets/imgs/mbrs/chair/2023.jpg" data-wow-duration="1s" data-wow-delay="0.3s" style="background-image: url(&quot;./assets/imgs/mbrs/chair/2023.jpg&quot;); background-position: center top; background-repeat: no-repeat; background-size: cover; min-height: 60% ; visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
       </div>
     </div>
   </div>
@@ -682,14 +717,14 @@
     <div class="container pb-70 pt-60 pb-sm-20">
         <div class="section-content">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -705,14 +740,14 @@
                 </div>
               </article>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -722,20 +757,20 @@
                       </div>
                     </div>
                   </div>
-                  <p class="mt-10">All about current researches and projects conducted in the department by graduate students and lead by department professors.</p>
+                  <p class="mt-10">All about current researches and projects conducted in the department.</p>
                      
                   <div class="clearfix"></div>
                 </div>
               </article>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 wow mb-sm-0  fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow mb-sm-0  fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -751,16 +786,14 @@
                 </div>
               </article>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -776,14 +809,14 @@
                 </div>
               </article>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -799,14 +832,14 @@
                 </div>
               </article>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 wow mb-sm-0  fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-6 col-md-4 wow mb-sm-0  fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
               <article class="post clearfix mb-sm-30">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
+                    <img style="border-radius: 20px 20px 0 0;" src="https://placehold.it/370x247" alt="" class="img-responsive img-fullwidth"> 
                   </div>
                 </div>
-                <div class="entry-content p-20 pr-10">
+                <div class="entry-content p-20 pr-10"  style="border-radius: 0 0 20px 20px;">
                   <div class="entry-meta media mt-0 no-bg no-border">
                     
                     <div class="media-body pl-10">
@@ -823,6 +856,10 @@
               </article>
             </div>
           </div>
+          <br>
+          <div class="row">
+            
+          </div>
         </div>
       </div>
     </section>
@@ -832,7 +869,7 @@
     <section id="mission">
       <div class="container-fluid pt-0 pb-0">
         <div class="row equal-height bg-theme-colored">
-          <div class="col-sm-6 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="col-sm-6 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
             <div class="pt-60 pb-40 pl-90 pr-160 p-md-30">
               <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Our Mission</h2>
               <div class="icon-box clearfix m-0 p-0 pb-10">
