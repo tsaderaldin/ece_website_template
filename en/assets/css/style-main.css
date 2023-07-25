@@ -80,8 +80,12 @@ This file contains the common styles of this theme.
 /* @import "../css/stroke-gap-icons.css"; */
 @import "../css/flaticon-set-carfixing.css";
 @import "../css/utility-classes.css";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|family=Raleway:400,200,300,500,600,700,800,900|family=Titillium+Web:400,200,300,600,700,900);
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:wght@400,200,300,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@100;200;300;400;600;700;800&display=swap');
+@import url('https://arabicfonts.net/fonts/alarabiya-font-normal');
 /* Font Family */
 @font-face { font-family: RotisExtraBold; src: url('./assets/fnts/Rotis_Sans_Serif_Std_75_Extra_Bold.otf"');}
 @font-face { font-family: RotisLight; src: url('./assets/fnts/Rotis_Sans_Serif_Std_45_Light.otf"');}
@@ -118,7 +122,7 @@ body {
   line-height: 1.7;
   color: #666666;
   font-size: 14px;
-  font-family: RotisLight, 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisLight, 'Open Sans', sans-serif;
   background-color: #fff;
 }
 a {
@@ -199,7 +203,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   font-weight: 700;
   line-height: 1.42857143;
   color: #333333;
@@ -235,7 +239,7 @@ h6 a,
   color: #333333;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6, span {
-  font-family: RotisLight, 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisLight, 'Open Sans', sans-serif;
 }
 /* -------- Body Text ---------- */
 p,
@@ -253,19 +257,19 @@ form {
 }
 /* -------- Custom Font Family ---------- */
 .font-opensans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
 }
 .font-raleway {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Raleway', sans-serif;
 }
 .font-titillium {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Titillium Web', sans-serif;
 }
 .font-RotisExtraBold {
-  font-family: RotisExtraBold, sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisExtraBold, sans-serif;
 }
 .font-RotisLight {
-  font-family: RotisLight, sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisLight, sans-serif;
 }
 /* breadcrumb */
 .breadcrumb {
@@ -1191,7 +1195,7 @@ section > .container-fluid {
 */
 .inner-header .title {
   font-size: 34px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Titillium Web', sans-serif;
 }
 /*
  *  Vertical-Nav.less
@@ -1371,7 +1375,7 @@ section > .container-fluid {
 .menu-full-page #fullpage-nav li a {
   color: #111;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
@@ -1723,7 +1727,7 @@ form textarea:focus {
   height: 70px;
 }
 form label {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Titillium Web', sans-serif;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -3190,7 +3194,7 @@ textarea {
   background: none repeat scroll 0 0 transparent;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   height: 18px;
   left: 2.8571em;
   line-height: 1;
@@ -3233,7 +3237,7 @@ textarea {
   color: #c0c0c0;
   content: "\f005\f005\f005\f005\f005";
   float: left;
-  font-family: RotisLight, fontawesome;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisLight, fontawesome;
   left: 0;
   letter-spacing: 2px;
   position: absolute;
@@ -3435,7 +3439,8 @@ table.no-border td {
 }
 .post .entry-content {
   position: relative;
-  background: #f8f8f8;
+  /*background: #f8f8f8;*/
+  background: #9cb2db8b;
   padding: 15px;
 }
 .post .entry-date {
@@ -3497,7 +3502,8 @@ table.no-border td {
 }
 .post.style2 .entry-content,
 .post.style3 .entry-content {
-  background-color: rgba(0, 0, 0, 0.8);
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+  background-color: rgba(93, 142, 233, 0.75);
   bottom: -30px;
   left: 0;
   padding: 30px;
@@ -4350,7 +4356,7 @@ blockquote.dark footer {
   color: #d3d3d3;
 }
 blockquote p {
-  font-family: "Playfair Display", serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', "Playfair Display", serif;
   font-size: 16px;
   font-style: italic;
 }
@@ -5119,7 +5125,7 @@ blockquote p {
 }
 .toggle-map span:after {
   content: "\f107";
-  font-family: RotisLight, fontawesome;
+  font-family: 'Cairo', 'Noto Kufi Arabic', RotisLight, fontawesome;
   margin-left: 10px;
 }
 .toggle-map.open span:after {
@@ -5242,7 +5248,7 @@ blockquote p {
   font-size: 4rem !important;
   /* =64px */
   line-height: 1.2;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', "Open Sans", sans-serif;
   margin: 0 0 20px;
   font-weight: 200;
 }
@@ -5685,7 +5691,7 @@ blockquote p {
 }
 .nav-tabs > li > a {
   border-radius: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   font-size: 12px;
   color: #555555;
   padding: 12px 20px;
@@ -6104,7 +6110,7 @@ blockquote p {
 }
 .fc-timetable-wrapper .fc-toolbar h2 {
   color: #7f7f7f;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 38px;
@@ -6152,7 +6158,7 @@ blockquote p {
 .fc-timetable-wrapper .fc-day-header {
   background: #ffffff;
   color: #7f7f7f;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 52px;
@@ -6210,7 +6216,7 @@ blockquote p {
   border: 0;
   border: 2px solid #5fc7ae;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
   transition: all 0.3s ease;
@@ -6251,7 +6257,7 @@ blockquote p {
 }
 .fc-timetable-wrapper td.fc-time {
   color: #7f7f7f;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cairo', 'Noto Kufi Arabic', 'Lato', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 70px;
@@ -7002,7 +7008,7 @@ blockquote p {
 }
 .horizontal-contact-widget .each-widget::before {
   content: "\f111";
-  font-family: FontAwesome;
+  font-family: fontawesome;
   left: 0;
   position: absolute;
   right: 0;
