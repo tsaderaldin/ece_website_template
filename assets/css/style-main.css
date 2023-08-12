@@ -4793,10 +4793,20 @@ blockquote p {
 .funfact.border {
   border: 1px solid #d3d3d3;
 }
+.funfact title {
+  position: relative;
+}
 .funfact i {
+  position: relative;
   font-size: 45px;
 }
 .funfact h2 {
+  position: relative;
+}
+.funfact h3 {
+  position: relative;
+}
+.funfact h4 {
   position: relative;
 }
 .funfact h2:after {
@@ -4814,7 +4824,7 @@ blockquote p {
   transition: all 0.5s ease;
 }
 .funfact.style-1 .funfact-title {
-  color: #999999;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
 }
