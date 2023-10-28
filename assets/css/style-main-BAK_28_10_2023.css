@@ -128,12 +128,12 @@ body {
   background-color: #fff;
 }
 a {
-  color: #ffffff;
+  color: #808080;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #595959;
   text-decoration: none;
 }
 a img {
@@ -481,7 +481,7 @@ iframe {
   margin: 10px 0 20px;
 }
 .line-bottom-centered:after {
-  background: #4FB144 none repeat scroll 0 0;
+  background: #2b96cc none repeat scroll 0 0;
   bottom: -8px;
   content: "";
   height: 1px;
@@ -1127,7 +1127,7 @@ section > .container-fluid {
 /* -------- Header White ---------- */
 .header-nav.navbar-white {
   background-color: rgba(255, 255, 255, 0.95);
-  border: none none;
+  border: medium none;
 }
 .header-nav.navbar-white .menuzord {
   background: transparent;
@@ -3442,11 +3442,8 @@ table.no-border td {
 .post .entry-content {
   position: relative;
   /*background: #f8f8f8;*/
-  background: #4AAD45;
+  background: #9cb2db8b;
   padding: 15px;
-}
-.post .entry-content:hover{
-  background-color: #1F6838;
 }
 .post .entry-date {
   font-size: 13px;
@@ -3461,7 +3458,7 @@ table.no-border td {
   font-size: 28px;
 }
 .post .entry-meta.meta-absolute span a {
-  color: #ffffff;
+  color: #454545;
   font-size: 12px;
   font-style: italic;
   letter-spacing: 2px;
@@ -3508,7 +3505,7 @@ table.no-border td {
 .post.style2 .entry-content,
 .post.style3 .entry-content {
   /*background-color: rgba(0, 0, 0, 0.8);*/
-  background-color: #4AAD45a8;
+  background-color: rgba(93, 142, 233, 0.75);
   bottom: -30px;
   left: 0;
   padding: 30px;
@@ -5257,7 +5254,7 @@ blockquote p {
   transition: 0.3s all ease-in-out 0s;
 }
 .pricing:hover {
-  background-color: #4AAD45 !important;
+  background-color: #121b26 !important;
 }
 .pricing .table-price {
   font-size: 4rem !important;
