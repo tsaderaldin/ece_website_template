@@ -28,6 +28,10 @@
 <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
 <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
+<!-- Counter numbers animation -->
+<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'> -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
 <!-- Revolution Slider 5.x CSS settings -->
 <link  href="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
 <link  href="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
@@ -154,6 +158,13 @@
     }
     #topbartext {
       visibility: hidden;
+    }    
+    #logo{
+      display: block;
+      max-width: 45%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   </style>
@@ -169,6 +180,36 @@
 <!-- Revolution Slider 5.x SCRIPTS -->
 <script src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
 <script src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Counter number animation stylesheet -->
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+.counter {
+  font-size: 38pt;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+</style>
+
 
 
 <div id="wrapper" class="clearfix">
@@ -197,12 +238,12 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <img href="#default" src="../../assets/imgs/logos/secondary_en.png" alt="" class="">
+      <img src="../../assets/imgs/logos/secondary_en.png" alt="" class="">
     </div>
     <div style="width: 100%; height: 50px; background-color: #ffffff;"></div>
     <div id="navbar">
-      <a href="#default" id="logo" class="navbar-brand">
-        <img href="#default" id="logo" src="../../assets/imgs/logos/mark_wbg.png" alt="" class="">
+      <a id="logo" href="../../en/" class="navbar-brand">
+        <img id="logo" src="../../assets/imgs/logos/mark_wbg.png" alt="" class="">
         <div id="topbartext" class="container-fluid" style="padding-left: 10px; z-index: 102;">
           <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 25pt;">Department of Eelectrical and Computer Engineering</h2>
         </div>
@@ -248,7 +289,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sections</h5> -->
-        <img href="#default" src="../../assets/imgs/logos/secondary_en.png" alt="" class="">
+        <img href="#default" src="../../assets/imgs/logos/secondary_en_green.png" alt="" class="">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body" style="background-color: #9ccf997e;">
@@ -306,7 +347,7 @@
         <div class="section-content">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title text-white text-center">Computer Program</h2>
+              <h2 class="title text-white text-center">Computer Engineering Program</h2>
               <ol class="breadcrumb text-left text-black mt-10">
                 <li><a href="#"></a></li>
               </ol>
@@ -315,89 +356,139 @@
         </div>
       </div>
     </section>
-    
 
-
-	 <!-- Stats  -->
-   <!-- <section class="divider parallax layer-overlay" data-bg-img="../assets/imgs/banner1.jpg" data-parallax-ratio="0.0" style="background-image: url(&quot;../assets/imgs/banner1.jpg&quot;); background-position: 50% 50%;">
-    <div class="container pt-10 pb-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 mb-md-50">
-          <div class="funfact text-center">
-            <h3 class="text-white text-uppercase">Our Assets</h3>
+  <!-- Stats  -->
+  <section class="divider parallax layer-overlay" data-bg-img="../../assets/imgs/banner1.jpg"  data-parallax-ratio="0.0" style="background-image: url(&quot;../../../../assets/imgs/banner1.jpg&quot;); background-position: 50% 50%; background-size: 100% 50%;">
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact text-center">
+          <i class="fa  fa-graduation-cap mt-5 text-white"></i>
+          <div class="counter-container">
+            <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="4"></div></h2>
           </div>
+          <h4 class="text-white text-uppercase">Academic Programs</h4>
         </div>
       </div>
-    </div>
-    
-    <div class="container pt-10 pb-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-users mt-5 text-white"></i>
-            <h2 data-animation-duration="2000" data-value="70" class="animate-number text-white mt-0 font-38 font-weight-500 appeared">70+</h2>
-            <h4 class="text-white text-uppercase">Faculty Members</h4>
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact text-center">
+          <i class="fa fa-book mt-5 text-white"></i>
+          <div class="counter-container">
+            <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="40"></div></h2>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-book mt-5 text-white"></i>
-            <h2 data-animation-duration="2000" data-value="40"
-              class="animate-number text-white mt-0 font-38 font-weight-500 appeared">40+</h2>
-            <h4 class="text-white text-uppercase">Courses</h4>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-flask mt-5 text-white"></i>
-            <h2 data-animation-duration="2000" data-value="10"
-              class="animate-number text-white mt-0 font-38 font-weight-500 appeared">10+</h2>
-            <h4 class="text-white text-uppercase">Specialized Laboratories</h4>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa  fa-graduation-cap mt-5 text-white"></i>
-            <h2 data-animation-duration="2000" data-value="2324"
-              class="animate-number text-white mt-0 font-38 font-weight-500 appeared">9</h2>
-            <h4 class="text-white text-uppercase">Academic Programs</h4>
-          </div>
+          <h4 class="text-white text-uppercase">Courses</h4>
         </div>
       </div>
-    </div>
-  </section> -->
-
- 
-
-<!-- Section: Chairman Message -->
-<!--
-<section id="mission">
-  <div class="container-fluid pt-0 pb-0 bg-theme-colored">
-    <div class="row equal-height">
-      <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="../assets/imgs/mbrs/chair/current.jpg" data-wow-duration="1s" data-wow-delay="0.3s" style="background-image: url(&quot;../assets/imgs/mbrs/chair/2023.jpg&quot;); background-position: center top; background-repeat: no-repeat; background-size: cover; min-height: 60% ; visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact text-center">
+          <i class="fa fa-gear mt-5 text-white"></i>
+          <div class="counter-container">
+            <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="10"></div></h2>
+          </div>
+          <h4 class="text-white text-uppercase">Educational Laboratories</h4>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-          <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Chairman's Message</h2>
-          <p class="text-white">
-            The Department of Electrical Engineering at King Abdulaziz University was established in 1394 H (1975 G). In 1407H the name of the Department of Electrical Engineering was changed to the Department of Electrical and Computer Engineering. The department consists of four branches: Electric Power and Machines Engineering, Electronics and Communications Engineering, Computer Engineering, and Biomedical Engineering.
-          </p>
-          <a class="text-white font-weight-600" href="#">Read More →</a>
-          <br><br>
-          <h5 class="text-white" >
-            Dr. Sami Saleh Alghamdi
-            <br><br>
-            Chairman, Electrical & Computer Engineering Department
-          </h5>
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact text-center">
+          <i class="fa fa-users mt-5 text-white"></i>
+          <div class="counter-container">
+            <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="20"></div></h2>
+          </div>
+          <h4 class="text-white text-uppercase">Students Activities</h4>
         </div>
       </div>
     </div>
   </div>
-</section>
--->
+  </section>
 
+  <!-- Section: Sections -->
+  <section id="blog2">
+    <div class="container pb-10 pt-10 pb-sm-10">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <article class="post clearfix mb-sm-30" style="">
+                <!-- <div class="entry-header" style="">
+                  <div class="post-thumb thumb"> 
+                    <img src="../../assets/imgs/grps/bachelor.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div> -->
+                <div class="entry-content p-20 pr-10" style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <!-- <div class="media-body pl-10"> -->
+                      <!-- <div class="event-content pull-left flip"> -->
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Bachelor Degree</a></h4>
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <article class="post clearfix mb-md-30 mb-sm-30" style="">
+                <!-- <div class="entry-header" style="">
+                  <div class="post-thumb thumb"> 
+                    <img src="../../assets/imgs/grps/master.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div> -->
+                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <!-- <div class="media-body pl-10"> -->
+                      <!-- <div class="event-content pull-left flip"> -->
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Master Degree</a></h4>
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <article class="post clearfix mb-md-30 mb-sm-30" style="">
+                <!-- <div class="entry-header" style="">
+                  <div class="post-thumb thumb"> 
+                    <img src="../../assets/imgs/grps/phd.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div> -->
+                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <!-- <div class="media-body pl-10"> -->
+                      <!-- <div class="event-content pull-left flip"> -->
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Doctorate Degree</a></h4>
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <article class="post clearfix mb-md-30 mb-sm-30" style="">
+                <!-- <div class="entry-header" style="">
+                  <div class="post-thumb thumb"> 
+                    <img src="../../assets/imgs/grps/biomed_members.jpeg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div> -->
+                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <!-- <div class="media-body pl-10"> -->
+                      <!-- <div class="event-content pull-left flip"> -->
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_computer_members.html">Members</a></h4>
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- end main-content -->
 
-  <!-- Section: Admission -->
+  <!-- start: Admission -->
   <div class="rev_slider_wrapper">
     <div class="rev_slider" data-version="5.0">
       <ul>
@@ -407,15 +498,14 @@
           <img src="../../assets/imgs/Best_College.jpg"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
           <!-- LAYERS -->
 
-          <!-- LAYER NR. 1 -->
+          <!-- Title -->
           <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white RotisExtraBold pl-30 pr-30"
             id="rs-2-layer-2"
-
             data-x="['center']"
             data-hoffset="['0']"
             data-y="['middle']"
             data-voffset="['-90']"
-            data-fontsize="['48']"
+            data-fontsize="['35']"
             data-lineheight="['70']"
             data-width="none"
             data-height="none"
@@ -429,63 +519,20 @@
             data-splitin="none" 
             data-splitout="none" 
             data-responsive_offset="on"
-            style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px; text-shadow: 1px 1px 8px black;">Study at King Abdulaziz University
+            style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px; text-shadow: 1px 1px 8px black; ">Study at King Abdulaziz University
           </div>
 
-          <!-- LAYER NR. 2 -->
-          <!-- <div class="tp-caption tp-resizeme text-uppercase  bg-theme-colored-transparent text-white RotisExtraBold border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30"
-            id="rs-2-layer-1"
-          
-            data-x="['center']"
-            data-hoffset="['0']"
-            data-y="['middle']"
-            data-voffset="['-20']" 
-            data-fontsize="['32']"
-            data-lineheight="['54']"
-            data-width="none"
-            data-height="none"
-            data-whitespace="nowrap"
-            data-transform_idle="o:1;s:500"
-            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-            data-start="1000" 
-            data-splitin="none" 
-            data-splitout="none" 
-            data-responsive_offset="on"
-            style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px; text-shadow: 1px 1px 4px black;">Undergraduate Program
-          </div> -->
-
-          <!-- LAYER NR. 3
-          <div class="tp-caption tp-resizeme text-white text-center" 
-            id="rs-2-layer-3"
-
-            data-x="['center']"
-            data-hoffset="['0']"
-            data-y="['middle']"
-            data-voffset="['50']"
-            data-fontsize="['16']"
-            data-lineheight="['28']"
-            data-width="none"
-            data-height="none"
-            data-whitespace="nowrap"
-            data-transform_idle="o:1;s:500"
-            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-            data-start="1400" 
-            data-splitin="none" 
-            data-splitout="none" 
-            data-responsive_offset="on"
-            style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; text-shadow: 1px 1px 4px black;">Our graduates will successfully engage in careers in the areas of computer engineering and control systems.
-          </div> -->
-
-          <!-- LAYER NR. 4 -->
+          <!-- Button -->
+          <style>
+            .btn-xl {
+                padding: 10px 20px;
+                font-size: 25px;
+                font-weight: 700;
+                border-radius: 25px;
+            }
+          </style>
           <div class="tp-caption tp-resizeme" 
             id="rs-2-layer-4"
-
             data-x="['center']"
             data-hoffset="['0']"
             data-y="['middle']"
@@ -502,7 +549,8 @@
             data-splitin="none" 
             data-splitout="none" 
             data-responsive_offset="on"
-            style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-default btn-circled pl-20 pr-20" href="#">Apply for Admission</a> 
+            style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
+            <a class="btn btn-theme-colored border btn-xl btn-circled pl-20 pr-20" href="https://www.kau.edu.sa/Content-0-EN-285332">Apply for Admission</a> 
           </div>
         </li>
       </ul>
@@ -602,99 +650,8 @@
       });
     });
   </script>
-  <!-- Slider Revolution Ends -->
-</section>
+  <!-- end: Admission -->
 
-
-  <!-- Section: Sections -->
-  <section id="blog2">
-    <div class="container pb-10 pt-10 pb-sm-10">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-sm-30" style="">
-                <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/bachelor.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                  </div>
-                </div>
-                <div class="entry-content p-20 pr-10" style="min-height: 70px; border-radius: 0 0 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Bachelor Degree</a></h4>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/master.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                  </div>
-                </div>
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 0 0 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Master Degree</a></h4>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/phd.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                  </div>
-                </div>
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 0 0 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Doctorate Degree</a></h4>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="https://placehold.it/310x174" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                  </div>
-                </div>
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 0 0 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="#">Members</a></h4>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- end main-content -->
-  
-  
   <!-- Footer  -->
   <footer id="footer" class="footer bg-black-222" data-bg-img="https://fcitweb.kau.edu.sa/center/assetseng/images/footer-bg.png">
 
@@ -703,10 +660,10 @@
         <div class="row">
           <div class="col-md-12">
             <!-- <p class="font-11 text-black-777 m-0">Copyright &copy;2015 Engineering. All Rights Reserved</p> -->
-            <span class="font-16 m-0" style="color: #BF8948;">Webmaster: <span class="font-16 text-white">Engr. Turky Abdulaziz</span></span>
-            <h4 class="font-14 text-black-777 m-0">All Right Reserved to Department of Electrical and Computer Engineering &copy;2023</h4>
+            <h4 class="font-14 text-black-777 m-0">All Right Reserved to Department of Electrical and Computer Engineering &copy;2023-2024</h4>
+            <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Turky Abdulaziz Saderaldin</span></span>
           </div>
-         
+        
         </div>
       </div>
     </div>
@@ -731,3 +688,22 @@
 <script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script> 
 <script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script> 
 <script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+<!-- Counter number animation javascript -->
+<script>
+  const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+</script>
