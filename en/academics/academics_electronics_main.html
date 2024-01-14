@@ -217,36 +217,35 @@
 
 <!-- Header (Department Logo) -->
 <header id="header" class="header">
+
 <!-- START SideMenu -->
-<nav class="navbar bg-body-tertiary fixed-top">
+<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <div id="topbar">
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <img href="#default" src="../../assets/imgs/logos/secondary_en.png" alt="" class="">
+      <img src="../../assets/imgs/logos/secondary_en.png" style="padding-left: 5px; padding-top: 5px; " alt="" class="">
     </div>
     <div style="width: 100%; height: 50px; background-color: #ffffff;"></div>
     <div id="navbar">
-      <a href="../../en/" id="logo" class="navbar-brand">
-        <img id="logo" src="../../assets/imgs/logos/mark_wbg.png" alt="" class="">
-        <div id="topbartext" class="container-fluid" style="padding-left: 10px; z-index: 102;">
+      <a id="logo" class="navbar-brand">
+        <img id="logo" src="../../assets/imgs/logos/mark_wbg.png" alt="" class="img-responsive">
+        <div id="topbartext" class="container-fluid d-sm-none d-md-block" style="padding-left: 10px; z-index: 102;">
           <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 25pt;">Department of Eelectrical and Computer Engineering</h2>
         </div>
       </a>
     </div>
+    <div class="d-none d-sm-block " style="padding-left: 200px; z-index: 1000;">
+      <a class="btn btn-success" href="../en/academics/academics_main.html" style="">Academics</a>
+      <a class="btn btn-success" href="../en/404.html" style="">Research & Projects</a>
+      <a class="btn btn-success" href="../en/404.html" style="">Achievements & Awards</a>
+      <a class="btn btn-success" href="../en/404.html" style="">Collaborations</a>
+      <a class="btn btn-success" href="../en/404.html" style="">Community Services</a>
+      <a class="btn btn-success" href="../en/404.html" style="">Map & Directions</a>
+      <a class="btn btn-success" href="../en/404.html" style="">NEWS</a>
+    </div>
     <div class="container" style="margin-left: 0;">
-      <!-- <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
-        <img src="../assets/imgs/logos/mark.png" alt="">
-        <h1 class="RotisLight" style="font-size: 22pt; font-family: RotisLight, sans-serif; color: #2264dc; white-space:nowrap; font-weight: 600; transform-origin: 50% 50% 0px; padding-top: 0px; z-index: 10;">Department of Electrical & Computer Engineering</h1>
-      </a> -->
-       <!-- Header -->
-      <!-- <div id="navbar">
-        <a href="#default" id="logo" class="navbar-brand">
-          <img href="#default" id="logo" src="../assets/imgs/logos/mark.png" alt="" class="">
-        </a>
-      </div> -->
-      
       <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {scrollFunction()};
@@ -275,54 +274,174 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sections</h5> -->
-        <img href="#default" src="../../assets/imgs/logos/secondary_en.png" alt="" class="">
+        <a target="_self" href="../../en/index.html"><img src="../../assets/imgs/logos/secondary_en.png" alt="" class=""></a>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      <style>
+        /* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: relative;
+		left:30px; 
+    top:0px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #ffffff }
+	.dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+  .dropdown-menu > li:hover{ background-color: #ffffff }
+	.dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+}	
+/* ============ small devices .end// ============ */
+      </style>
       <div class="offcanvas-body" style="background-color: #9ccf997e;">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!-- Home -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="location" href="#">Home</a>
+            <a class="nav-link active" aria-current="location" href="../index.html">Home</a>
           </li>
+          <!-- Academics -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Academics
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Services (for members)</a></li>
+              <!-- Admission -->
+              <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332">Admission</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- Programs -->
               <li>
-                <hr class="dropdown-divider">
+                <a class="dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Programs
+                </a>
+                <ul class="submenu dropdown-menu">
+                  <!-- Biomedical -->
+                  <li>
+                    <a class="dropdown-item" >Biomedical Enineering</a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
+                      <li><a class="dropdown-item" href="../academics/academics_biomedical_members.html">Program Members</a></li>
+                    </ul>
+                  </li>
+                  <!-- Computer -->
+                  <li>
+                    <a class="dropdown-item" >Computer Enineering</a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
+                      <li><a class="dropdown-item" href="../academics/academics_computer_members.html">Program Members</a></li>
+                    </ul>
+                  </li>
+                  <!-- Electronics -->
+                  <li>
+                    <a class="dropdown-item" >Electronics & Communications Enineering</a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
+                      <li><a class="dropdown-item" href="../academics/academics_electronics_members.html">Program Members</a></li>
+                    </ul>
+                  </li>
+                  <!-- Power -->
+                  <li>
+                    <a class="dropdown-item" >Power & Machines Enineering</a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
+                      <li><a class="dropdown-item" href="../academics/academics_power_members.html">Program Members</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li><a class="dropdown-item" href="#">Admission</a></li>
-              <li><a class="dropdown-item" href="#">Programs</a></li>
-              <li><a class="dropdown-item" href="#">Facilities</a></li>
+              <li><a class="dropdown-item" href="../404.html">Members</a></li>
+              <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Research & Projects</a>
+          <!-- Research & Projects -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="../404.html">Research & Projects</a>
           </li>
+          <!-- Achievements & Awards -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Achievements & Awards</a>
+            <a class="nav-link" href="../404.html">Achievements & Awards</a>
           </li>
+          <!-- Collaborations -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Map & Directions</a>
+            <a class="nav-link" href="../404.html">Collaborations</a>
           </li>
+          <!-- Community -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Community Services</a>
+            <a class="nav-link" href="../404.html">Community</a>
           </li>
+          <!-- Map & Directions -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Collaborations</a>
+            <a class="nav-link" href="../404.html">Map & Directions</a>
+          </li>
+          <!-- NEWS -->
+          <li class="nav-item">
+            <a class="nav-link" href="../404.html">NEWS</a>
           </li>
         </ul>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+      </script>
     </div>
   </div>
 </nav>
-
 <!-- END SideMenu -->
-</header>
   
   <!-- Start main-content -->
   <div class="main-content">
@@ -647,7 +766,7 @@
           <div class="col-md-12">
             <!-- <p class="font-11 text-black-777 m-0">Copyright &copy;2015 Engineering. All Rights Reserved</p> -->
             <h4 class="font-14 text-black-777 m-0">All Right Reserved to Department of Electrical and Computer Engineering &copy;2023-2024</h4>
-            <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Turky Abdulaziz Saderaldin</span></span>
+            <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Turky Abdulaziz </span></span>
           </div>
         
         </div>
