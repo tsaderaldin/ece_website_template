@@ -137,6 +137,12 @@
     background-color: #5E9673;
     color: white;
   }
+
+  @media screen and (max-width: 955px) {
+    #topbartext {
+      font-size: 3.5vw;
+    }
+  }
   
   @media screen and (max-width: 580px) {
     #navbar {
@@ -174,25 +180,8 @@
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
 
- 
-
 <!-- Header (Department Logo) -->
-<header id="header" class="header">
-    <!-- <div class="header-nav">
-      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-        <div class="container">
-          <nav id="menuzord-right" class="menuzord default">
-            <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
-              <img src="../assets/imgs/logos/mark.png" alt="">
-              <h1 class="RotisLight" style="font-size: 22pt; font-family: RotisLight, sans-serif; color: #179647; white-space:nowrap; font-weight: 600; transform-origin: 50% 50% 0px; padding-top: 0px; z-index: 10;">Department of Electrical & Computer Engineering</h1>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div> -->
-
-
-    
+<header id="header" class="header">   
     
 <!-- START SideMenu -->
 <nav class="navbar bg-body-tertiary">
@@ -207,20 +196,32 @@
     <div id="navbar">
       <a id="logo" class="navbar-brand">
         <img id="logo" src="../assets/imgs/logos/mark_wbg.png" alt="" class="img-responsive">
-        <div id="topbartext" class="container-fluid d-sm-none d-md-block" style="padding-left: 10px; z-index: 102;">
-          <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 25pt;">Department of Eelectrical and Computer Engineering</h2>
+        <div id="topbartext" class="container-fluid d-sm-block d-md-block" style="padding-left: 10px; z-index: 102;">
+          <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 100%;">Department of Eelectrical and Computer Engineering</h2>
         </div>
       </a>
     </div>
-    <div class="d-none d-sm-block " style="padding-left: 200px; z-index: 1000;">
-      <a class="btn btn-success" href="../en/academics/academics_main.html" style="">Academics</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Research & Projects</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Achievements & Awards</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Collaborations</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Community Services</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Map & Directions</a>
-      <a class="btn btn-success" href="../en/404.html" style="">NEWS</a>
+    <!-- Menu bar -->
+    <div class="d-none d-sm-block " style="padding-left: 140px; z-index: 1000;">
+      <a class="btn btn-success disabled" href="./index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
+      <div class=" btn-group " >
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+          Administration
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./academics/academics_chairman.html">Meet The Chairman</a></li>
+          <li><a class="dropdown-item" href="./academics/academics_secretary.html">Secretary</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-success" href="../en/academics/academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">Research & Projects</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">Achievements & Awards</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">Collaborations</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">Community</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">Map & Directions</a>
+      <a class="btn btn-success" href="./404.html" style="margin-top: 2px; margin-bottom: 2px;">NEWS</a>
     </div>
+
     <div class="container" style="margin-left: 0;">
       <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -276,8 +277,8 @@
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
-  .dropdown-menu > li:hover{ background-color: #ffffff }
-	.dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+  /* .dropdown-menu > li:hover{ background-color: #ffffff } */
+	/* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
 }	
 /* ============ small devices .end// ============ */
       </style>
@@ -289,7 +290,7 @@
           </li>
           <!-- Academics -->
           <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
               Academics
             </a>
             <ul class="dropdown-menu">
@@ -309,7 +310,6 @@
                       <li><a class="dropdown-item" href="./404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="./404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="./academics/academics_biomedical_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -320,7 +320,6 @@
                       <li><a class="dropdown-item" href="./404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="./404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="./academics/academics_computer_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -331,7 +330,6 @@
                       <li><a class="dropdown-item" href="./404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="./404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="./academics/academics_electronics_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -342,14 +340,13 @@
                       <li><a class="dropdown-item" href="./404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="./404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="./404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="./academics/academics_power_members.html">Program Members</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="./404.html">Members</a></li>
               <li><a class="dropdown-item" href="./404.html">Facilities</a></li>
+              <li><a class="dropdown-item" href="./404.html">Services</a></li>
             </ul>
           </li>
           <!-- Research & Projects -->
@@ -380,39 +377,39 @@
       </div>
       <script>
         document.addEventListener("DOMContentLoaded", function(){
-// make it as accordion for smaller screens
-if (window.innerWidth < 992) {
+          // make it as accordion for smaller screens
+          if (window.innerWidth < 992) {
 
-  // close all inner dropdowns when parent is closed
-  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('hidden.bs.dropdown', function () {
-      // after dropdown is hidden, then find all submenus
-        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
-          // hide every submenu as well
-          everysubmenu.style.display = 'none';
-        });
-    })
-  });
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+              everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                // after dropdown is hidden, then find all submenus
+                  this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                    // hide every submenu as well
+                    everysubmenu.style.display = 'none';
+                  });
+              })
+            });
 
-  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
-    element.addEventListener('click', function (e) {
-        let nextEl = this.nextElementSibling;
-        if(nextEl && nextEl.classList.contains('submenu')) {	
-          // prevent opening link if link needs to open dropdown
-          e.preventDefault();
-          if(nextEl.style.display == 'block'){
-            nextEl.style.display = 'none';
-          } else {
-            nextEl.style.display = 'block';
-          }
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+              element.addEventListener('click', function (e) {
+                  let nextEl = this.nextElementSibling;
+                  if(nextEl && nextEl.classList.contains('submenu')) {	
+                    // prevent opening link if link needs to open dropdown
+                    e.preventDefault();
+                    if(nextEl.style.display == 'block'){
+                      nextEl.style.display = 'none';
+                    } else {
+                      nextEl.style.display = 'block';
+                    }
 
-        }
-    });
-  })
-}
-// end if innerWidth
-}); 
-// DOMContentLoaded  end
+                  }
+              });
+            })
+          }       
+          // end if innerWidth
+        }); 
+        // DOMContentLoaded  end
       </script>
     </div>
   </div>

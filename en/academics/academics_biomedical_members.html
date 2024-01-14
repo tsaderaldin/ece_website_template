@@ -139,6 +139,12 @@
     color: white;
   }
   
+  @media screen and (max-width: 955px) {
+    #topbartext {
+      font-size: 3.5vw;
+    }
+  }
+  
   @media screen and (max-width: 580px) {
     #navbar {
       /* padding: 20px 10px !important; */
@@ -155,6 +161,13 @@
     }
     #topbartext {
       visibility: hidden;
+    }
+    #logo{
+      display: block;
+      max-width: 45%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   </style>
@@ -194,20 +207,33 @@
     <div id="navbar">
       <a id="logo" class="navbar-brand">
         <img id="logo" src="../../assets/imgs/logos/mark_wbg.png" alt="" class="img-responsive">
-        <div id="topbartext" class="container-fluid d-sm-none d-md-block" style="padding-left: 10px; z-index: 102;">
-          <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 25pt;">Department of Eelectrical and Computer Engineering</h2>
+        <div id="topbartext" class="container-fluid d-sm-block d-md-block" style="padding-left: 10px; z-index: 102;">
+          <h2 class="d-flex" style="text-align: left; color: #179647; font-size: 100%;">Department of Eelectrical and Computer Engineering</h2>
         </div>
       </a>
     </div>
-    <div class="d-none d-sm-block " style="padding-left: 200px; z-index: 1000;">
-      <a class="btn btn-success" href="../en/academics/academics_main.html" style="">Academics</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Research & Projects</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Achievements & Awards</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Collaborations</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Community Services</a>
-      <a class="btn btn-success" href="../en/404.html" style="">Map & Directions</a>
-      <a class="btn btn-success" href="../en/404.html" style="">NEWS</a>
+
+    <!-- Menu bar -->
+    <div class="d-none d-sm-block " style="padding-left: 140px; z-index: 1000;">
+      <a class="btn btn-success" href="../index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
+      <div class=" btn-group " >
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+          Administration
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../academics/academics_chairman.html">Meet The Chairman</a></li>
+          <li><a class="dropdown-item" href="../academics/academics_secretary.html">Secretary</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-success" href="../academics/academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Research & Projects</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Achievements & Awards</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Collaborations</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Community</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Map & Directions</a>
+      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">NEWS</a>
     </div>
+
     <div class="container" style="margin-left: 0;">
       <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -263,8 +289,8 @@
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
-  .dropdown-menu > li:hover{ background-color: #ffffff }
-	.dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+  /* .dropdown-menu > li:hover{ background-color: #ffffff } */
+	/* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
 }	
 /* ============ small devices .end// ============ */
       </style>
@@ -276,7 +302,7 @@
           </li>
           <!-- Academics -->
           <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
               Academics
             </a>
             <ul class="dropdown-menu">
@@ -296,7 +322,6 @@
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="../academics/academics_biomedical_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -307,7 +332,6 @@
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="../academics/academics_computer_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -318,7 +342,6 @@
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="../academics/academics_electronics_members.html">Program Members</a></li>
                     </ul>
                   </li>
@@ -329,14 +352,13 @@
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
                       <li><a class="dropdown-item" href="../academics/academics_power_members.html">Program Members</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="../404.html">Members</a></li>
               <li><a class="dropdown-item" href="../404.html">Facilities</a></li>
+              <li><a class="dropdown-item" href="../404.html">Services</a></li>
             </ul>
           </li>
           <!-- Research & Projects -->
@@ -487,169 +509,6 @@ if (window.innerWidth < 992) {
 -->
 
 
-  <!-- start: Admission -->
-  <div class="rev_slider_wrapper">
-    <div class="rev_slider" data-version="5.0">
-      <ul>
-        <!-- SLIDE 2 -->
-        <li data-index="rs-1" data-delay="10000" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Admission" data-description="">
-          <!-- MAIN IMAGE -->
-          <img src="../../assets/imgs/Best_College.jpg"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-          <!-- LAYERS -->
-
-          <!-- Title -->
-          <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white RotisExtraBold pl-30 pr-30"
-            id="rs-2-layer-2"
-            data-x="['center']"
-            data-hoffset="['0']"
-            data-y="['middle']"
-            data-voffset="['-90']"
-            data-fontsize="['35']"
-            data-lineheight="['70']"
-            data-width="none"
-            data-height="none"
-            data-whitespace="nowrap"
-            data-transform_idle="o:1;s:500"
-            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-            data-start="1000" 
-            data-splitin="none" 
-            data-splitout="none" 
-            data-responsive_offset="on"
-            style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px; text-shadow: 1px 1px 8px black; ">Study at King Abdulaziz University
-          </div>
-
-          <!-- Button -->
-          <style>
-            .btn-xl {
-                padding: 10px 20px;
-                font-size: 25px;
-                font-weight: 700;
-                border-radius: 25px;
-            }
-          </style>
-          <div class="tp-caption tp-resizeme" 
-            id="rs-2-layer-4"
-            data-x="['center']"
-            data-hoffset="['0']"
-            data-y="['middle']"
-            data-voffset="['115']"
-            data-width="none"
-            data-height="none"
-            data-whitespace="nowrap"
-            data-transform_idle="o:1;"
-            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-            data-start="1400" 
-            data-splitin="none" 
-            data-splitout="none" 
-            data-responsive_offset="on"
-            style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
-            <a class="btn btn-theme-colored border btn-xl btn-circled pl-20 pr-20" href="https://www.kau.edu.sa/Content-0-EN-285332">Apply for Admission</a> 
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- end .rev_slider -->
-  </div>
-  <script>
-    $(document).ready(function(e) {
-      $(".rev_slider").revolution({
-        sliderType:"standard",
-        sliderLayout: "auto",
-        dottedOverlay: "none",
-        delay: 20000,
-        navigation: {
-            keyboardNavigation: "off",
-            keyboard_direction: "horizontal",
-            mouseScrollNavigation: "off",
-            onHoverStop: "off",
-            touch: {
-                touchenabled: "on",
-                swipe_threshold: 75,
-                swipe_min_touches: 1,
-                swipe_direction: "horizontal",
-                drag_block_vertical: false
-            },
-          arrows: {
-            style:"zeus",
-            enable:false,
-            hide_onmobile:true,
-            hide_under:600,
-            hide_onleave:true,
-            hide_delay:200,
-            hide_delay_mobile:1200,
-            tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-            left: {
-              h_align:"left",
-              v_align:"center",
-              h_offset:30,
-              v_offset:0
-            },
-            right: {
-              h_align:"right",
-              v_align:"center",
-              h_offset:30,
-              v_offset:0
-            }
-          },
-          bullets: {
-            enable:false,
-            hide_onmobile:true,
-            hide_under:600,
-            style:"metis",
-            hide_onleave:true,
-            hide_delay:200,
-            hide_delay_mobile:1200,
-            direction:"horizontal",
-            h_align:"center",
-            v_align:"bottom",
-            h_offset:0,
-            v_offset:30,
-            space:5,
-            tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
-          }
-        },
-        responsiveLevels: [1240, 1024, 778],
-        visibilityLevels: [1240, 1024, 778],
-        gridwidth: [1170, 1024, 778, 480],
-        gridheight: [650, 768, 960, 720],
-        lazyType: "none",
-        parallax: {
-            origo: "slidercenter",
-            speed: 10000,
-            levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
-            type: "scroll"
-        },
-        shadow: 0,
-        spinner: "off",
-        stopLoop: "on",
-        stopAfterLoops: 0,
-        stopAtSlide: -1,
-        shuffle: "off",
-        autoHeight: "off",
-        fullScreenAutoWidth: "off",
-        fullScreenAlignForce: "off",
-        fullScreenOffsetContainer: "",
-        fullScreenOffset: "0",
-        hideThumbsOnMobile: "off",
-        hideSliderAtLimit: 0,
-        hideCaptionAtLimit: 0,
-        hideAllCaptionAtLilmit: 0,
-        debugMode: false,
-        fallbacks: {
-            simplifyAll: "off",
-            nextSlideOnWindowFocus: "off",
-            disableFocusListener: false,
-        }
-      });
-    });
-  </script>
-  <!-- end: Admission -->
 
 
   <!-- Start main-content -->
