@@ -801,7 +801,7 @@ section > .container-fluid {
   /* overlay-white */
 }
 .layer-overlay::before {
-  background: #0c593369;
+  background: #0c5933d4;
   content: " ";
   height: 100%;
   left: 0;
