@@ -522,8 +522,8 @@ if (window.innerWidth < 992) {
         <div class="section-content">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-sm-30" style="">
-                <div class="entry-header" style="">
+              <article class="post clearfix mb-sm-30">
+                <div class="entry-header">
                   <div class="post-thumb thumb"> 
                     <img src="../../assets/imgs/grps/bio.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
@@ -541,8 +541,8 @@ if (window.innerWidth < 992) {
               </article>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
                   <div class="post-thumb thumb"> 
                     <img src="../../assets/imgs/grps/comp.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
@@ -560,8 +560,8 @@ if (window.innerWidth < 992) {
               </article>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
                   <div class="post-thumb thumb"> 
                     <img src="../../assets/imgs/grps/comm.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
@@ -579,8 +579,8 @@ if (window.innerWidth < 992) {
               </article>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30" style="">
-                <div class="entry-header" style="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
                   <div class="post-thumb thumb"> 
                     <img src="../../assets/imgs/grps/pow.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
@@ -745,35 +745,70 @@ if (window.innerWidth < 992) {
 </div>
 
 <!-- start: ADMISSION -->
-<div class="section-content">
-  <div class="container pt-20 pb-20">
+<style>
+  @media screen and (max-width: 580px){
+    #admission_lbl span{
+      font-size: 14pt;
+    }
+  }
+</style>
+<section id="admission">
+  <div class="pt-0 pb-0  mt-20 mb-20">
     <div class="row">
-      <div class="col-md-12">
-        <div class="text-uppercase bg-theme-colored-transparent text-white RotisExtraBold pl-30 pr-30" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px; text-shadow: 1px 1px 8px black; text-align: center;">
-          Study at King Abdulaziz University
-          <a class="btn btn-theme-colored border btn-xl btn-circled pl-25 pr-25" href="https://www.kau.edu.sa/Content-0-EN-285332" style="border-radius: 30px;">Apply for Admission</a>
+      <div class="col-xs-12 col-sm-12 col-md-6 p-25 position-relative">
+        <div id="admission_lbl" class="text-uppercase bg-theme-colored-transparent text-white RotisExtraBold pl-30 pr-30 position-absolute top-50 start-50 translate-middle" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 18pt; font-weight:700; border-radius: 30px; text-shadow: 1px 1px 8px black; text-align: center;">
+          <span>Study at King Abdulaziz University</span>
         </div>
       </div>
-      
+      <div class="col-xs-12 col-sm-12 col-md-6 p-25 position-relative" data-wow-duration="1s" data-wow-delay="0.3s">
+        <a class="btn btn-theme-colored border btn-xl btn-circled pl-25 pr-25 position-absolute top-50 start-50 translate-middle" href="https://www.kau.edu.sa/Content-0-EN-285332" style="z-index: 7; border-radius: 30px;">Apply for Admission</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <!-- end: ADMISSION -->
 
 <!-- end main-content -->
     
 <!-- Footer  -->
+<style>
+  @media screen and (max-width: 580px) { 
+    #footer_div {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+    #footer_contactus {
+      padding-left: 10px;
+      padding-top: 20px;
+    }
+  }
+  @media screen and (min-width: 581px){
+    #footer_div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    #footer_contactus {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-right: 10px;
+      padding-top: 0px;
+    }
+  }
+</style>
 <footer id="footer" class="footer bg-black-222" data-bg-img="https://fcitweb.kau.edu.sa/center/assetseng/images/footer-bg.png">
-
-  <div class="footer-bottom bg-black-333">
-    <div class="container pt-20 pb-20">
+  <div class="footer-bottom bg-black-333 position-relative">
+    <div id="footer_div" class="container">
       <div class="row">
-        <div class="col-md-12">
-          <!-- <p class="font-11 text-black-777 m-0">Copyright &copy;2015 Engineering. All Rights Reserved</p> -->
-          <h4 class="font-14 text-black-777 m-0">All Right Reserved to Department of Electrical and Computer Engineering &copy;2023-2024</h4>
-          <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Turky Abdulaziz </span></span>
+        <div class="col-md-12 pb-30">
+          <div class="position-absolute top-0 start-0">
+            <h4 class="font-14 text-black-777 m-0">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
+            <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Engr. Turky Abdulaziz Abdulhafiz</span></span>
+          </div>
+          <div id="footer_contactus" class="position-absolute">
+            <a href="#" target="_blank" class="link-info">Contact us</a>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
