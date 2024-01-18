@@ -181,24 +181,7 @@
   <!-- preloader -->
 
  
-
-<!-- Header (Department Logo) -->
-<header id="header" class="header">
-    <!-- <div class="header-nav">
-      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-        <div class="container">
-          <nav id="menuzord-right" class="menuzord default">
-            <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
-              <img src="../assets/imgs/logos/mark.png" alt="">
-              <h1 class="RotisLight" style="font-size: 22pt; font-family: RotisLight, sans-serif; color: #2264dc; white-space:nowrap; font-weight: 600; transform-origin: 50% 50% 0px; padding-top: 0px; z-index: 10;">Department of Electrical & Computer Engineering</h1>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div> -->
-
-
-<!-- START SideMenu -->
+<!-- start: page-content -->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <div id="topbar">
@@ -216,33 +199,33 @@
         </div>
       </a>
     </div>
-
     <!-- Menu bar -->
-    <div class="d-none d-sm-block " style="padding-left: 140px; z-index: 1000;">
-      <a class="btn btn-success" href="../index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
-      <div class=" btn-group " >
-        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
-          Administration
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="../academics/academics_chairman.html">Meet The Chairman</a></li>
-          <li><a class="dropdown-item" href="../academics/academics_secretary.html">Secretary</a></li>
-        </ul>
+    <div class="container-fluid" style="z-index: 1000;">
+      <div id="logo" class="d-none d-sm-block " style="padding-left: 130px; z-index: 1000;">
+        <a class="btn btn-success" href="../index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
+        <div class="btn-group" >
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+            Administration
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../academics/academics_chairman.html">Meet The Chairman</a></li>
+            <li><a class="dropdown-item" href="../academics/academics_secretary.html">Secretary</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-success" href="../../en/academics/academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Research & Projects</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Achievements & Awards</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Collaborations</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Community</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Map & Directions</a>
+        <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">NEWS</a>
       </div>
-      <a class="btn btn-success disabled" href="../academics/academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Research & Projects</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Achievements & Awards</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Collaborations</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Community</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">Map & Directions</a>
-      <a class="btn btn-success" href="../404.html" style="margin-top: 2px; margin-bottom: 2px;">NEWS</a>
     </div>
 
     <div class="container" style="margin-left: 0;">
       <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {scrollFunction()};
-        
         function scrollFunction() {
           if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
             document.getElementById("logo").style.padding = "0px 70px ";
@@ -267,42 +250,45 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sections</h5> -->
-        <a target="_self" href="../../en/index.html"><img src="../../assets/imgs/logos/secondary_en.png" alt="" class=""></a>
+        <a target="_self" href="../index.html"><img src="../../assets/imgs/logos/secondary_en.png" alt="" class=""></a>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+
+
+      <!-- START SideMenu -->
       <style>
         /* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: relative;
-		left:30px; 
-    top:0px;
-	}
-	.nav-item .submenu-left{ 
-		right:100%; left:auto;
-	}
-	.dropdown-menu > li:hover{ background-color: #ffffff }
-	.dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
-}	
-/* ============ desktop view .end// ============ */
+        @media all and (min-width: 992px) {
+          .dropdown-menu li{ position: relative; 	}
+          .nav-item .submenu{ 
+            display: none;
+            position: relative;
+            left:30px; 
+            top:0px;
+          }
+          .nav-item .submenu-left{ 
+            right:100%; left:auto;
+          }
+          .dropdown-menu > li:hover{ background-color: #ffffff }
+          .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+        }	
+        /* ============ desktop view .end// ============ */
 
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-  /* .dropdown-menu > li:hover{ background-color: #ffffff } */
-	/* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
-}	
-/* ============ small devices .end// ============ */
+        /* ============ small devices ============ */
+        @media (max-width: 991px) {
+          .dropdown-menu .dropdown-menu{
+              margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+          }
+          /* .dropdown-menu > li:hover{ background-color: #ffffff } */
+          /* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
+        }	
+        /* ============ small devices .end// ============ */
       </style>
       <div class="offcanvas-body" style="background-color: #9ccf997e;">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <!-- Home -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="location" href="../index.html">Home</a>
+            <a class="nav-link" aria-current="location" href="../index.html">Home</a>
           </li>
           <!-- Academics -->
           <li class="nav-item">
@@ -313,6 +299,18 @@
               <!-- Admission -->
               <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332">Admission</a></li>
               <li><hr class="dropdown-divider"></li>
+              <!-- Administration -->
+              <li>
+                <a class="dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administration
+                </a>
+                <ul class="submenu dropdown-menu">
+                  <!-- Chairman -->
+                  <li><a class="dropdown-item" href="./academics_chairman.html">Meet the Chairman</a></li>
+                  <!-- Secretary -->
+                  <li><a class="dropdown-item" href="./academics_secretary.html">Secretary</a></li>
+                </ul>
+              </li>
               <!-- Programs -->
               <li>
                 <a class="dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -323,40 +321,44 @@
                   <li>
                     <a class="dropdown-item" >Biomedical Enineering</a>
                     <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="./academics_biomedical_main.html">Main Page</a></li>
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../academics/academics_biomedical_members.html">Program Members</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="./academics_biomedical_members.html">Program Members</a></li>
                     </ul>
                   </li>
                   <!-- Computer -->
                   <li>
                     <a class="dropdown-item" >Computer Enineering</a>
                     <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="./academics_computer_main.html">Main Page</a></li>
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../academics/academics_computer_members.html">Program Members</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="./academics_computer_members.html">Program Members</a></li>
                     </ul>
                   </li>
                   <!-- Electronics -->
                   <li>
                     <a class="dropdown-item" >Electronics & Communications Enineering</a>
                     <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="./academics_electronics_main.html">Main Page</a></li>
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../academics/academics_electronics_members.html">Program Members</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="./academics_electronics_members.html">Program Members</a></li>
                     </ul>
                   </li>
                   <!-- Power -->
                   <li>
                     <a class="dropdown-item" >Power & Machines Enineering</a>
                     <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="./academics_power_main.html">Main Page</a></li>
                       <li><a class="dropdown-item" href="../404.html">Bechelore Degree</a></li>
                       <li><a class="dropdown-item" href="../404.html">Master Degree</a></li>
-                      <li><a class="dropdown-item" href="../404.html">doctorate Degree</a></li>
-                      <li><a class="dropdown-item" href="../academics/academics_power_members.html">Program Members</a></li>
+                      <li><a class="dropdown-item" href="../404.html">Doctorate Degree</a></li>
+                      <li><a class="dropdown-item" href="./academics_power_members.html">Program Members</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -393,44 +395,47 @@
       </div>
       <script>
         document.addEventListener("DOMContentLoaded", function(){
-// make it as accordion for smaller screens
-if (window.innerWidth < 992) {
+          // make it as accordion for smaller screens
+          if (window.innerWidth < 992) {
 
-  // close all inner dropdowns when parent is closed
-  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('hidden.bs.dropdown', function () {
-      // after dropdown is hidden, then find all submenus
-        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
-          // hide every submenu as well
-          everysubmenu.style.display = 'none';
-        });
-    })
-  });
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+              everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                // after dropdown is hidden, then find all submenus
+                  this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                    // hide every submenu as well
+                    everysubmenu.style.display = 'none';
+                  });
+              })
+            });
 
-  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
-    element.addEventListener('click', function (e) {
-        let nextEl = this.nextElementSibling;
-        if(nextEl && nextEl.classList.contains('submenu')) {	
-          // prevent opening link if link needs to open dropdown
-          e.preventDefault();
-          if(nextEl.style.display == 'block'){
-            nextEl.style.display = 'none';
-          } else {
-            nextEl.style.display = 'block';
-          }
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+              element.addEventListener('click', function (e) {
+                  let nextEl = this.nextElementSibling;
+                  if(nextEl && nextEl.classList.contains('submenu')) {	
+                    // prevent opening link if link needs to open dropdown
+                    e.preventDefault();
+                    if(nextEl.style.display == 'block'){
+                      nextEl.style.display = 'none';
+                    } else {
+                      nextEl.style.display = 'block';
+                    }
 
-        }
-    });
-  })
-}
-// end if innerWidth
-}); 
-// DOMContentLoaded  end
+                  }
+              });
+            })
+          }       
+          // end if innerWidth
+        }); 
+        // DOMContentLoaded  end
       </script>
+      <!-- END SideMenu -->
+
+
     </div>
   </div>
 </nav>
-<!-- END SideMenu -->
+<!-- end: page-content -->
   
   <!-- Start main-content -->
   <div class="main-content">
@@ -1486,6 +1491,9 @@ if (window.innerWidth < 992) {
         padding-bottom: 30px;
       }
       #footer_contactus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
         padding-left: 10px;
         padding-top: 20px;
       }
@@ -1497,7 +1505,7 @@ if (window.innerWidth < 992) {
       }
       #footer_contactus {
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
         padding-right: 10px;
         padding-top: 0px;
@@ -1509,7 +1517,7 @@ if (window.innerWidth < 992) {
       <div id="footer_div" class="container">
         <div class="row">
           <div class="col-md-12 pb-30">
-            <div class="position-absolute top-0 start-0">
+            <div class="position-absolute bottom-0 start-0">
               <h4 class="font-14 text-black-777 m-0">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
               <span class="font-12 m-0" style="color: #BF8948;">Webmaster: <span class="font-12 text-white">Engr. Turky Abdulaziz Abdulhafiz</span></span>
             </div>
