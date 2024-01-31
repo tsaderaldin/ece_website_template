@@ -1049,37 +1049,6 @@
         </div>
         <div class="section-content">
           <div class="row">
-            <!-- News Card -->
-            <!-- <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-              <article class="post clearfix mb-sm-30">
-                <div class="entry-header">
-                  <div class="post-thumb thumb"> 
-                    <img style="border-radius: 20px 20px 0 0;" src="../assets/imgs/news/sample/drnazeehtribute.jpg" alt="" class="img-responsive img-fullwidth"> 
-                  </div>
-                </div>
-                <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 entry-date media-left flip text-center">
-                      <ul>
-                        <li class="font-16 font-weight-600 border-bottom bg-white-f1 pt-5 pr-15 pb-5 pl-15">28</li>
-                        <li class="font-12 text-white text-uppercase bg-theme-colored pt-5 pr-15 pb-5 pl-15">Feb</li>
-                      </ul>
-                    </div>
-                    <div class="media-body pl-10">
-                      <div class="event-content pull-left flip">
-                        <h4 class="entry-title text-white text-capitalize m-0"><a href="#">Condolence message for the loss of Dr. Nazeeh Alothmany</a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="mt-10 text-white">The Family of The Department of Electrical and Computer Engineering extending their condolences for the loss of Dr. Nazeeh Alothmany to his family. May Allah in his unending mercy, forgive his trepasses and admit him into heaven. May his soul rest in peace.</p>
-                      <div class="mt-10">
-                        <!-- <a href="blog-single-left-sidebar.html" class="btn btn-theme-colored btn-sm">Read More</a>
-                      </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
-            </div> -->
-            <!-- KAUweb X account -->
             <div class="col-xs-12 col-sm-12 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
               <article class="post clearfix mb-sm-30">
                 <a class="twitter-timeline"  data-aria-polite="polite" data-chrome="noheader nofooter" data-lang="en" data-width="600" data-height="420" data-dnt="ture" data-theme="light" href="https://twitter.com/kauweb"></a>
@@ -1103,6 +1072,16 @@
     </section>
 
     <!-- Section: Youtube Video + Our Mission -->
+    <style>
+      @media screen and (max-width: 950px) {
+          #vision {
+            visibility: hidden;
+          }
+          #mission {
+            visibility: hidden
+          }
+      }
+    </style>
     <section id="Youtube">
       <div class="container-fluid pt-0 pb-0 bg-theme-colored">
         <div class="row">
@@ -1113,51 +1092,46 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <!-- <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Chairman's Message</h2>
-              <p class="text-white">
-                The Department of Electrical Engineering at King Abdulaziz University was established in 1394 H (1975 G). In 1407H the name of the Department of Electrical Engineering was changed to the Department of Electrical and Computer Engineering. The department consists of four branches: Electric Power and Machines Engineering, Electronics and Communications Engineering, Computer Engineering, and Biomedical Engineering.
-              </p>
-              <a class="text-white font-weight-600" href="#">Read More →</a>
-              <br><br>
-              <h5 class="text-white" >
-                Dr. Sami Saleh Alghamdi
-                <br><br>
-                Chairman, Electrical & Computer Engineering Department
-              </h5>
-            </div> -->
             <div class="pt-40 pb-10 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Our Mission & Vission</h2>
-              <!-- <div class="icon-box clearfix m-0 p-0 pb-10">
-                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"> 
-                  <i class="fa fa-cogs text-theme-color-3 font-36"></i> 
-                </a>
-                <div class="ml-120 ml-sm-0">
-                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">KAU Mission</h4>
-                  <p class="text-white">Promoting society through pioneering education and research excellence.  </p>
-                </div>
-              </div> -->
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Our Vission & Mission</h2>
               <div class="icon-box clearfix m-0 mt-50 p-0 pb-10">
-                <div class="col ml-0 ml-sm-0">
-                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
-                  <i class="fa-solid fa-trophy text-theme-color-3 font-36"></i> 
-                </a>
-              </div>
-                <div class="ml-120 ml-sm-0">
-                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Vision</h4>
-                  <p class="text-white">To be innovative pioneer in effective engineering education, collaborative research, and community service in various fields of electrical engineering.</p>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-2">
+                          <div id="vision" class="col mt-20 ml-0 ml-sm-0">
+                              <a class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                                <i  class="fa-solid fa-trophy text-theme-color-3 font-36"></i> 
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-10">
+                          <div class="ml-20 ml-sm-0">
+                                <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Vision</h4>
+                                <p class="text-white">To be innovative pioneer in effective engineering education, collaborative research, and community service in various fields of electrical engineering. </p>
+                          </div>
+                      </div>
+                  </div>
                 </div>
               </div>
               <div class="icon-box clearfix m-0 p-0 pb-10">
-                <span class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
-                  <i class="fa fa-graduation-cap text-theme-color-3 font-36"></i> 
-                </span>
-                <div class="ml-120 ml-sm-0">
-                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Mission</h4>
-                  <p class="text-white">To provide high quality education to students that enable them to enhance services to the community through their professional, technical, managerial, communication, teamwork, and research competencies in accordance with Islamic teachings. </p>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-2">
+                          <div id="mission" class="col mt-20 ml-0 ml-sm-0">
+                              <a class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                                <i class="fa fa-graduation-cap text-theme-color-3 font-36"></i> 
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-10">
+                          <div class="ml-20 ml-sm-0">
+                                <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Mission</h4>
+                                <p class="text-white">To provide high quality education to students that enable them to enhance services to the community through their professional, technical, managerial, communication, teamwork, and research competencies in accordance with Islamic teachings. </p>
+                          </div>
+                      </div>
+                  </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
