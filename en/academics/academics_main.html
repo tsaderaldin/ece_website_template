@@ -239,9 +239,17 @@
     <div class="container-fluid" style="z-index: 1000;">
       <div id="logo" class="d-none d-sm-block " style="padding-left: 130px; z-index: 1000;">
         <!-- Home -->
-        <a class="btn btn-success " href="./index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
+        <a class="btn btn-success " href="../index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
         <!-- Academics -->
-        <a class="btn btn-success disabled" href="./academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+        <div class="btn-group" >
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+            Academics
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="./academics_main.html"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+            <li><a class="dropdown-item" href="./projects/projects_main.html"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+          </ul>
+        </div>
         <!-- Research -->
         <div class="btn-group" >
           <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
@@ -286,8 +294,9 @@
             Chairman
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./academics_chairman.html"><i class="fa-solid fa-user-group" style="color: #179647;"></i>  Meet The Chairman</a></li>
-            <li><a class="dropdown-item" href="../404.html"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
+            <li><a class="dropdown-item" href="./academics_chairman.html"><i class="fa-solid fa-user-tie" style="color: #179647;"></i>  Meet The Chairman</a></li>
+            <li><a class="dropdown-item" href="./academics_chairmanmessage.html"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
+            <li><a class="dropdown-item" href="./academics_previous_chairs.html"><i class="fa-solid fa-users-line" style="color: #179647;"></i>  Previous Deprtment Chairs</a></li>
           </ul>
         </div>
         <!-- About -->
@@ -296,12 +305,215 @@
             About
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../404.html"><i class="fa-solid fa-award" style="color: #179647;"></i>  Acreditation</a></li>
-            <li><a class="dropdown-item" href="../404.html"><i class="fa-solid fa-globe" style="color: #179647;"></i>  The Website</a></li>
+            <li><a class="dropdown-item" href="./academics_acreditations.html"><i class="fa-solid fa-award" style="color: #179647;"></i>  Acreditation</a></li>
+            <li><a class="dropdown-item" href="../about_ece_website.html"><i class="fa-solid fa-globe" style="color: #179647;"></i>  ECE Website</a></li>
             <li><a class="dropdown-item" href="../contactus.html"><i class="fa-solid fa-address-book" style="color: #179647;"></i>  Contact Us</a></li>
           </ul>
         </div>
       </div>
+
+    <div class="container" style="margin-left: 0;">
+      <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("logo").style.padding = "0px 70px ";
+            document.getElementById("logo").style.opacity = "0";
+            document.getElementById("logo").style.visibility = "hidden";
+            document.getElementById("topbar").style.opacity = "1";
+            document.getElementById("topbar").style.padding = "0px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+            document.getElementById("topbar").style.zIndex = "101";
+          } else {
+            document.getElementById("topbar").style.zIndex = "99";
+            document.getElementById("logo").style.padding = "0px 0px ";
+            document.getElementById("logo").style.visibility = "visible";
+            document.getElementById("topbar").style.opacity = "0.0";
+            document.getElementById("topbar").style.padding = "0px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+            document.getElementById("logo").style.opacity = "1";
+          }
+        }
+      </script>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sections</h5> -->
+        <a target="_self" href="../index.html"><img src="../../assets/imgs/logos/secondary_en.png" alt="" class=""></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+
+      <!-- START SideMenu -->
+      <style>
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+          .dropdown-menu li{ position: relative; 	}
+          .nav-item .submenu{ 
+            display: none;
+            position: relative;
+            left:30px; 
+            top:0px;
+          }
+          .nav-item .submenu-left{ 
+            right:100%; left:auto;
+          }
+          .dropdown-menu > li:hover{ background-color: #ffffff }
+          .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+        }	
+        /* ============ desktop view .end// ============ */
+
+        /* ============ small devices ============ */
+        @media (max-width: 991px) {
+          .dropdown-menu .dropdown-menu{
+              margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+          }
+          /* .dropdown-menu > li:hover{ background-color: #ffffff } */
+          /* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
+        }	
+        /* ============ small devices .end// ============ */
+      </style>
+      <div class="offcanvas-body" style="background-color: #9ccf997e;">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="location" href="../index.html" style="font-size: 15pt;"><i class="fa fa-home"></i>  Home</a>
+          </li>
+          <!-- Academics -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-university"></i>  Academics
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Academic Programs -->
+              <li><a class="dropdown-item disabled" href="./academics_main.html" style="font-size: 15pt;"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+              <!-- Projects -->
+              <li><a class="dropdown-item" href="./projects/projects_main.html" style="font-size: 15pt;"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+            </ul>
+          </li>
+          <!-- Research -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-book-open-reader"></i>  Research
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Scientific Research -->
+              <li><a class="dropdown-item" href="https://dsr.kau.edu.sa/Default-305-EN" style="font-size: 15pt;"><i class="fa-solid fa-flask-vial" style="color: #179647;"></i>  Scientific Research</a></li>
+              <!-- Life at KAU -->
+              <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285327" style="font-size: 15pt;"><i class="fa-solid fa-seedling" style="color: #179647;"></i>  Life at KAU</a></li>
+              <!-- Admission -->
+              <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332" style="font-size: 15pt;"><i class="fa-solid fa-list-check" style="color: #179647;"></i>  Admission</a></li>
+            </ul>
+          </li>
+          <!-- People -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-users"></i>  People
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Biomedical -->
+              <li><a class="dropdown-item" href="./academics_biomedical_members.html" style="font-size: 15pt;"><i class="fa-solid fa-dna" style="color: #179647;"></i>  Biomedical</a></li>
+              <!-- Computer -->
+              <li><a class="dropdown-item" href="./academics_computer_members.html" style="font-size: 15pt;"><i class="fa-solid fa-computer" style="color: #179647;"></i>  Computer</a></li>
+              <!-- Electronics -->
+              <li><a class="dropdown-item" href="./academics_electronics_members.html" style="font-size: 15pt;"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics & Communications</a></li>
+              <!-- Power -->
+              <li><a class="dropdown-item" href="./academics_power_members.html" style="font-size: 15pt;"><i class="fa-solid fa-plug-circle-bolt" style="color: #179647;"></i>  Power & Machines</a></li>
+              <!-- Adminstration -->
+              <li><a class="dropdown-item" href="./academics_secretary.html" style="font-size: 15pt;"><i class="fa-solid fa-users-gear" style="color: #179647;"></i>  Administrative Staff</a></li>
+            </ul>
+          </li>
+          <!-- Lab Facilities -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-flask"></i>  Lab Facilities
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Biomedical Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-microscope" style="color: #179647;"></i>  Biomedical Labs</a></li>
+              <!-- Computer Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-network-wired" style="color: #179647;"></i>  Computer Labs</a></li>
+              <!-- Electronics Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics Labs</a></li>
+              <!-- Communications Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-satellite-dish" style="color: #179647;"></i>  Communications Labs</a></li>
+              <!-- Power Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-charging-station" style="color: #179647;"></i>  Power Labs</a></li>
+              <!-- Machines Labs -->
+              <li><a class="dropdown-item" href="../404.html" style="font-size: 15pt;"><i class="fa-solid fa-industry" style="color: #179647;"></i>  Machines Labs</a></li>
+            </ul>
+          </li>
+          <!-- Chairman -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-user-tie"></i>  Chairman
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Meet The Chairman -->
+              <li><a class="dropdown-item" href="./academics_chairman.html" style="font-size: 15pt;"><i class="fa-solid fa-user-group" style="color: #179647;"></i>  Meet The Chairman</a></li>
+              <!-- Chairman Message -->
+              <li><a class="dropdown-item" href="./academics_chairmanmessage.html" style="font-size: 15pt;"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
+              <!-- Previous Deprtment Chairs -->
+              <li><a class="dropdown-item" href="./academics_previous_chairs.html" style="font-size: 15pt;"><i class="fa-solid fa-users-line" style="color: #179647;"></i>  Previous Deprtment Chairs</a></li>
+            </ul>
+          </li>
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-circle-info"></i>  About
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Acreditation -->
+              <li><a class="dropdown-item" href="./academics_acreditations.html" style="font-size: 15pt;"><i class="fa-solid fa-award" style="color: #179647;"></i>  Acreditation</a></li>
+              <!-- The Website -->
+              <li><a class="dropdown-item" href="../about_ece_website.html" style="font-size: 15pt;"><i class="fa-solid fa-globe" style="color: #179647;"></i>  The Website</a></li>
+              <!-- Contact Us -->
+              <li><a class="dropdown-item" href="../contactus.html" style="font-size: 15pt;"><i class="fa-solid fa-address-book" style="color: #179647;"></i>  Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          // make it as accordion for smaller screens
+          if (window.innerWidth < 992) {
+
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+              everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                // after dropdown is hidden, then find all submenus
+                  this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                    // hide every submenu as well
+                    everysubmenu.style.display = 'none';
+                  });
+              })
+            });
+
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+              element.addEventListener('click', function (e) {
+                  let nextEl = this.nextElementSibling;
+                  if(nextEl && nextEl.classList.contains('submenu')) {	
+                    // prevent opening link if link needs to open dropdown
+                    e.preventDefault();
+                    if(nextEl.style.display == 'block'){
+                      nextEl.style.display = 'none';
+                    } else {
+                      nextEl.style.display = 'block';
+                    }
+
+                  }
+              });
+            })
+          }       
+          // end if innerWidth
+        }); 
+        // DOMContentLoaded  end
+      </script>
+      <!-- END SideMenu -->
+
+
+    </div>
     </div>
 
     <div class="container" style="margin-left: 0;">
@@ -579,7 +791,7 @@
                   <div class="entry-meta media mt-0 no-bg no-border">
                     <!-- <div class="media-body pl-10"> -->
                       <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_biomedical_main.html">Biomedical Engineering Program</a></h4>
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_biomedical_main.html">Biomedical<br>Engineering Program</a></h4>
                       <!-- </div> -->
                     <!-- </div> -->
                   </div>
@@ -598,7 +810,7 @@
                   <div class="entry-meta media mt-0 no-bg no-border">
                     <!-- <div class="media-body pl-10"> -->
                       <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_computer_main.html">Computer Engineering Program</a></h4>
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_computer_main.html">Computer<br>Engineering Program</a></h4>
                       <!-- </div> -->
                     <!-- </div> -->
                   </div>
@@ -617,7 +829,7 @@
                   <div class="entry-meta media mt-0 no-bg no-border">
                     <!-- <div class="media-body pl-10"> -->
                       <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_electronics_main.html">Electronics & Communication Engineering Program</a></h4>
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_electronics_main.html">Electronics & Communication<br>Engineering Program</a></h4>
                       <!-- </div> -->
                     <!-- </div> -->
                   </div>
@@ -636,7 +848,7 @@
                   <div class="entry-meta media mt-0 no-bg no-border">
                     <!-- <div class="media-body pl-10"> -->
                       <!-- <div class="event-content pull-left flip"> -->
-                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_power_main.html">Power & Machines Engineering Program</a></h4>
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;"><a href="./academics_power_main.html">Power & Machines<br>Engineering Program</a></h4>
                       <!-- </div> -->
                     <!-- </div> -->
                   </div>
@@ -669,24 +881,19 @@
       <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department1.png');">
           <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Biomedical Program</h2>
-              <p class="text-white">
-                Within a few years after graduation, the graduates of the Electrical Engineering (Biomedical) program are expected to attain the following program educational objectives:
-              </p>
+              <h2 class="title text-white  line-bottom mt-0 mb-30">Biomedical Engineering Program</h2>
               <ol class="text-white">
                 <li>
-                  <h3 style="color: #9D938C ;">Career:</h3> Graduates will successfully engage in careers in the areas of biomedical engineering and electronic instrumentation to serve the needs of industry and academia in both the private and public sectors in Saudi Arabia.
+                  <h3 style="color: #EDD299;">Vision:</h3> To be a trailblazer in Biomedical Engineering education, research, and innovation, inspiring a generation of engineers committed to advancing healthcare through cutting-edge technologies and interdisciplinary collaboration.
                 </li>
                 <li>
-                  <h3 style="color: #8698B6 ;">Professional Development:</h3> Graduates will engage in active, continuous and lifelong professional development, seek learning and training opportunities including graduate studies, adapt to the rapid changes in work environment, and attain professional positions in their business, career, and community.
-                </li>
-                <li>
-                  <h3 style="color: #CAD4D1 ;">Social Responsibility:</h3> Graduates will contribute to the welfare of society and the development of the profession through responsible practice of engineering.
+                  <h3 style="color: #EDD299;">Mission:</h3> The Biomedical Engineering program aims to integrate advanced biomedical engineering solutions into clinical practice, foster global perspectives through international collaborations, and cultivate an entrepreneurial mindset. 
+                  It aims to produce skilled professionals and innovative leaders capable of positively impacting healthcare outcomes and communities worldwide.
                 </li>
               </ol>
-              <br><br>
+              <br>
               <h5 class="text-white" >
-                Program Cordinator: Dr. XXXXX XXXXX
+                <b>BME Coordinator:</b> Dr. Eyad Talal Attar
               </h5>
             </div>
           </div>
@@ -700,24 +907,18 @@
         <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department2.png');">
           <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Computer Program</h2>
-              <p class="text-white">
-                Within a few years after graduation, the graduates of the Electrical Engineering (Computer) program are expected to attain the following program educational objectives:
-              </p>
+              <h2 class="title text-white  line-bottom mt-0 mb-30">Computer Engineering Program</h2>
               <ol class="text-white">
                 <li>
-                  <h3 style="color: #BEB4BB ;">Career:</h3> Graduates will successfully engage in careers in the areas of computer engineering to serve the needs of industry and academia in both the private and public sectors in Saudi Arabia.
+                  <h3 style="color: #EDD299;">Vision:</h3> The Computer Engineering program aims to be a global leader in computing, renowned for excellence in education, research, and innovation. It focuses on producing graduates with deep understanding of hardware and software systems, fostering creativity, critical thinking, and problem-solving. The program also focuses on cutting-edge research in artificial intelligence, cybersecurity, embedded systems, and emerging computing paradigms.
                 </li>
                 <li>
-                  <h3 style="color: #93513E ;">Professional Development:</h3> Graduates will engage in active, continuous and lifelong professional development, seek learning and training opportunities including graduate studies, adapt to the rapid changes in work environment, and attain professional positions in their business, career, and community.
-                </li>
-                <li>
-                  <h3 style="color: #EDD299 ;">Social Responsibility:</h3> Graduates will contribute to the welfare of society and the development of the profession through responsible practice of engineering.
+                  <h3 style="color: #EDD299;">Mission:</h3> The Computer Engineering program aims to offer a comprehensive education, combining theoretical knowledge with practical experience, to equip students with industry-ready skills, ethical and social responsibility, and a global perspective, fostering continuous learning and career success.
                 </li>
               </ol>
-              <br><br>
+              <br>
               <h5 class="text-white" >
-                Program Cordinator: Dr. XXXXX XXXXX
+                <b>CE Coordinator:</b> Dr. Saud Wasly
               </h5>
             </div>
           </div>
@@ -731,24 +932,18 @@
       <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department3.png');">          
         <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-            <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Electronics & Communication Program</h2>
-            <p class="text-white">
-              Within a few years after graduation, the graduates of the Electrical Engineering (Electronics and Communications) program are expected to attain the following program educational objectives:
-            </p>
+            <h2 class="title text-white  line-bottom mt-0 mb-30">Electronics & Communication Engineering Program</h2>
             <ol class="text-white">
               <li>
-                <h3 style="color: #DEA43E ;">Career:</h3> Graduates will successfully engage in careers in the areas of electronics and communications engineering to serve the needs of industry and academia in both the private and public sectors in Saudi Arabia.
+                <h3 style="color: #EDD299;">Vision:</h3> The Electronics and Communication Engineering program aims to be a global leader in the field, producing graduates who are technically proficient, creative thinkers, and problem solvers. It aims to contribute to advancements in electronics and communication technologies, shaping the future of communication systems and electronic devices.
               </li>
               <li>
-                <h3 style="color: #5B3F34 ;">Professional Development:</h3> Graduates will engage in active, continuous and lifelong professional development, seek learning and training opportunities including graduate studies, adapt to the rapid changes in work environment, and attain professional positions in their business, career, and community.
-              </li>
-              <li>
-                <h3 style="color: #DDC2A6 ;">Social Responsibility:</h3> Graduates will contribute to the welfare of society and the development of the profession through responsible practice of engineering.
+                <h3 style="color: #EDD299;">Mission:</h3> The Electronics and Communication Engineering program aims to provide a dynamic educational experience, fostering analytical and problem-solving skills through hands-on learning, practical applications, and innovation. It aims to produce graduates adept in designing and implementing cutting-edge electronic systems, contributing to technological advancements and societal needs.
               </li>
             </ol>
-            <br><br>
+            <br>
             <h5 class="text-white" >
-              Program Cordinator: Dr. XXXXX XXXXX
+              <b>ECE Coordinator:</b> Dr. Mohammed Abduulaal
             </h5>
           </div>
         </div>
@@ -762,24 +957,18 @@
       <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department4.png');">
         <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
           <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-            <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Power & Machine Program</h2>
-            <p class="text-white">
-              Within a few years after graduation, the graduates of the Electrical Engineering (Power and Machines) program are expected to attain the following program educational objectives:
-            </p>
+            <h2 class="title text-white  line-bottom mt-0 mb-30">Power & Machine Engineering Program</h2>
             <ol class="text-white">
               <li>
-                <h3 style="color: #CFB997 ;">Career:</h3> Graduates will successfully engage in careers in the areas of electric power engineering to serve the needs of industry and academia in both the private and public sectors in Saudi Arabia.
+                <h3 style="color: #EDD299;">Vision:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
               </li>
               <li>
-                <h3 style="color: #877B71 ;">Professional Development:</h3> Graduates will engage in active, continuous and lifelong professional development, seek learning and training opportunities including graduate studies, adapt to the rapid changes in work environment, and attain professional positions in their business, career, and community.
-              </li>
-              <li>
-                <h3 style="color: #5684B4 ;">Social Responsibility:</h3> Graduates will contribute to the welfare of society and the development of the profession through responsible practice of engineering.
+                <h3 style="color: #EDD299;">Mission:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
               </li>
             </ol>
-            <br><br>
+            <br>
             <h5 class="text-white" >
-              Program Cordinator: Dr. XXXXX XXXXX
+              <b>PME Coordinator:</b> Dr. Muhyaddin Rawa
             </h5>
           </div>
         </div>

@@ -242,7 +242,15 @@
         <!-- Home -->
         <a class="btn btn-success " href="./index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
         <!-- Academics -->
-        <a class="btn btn-success" href="./academics/academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+        <div class="btn-group" >
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+            Academics
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../en/academics/academics_main.html"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+            <li><a class="dropdown-item" href="./academics/projects/projects_main.html"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+          </ul>
+        </div>
         <!-- Research -->
         <div class="btn-group" >
           <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
@@ -287,9 +295,9 @@
             Chairman
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./academics/academics_chairman.html"><i class="fa-solid fa-user-group" style="color: #179647;"></i>  Meet The Chairman</a></li>
+            <li><a class="dropdown-item" href="./academics/academics_chairman.html"><i class="fa-solid fa-user-tie" style="color: #179647;"></i>  Meet The Chairman</a></li>
             <li><a class="dropdown-item" href="./academics/academics_chairmanmessage.html"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
-            <li><a class="dropdown-item" href="./academics/academics_formerchairs.html"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Former Chairs</a></li>
+            <li><a class="dropdown-item" href="./academics/academics_previous_chairs.html"><i class="fa-solid fa-users-line" style="color: #179647;"></i>  Previous Deprtment Chairs</a></li>
           </ul>
         </div>
         <!-- About -->
@@ -304,6 +312,209 @@
           </ul>
         </div>
       </div>
+
+    <div class="container" style="margin-left: 0;">
+      <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("logo").style.padding = "0px 70px ";
+            document.getElementById("logo").style.opacity = "0";
+            document.getElementById("logo").style.visibility = "hidden";
+            document.getElementById("topbar").style.opacity = "1";
+            document.getElementById("topbar").style.padding = "0px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+            document.getElementById("topbar").style.zIndex = "101";
+          } else {
+            document.getElementById("topbar").style.zIndex = "99";
+            document.getElementById("logo").style.padding = "0px 0px ";
+            document.getElementById("logo").style.visibility = "visible";
+            document.getElementById("topbar").style.opacity = "0.0";
+            document.getElementById("topbar").style.padding = "0px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+            document.getElementById("logo").style.opacity = "1";
+          }
+        }
+      </script>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sections</h5> -->
+        <a target="_self" href="./index.html"><img src="../assets/imgs/logos/secondary_en.png" alt="" class=""></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+
+      <!-- START SideMenu -->
+      <style>
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+          .dropdown-menu li{ position: relative; 	}
+          .nav-item .submenu{ 
+            display: none;
+            position: relative;
+            left:30px; 
+            top:0px;
+          }
+          .nav-item .submenu-left{ 
+            right:100%; left:auto;
+          }
+          .dropdown-menu > li:hover{ background-color: #ffffff }
+          .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;}
+        }	
+        /* ============ desktop view .end// ============ */
+
+        /* ============ small devices ============ */
+        @media (max-width: 991px) {
+          .dropdown-menu .dropdown-menu{
+              margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+          }
+          /* .dropdown-menu > li:hover{ background-color: #ffffff } */
+          /* .dropdown-menu > li:hover > .submenu{ display: inline-block; background-color: #CEE7CD;} */
+        }	
+        /* ============ small devices .end// ============ */
+      </style>
+      <div class="offcanvas-body" style="background-color: #9ccf997e;">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="location" href="./index.html" style="font-size: 15pt;"><i class="fa fa-home"></i>  Home</a>
+          </li>
+          <!-- Academics -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-university"></i>  Academics
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Academic Programs -->
+              <li><a class="dropdown-item" href="./academics/academics_main.html" style="font-size: 15pt;"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+              <!-- Projects -->
+              <li><a class="dropdown-item" href="./academics/projects/projects_main.html" style="font-size: 15pt;"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+            </ul>
+          </li>
+          <!-- Research -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-book-open-reader"></i>  Research
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Scientific Research -->
+              <li><a class="dropdown-item" href="https://dsr.kau.edu.sa/Default-305-EN" style="font-size: 15pt;"><i class="fa-solid fa-flask-vial" style="color: #179647;"></i>  Scientific Research</a></li>
+              <!-- Life at KAU -->
+              <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285327" style="font-size: 15pt;"><i class="fa-solid fa-seedling" style="color: #179647;"></i>  Life at KAU</a></li>
+              <!-- Admission -->
+              <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332" style="font-size: 15pt;"><i class="fa-solid fa-list-check" style="color: #179647;"></i>  Admission</a></li>
+            </ul>
+          </li>
+          <!-- People -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-users"></i>  People
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Biomedical -->
+              <li><a class="dropdown-item" href="./academics/academics_biomedical_members.html" style="font-size: 15pt;"><i class="fa-solid fa-dna" style="color: #179647;"></i>  Biomedical</a></li>
+              <!-- Computer -->
+              <li><a class="dropdown-item" href="./academics/academics_computer_members.html" style="font-size: 15pt;"><i class="fa-solid fa-computer" style="color: #179647;"></i>  Computer</a></li>
+              <!-- Electronics -->
+              <li><a class="dropdown-item" href="./academics/academics_electronics_members.html" style="font-size: 15pt;"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics & Communications</a></li>
+              <!-- Power -->
+              <li><a class="dropdown-item" href="./academics/academics_power_members.html" style="font-size: 15pt;"><i class="fa-solid fa-plug-circle-bolt" style="color: #179647;"></i>  Power & Machines</a></li>
+              <!-- Adminstration -->
+              <li><a class="dropdown-item" href="./academics/academics_secretary.html" style="font-size: 15pt;"><i class="fa-solid fa-users-gear" style="color: #179647;"></i>  Administrative Staff</a></li>
+            </ul>
+          </li>
+          <!-- Lab Facilities -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-flask"></i>  Lab Facilities
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Biomedical Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-microscope" style="color: #179647;"></i>  Biomedical Labs</a></li>
+              <!-- Computer Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-network-wired" style="color: #179647;"></i>  Computer Labs</a></li>
+              <!-- Electronics Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics Labs</a></li>
+              <!-- Communications Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-satellite-dish" style="color: #179647;"></i>  Communications Labs</a></li>
+              <!-- Power Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-charging-station" style="color: #179647;"></i>  Power Labs</a></li>
+              <!-- Machines Labs -->
+              <li><a class="dropdown-item" href="./404.html" style="font-size: 15pt;"><i class="fa-solid fa-industry" style="color: #179647;"></i>  Machines Labs</a></li>
+            </ul>
+          </li>
+          <!-- Chairman -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-user-tie"></i>  Chairman
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Meet The Chairman -->
+              <li><a class="dropdown-item" href="./academics/academics_chairman.html" style="font-size: 15pt;"><i class="fa-solid fa-user-group" style="color: #179647;"></i>  Meet The Chairman</a></li>
+              <!-- Chairman Message -->
+              <li><a class="dropdown-item" href="./academics/academics_chairmanmessage.html" style="font-size: 15pt;"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
+              <!-- Previous Deprtment Chairs -->
+              <li><a class="dropdown-item" href="./academics/academics_previous_chairs.html" style="font-size: 15pt;"><i class="fa-solid fa-users-line" style="color: #179647;"></i>  Previous Deprtment Chairs</a></li>
+            </ul>
+          </li>
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 15pt;">
+              <i class="fa-solid fa-circle-info"></i>  About
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Acreditation -->
+              <li><a class="dropdown-item" href="./academics/academics_acreditations.html" style="font-size: 15pt;"><i class="fa-solid fa-award" style="color: #179647;"></i>  Acreditation</a></li>
+              <!-- The Website -->
+              <li><a class="dropdown-item" href="./about_ece_website.html" style="font-size: 15pt;"><i class="fa-solid fa-globe" style="color: #179647;"></i>  The Website</a></li>
+              <!-- Contact Us -->
+              <li><a class="dropdown-item" href="./contactus.html" style="font-size: 15pt;"><i class="fa-solid fa-address-book" style="color: #179647;"></i>  Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          // make it as accordion for smaller screens
+          if (window.innerWidth < 992) {
+
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+              everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                // after dropdown is hidden, then find all submenus
+                  this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                    // hide every submenu as well
+                    everysubmenu.style.display = 'none';
+                  });
+              })
+            });
+
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+              element.addEventListener('click', function (e) {
+                  let nextEl = this.nextElementSibling;
+                  if(nextEl && nextEl.classList.contains('submenu')) {	
+                    // prevent opening link if link needs to open dropdown
+                    e.preventDefault();
+                    if(nextEl.style.display == 'block'){
+                      nextEl.style.display = 'none';
+                    } else {
+                      nextEl.style.display = 'block';
+                    }
+
+                  }
+              });
+            })
+          }       
+          // end if innerWidth
+        }); 
+        // DOMContentLoaded  end
+      </script>
+      <!-- END SideMenu -->
+
+
+    </div>
     </div>
 
     <div class="container" style="margin-left: 0;">
