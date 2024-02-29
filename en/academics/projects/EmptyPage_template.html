@@ -6,7 +6,7 @@
 <meta name="author" content="EngTurkyGary" />
 
 <!-- Page Title -->
-<title>KAU>ECE>Former_Chairs</title>
+<title>KAU>ECE>template</title>
 
 
 <!-- Stylesheet -->
@@ -242,7 +242,15 @@
         <!-- Home -->
         <a class="btn btn-success " href="../../index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
         <!-- Academics -->
-        <a class="btn btn-success disabled" href="../../academics_main.html" style="margin-top: 2px; margin-bottom: 2px;">Academics</a>
+        <div class="btn-group" >
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
+            Academics
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../academics_main.html"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+            <li><a class="dropdown-item" href="./projects_main.html"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+          </ul>
+        </div>
         <!-- Research -->
         <div class="btn-group" >
           <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">
@@ -522,7 +530,48 @@
 </div>
  
 <!-- start: Page Content  -->
-
+<div class="main-content">
+  <!-- Section: Course gird -->
+  <style>
+    a:hover {
+      color:#4AAD45;
+    }
+  </style>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="sidebar sidebar-left mt-sm-30">
+            <!-- Pages Menu -->
+            <div class="widget">
+              <h5 class="widget-title line-bottom"><i class="fa-solid fa-diagram-project"></i> <span class="text-theme-color-2">Pages</span></h5>
+              <div class="categories">
+                <ul class="list list-border angle-double-right">
+                  <li><a href="./projects_main (copy).html" style="color: #0C5933; "><i class="fa-solid fa-circle-question"></i> Page1</a></li>
+                  <li><a href="./projects_requirements.html" style="color: #0C5933; "><i class="fa-solid fa-list-check"></i> Page2</a></li>
+                  <li><a href="./projects_top10.html" style="color: #0C5933; "><i class="fa-solid fa-trophy"></i> Page3</a></li>
+                  <li class="bg-theme-colored-transparent"><a class="disabled" href="./projects_faqs.html" onclick="return false;" style="color: white; font-weight: bold;"><i class="fa-solid fa-circle-question"></i> Page4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 blog-pull-right">
+          <style>
+            .col-sm-6{
+              width: 240px;
+            }
+          </style>
+          <!-- Main Content -->
+          <div class="row">
+            <!-- Content -->
+            <img src="../../../assets/imgs/Under_Construction.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <!-- end: Page Content -->
 
 <!-- Footer  -->
