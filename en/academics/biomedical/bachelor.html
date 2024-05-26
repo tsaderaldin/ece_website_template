@@ -86,7 +86,6 @@
 <!-- preloader -->
 <div id="wrapper" class="clearfix">
 
-
 <!-- navbar and logo -->
 <style>
   * {box-sizing: border-box;}
@@ -96,6 +95,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  @media print {
+    #logo *,#topbar *, #navbar *, #blog2, #secList *, #footer_div * { display:none; }
+    #Program { display:block; }
+  }
+
   #topbar {
   overflow: hidden;
   /* background-color: #b5dca6; */
@@ -259,7 +263,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="https://dsr.kau.edu.sa/Default-305-EN"><i class="fa-solid fa-flask-vial" style="color: #179647;"></i>  Scientific Research</a></li>
             <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285327"><i class="fa-solid fa-seedling" style="color: #179647;"></i>  Life at KAU</a></li>
-            <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332"><i class="fa-solid fa-school" style="color: #179647;"></i>  Addmission</a></li>
+            <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332"><i class="fa-solid fa-school" style="color: #179647;"></i>  Admission</a></li>
           </ul>
         </div>
         <!-- People -->
@@ -733,85 +737,66 @@
     </div>
   </section>
   <!-- Section: Sections -->
+  <style>
+    @media screen and (max-width: 580px) {
+      #sections * {
+        visibility: hidden;
+        height: 0px;
+        display: none;
+      }
+    }
+  </style>
   <section id="blog2">
-    <div class="container pb-10 pt-10 pb-sm-10">
+    <div class="container pb-10 pt-10 pb-sm-10" id="sections">
         <div class="section-content">
           <div class="row d-flex justify-content-center">
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-sm-30">
-                <!-- <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/bachelor.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              <a class="disabled" href="" onclick="return false;">
+                <article class="post clearfix mb-sm-30">
+                  <div class="entry-content p-20 pr-10" style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Bachelor Degree</h4>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-                </div> -->
-                <div class="entry-content p-20 pr-10" style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <a class="disabled" href="#"><h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Bachelor Degree</h4></a>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30">
-                <!-- <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/master.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              <a href="./master.html">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Master Degree</h4>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-                </div> -->
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <a href="master.html"><h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Master Degree</h4></a>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30">
-                <!-- <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/phd.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              <a href="./phd.html">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Doctorate Degree</h4>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-                </div> -->
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <a href="phd.html"><h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Doctorate Degree</h4></a>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <article class="post clearfix mb-md-30 mb-sm-30">
-                <!-- <div class="entry-header" style="">
-                  <div class="post-thumb thumb"> 
-                    <img src="../../assets/imgs/grps/biomed_members.jpeg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              <a href="../academics_biomedical_members.html">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Members</h4>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-                </div> -->
-                <div class="entry-content p-20 pr-10"  style="min-height: 70px; border-radius: 20px 20px 20px 20px;">
-                  <div class="entry-meta media mt-0 no-bg no-border">
-                    <!-- <div class="media-body pl-10"> -->
-                      <!-- <div class="event-content pull-left flip"> -->
-                        <a href="../academics_biomedical_members.html"><h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Members</h4></a>
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
           </div>
         </div>
@@ -820,35 +805,732 @@
 
   <!-- Section: gird -->
   <style>
-    a:hover {
-      color:#4AAD45;
-    }
+    @media screen and (max-width: 580px) {#sections_menu {padding-top: 0px;}}
   </style>
   <section>
-    <div class="container">
+    <div class="container" id="sections_menu">
       <div class="row">
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-3" id="secList">
           <div class="sidebar sidebar-left mt-sm-30">
             <!-- Pages Menu -->
             <div class="widget">
               <h5 class="widget-title line-bottom"><i class="fa-solid fa-diagram-project"></i> <span class="text-theme-color-2">Pages</span></h5>
               <div class="categories">
                 <ul class="list list-border angle-double-right">
-                  <li><a href="../academics_biomedical_main.html" style="color: #0C5933;"><i class="fa-solid fa-house-chimney"></i>&nbsp;Main</a></li>
-                  <li class="bg-theme-colored-transparent"><a class="disabled" href="./bachelor.html" onclick="return false;" style="color: white; font-weight: bold;"><i class="fa-solid fa-chalkboard-user"></i>&nbsp;Bachelor Degree</a></li>
-                  <li><a href="./master.html" style="color: #0C5933; "><i class="fa-solid fa-book-open-reader"></i>&nbsp;Master Degree</a></li>
-                  <li><a href="./phd.html" style="color: #0C5933; "><i class="fa-solid fa-user-graduate"></i>&nbsp;Doctorate Degree</a></li>
-                  <li><a href="./newsletter.html" style="color: #0C5933; "><i class="fa-solid fa-scroll"></i>&nbsp;News Letter</a></li>
-                  <li><a href="./fromcoordinator.html" style="color: #0C5933; "><i class="fa-solid fa-bullhorn"></i>&nbsp;From Coordinator</a></li>
-                  <li><a href="./bmehistory.html" style="color: #0C5933; "><i class="fa-solid fa-book"></i>&nbsp;History</a></li>
-                  <li><a href="./socialmedia.html" style="color: #0C5933; "><i class="fa-solid fa-share-nodes"></i>&nbsp;Social Media</a></li>
+                  <a href="../academics_biomedical_main.html" style="color: #0C5933; "><li><i class="fa-solid fa-chalkboard-user"></i>&nbsp;Main</li></a>
+                  <a class="disabled" href="" onclick="return false;" style="color: white; font-weight: bold;"><li class="bg-theme-colored-transparent"><i class="fa-solid fa-house-chimney"></i>&nbsp;Bachelor Degree</a></li>
+                  <a href="./master.html" style="color: #0C5933; "><li><i class="fa-solid fa-book-open-reader"></i>&nbsp;Master Degree</li></a>
+                  <a href="./phd.html" style="color: #0C5933; "><li><i class="fa-solid fa-user-graduate"></i>&nbsp;Doctorate Degree</li></a>
+                  <a href="../../facilities/facilities_biomedical.html" style="color: #0C5933; "><li><i class="fa-solid fa-microscope"></i>&nbsp;BME Laboratories</li></a>
+                  <a href="./fromcoordinator.html" style="color: #0C5933; "><li><i class="fa-solid fa-bullhorn"></i>&nbsp;From Coordinator</li></a>
+                  <a href="./bmehistory.html" style="color: #0C5933; "><li><i class="fa-solid fa-book"></i>&nbsp;History</li></a>
+                  <a href="./socialmedia.html" style="color: #0C5933; "><li><i class="fa-solid fa-share-nodes"></i>&nbsp;Social Media</li></a>
+                  <a href="./newsletter.html" style="color: #0C5933; "><li><i class="fa-solid fa-scroll"></i>&nbsp;News Letter</li></a>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-9 blog-pull-right">
-
+        <div class="col-md-9 blog-pull-right" id="Program">
+          <!-- Study Plan ##start## -->
+          <style>
+            table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+            td, th { vertical-align:top; font-size:12pt;}
+            h1, h2, h3, h4, h5, h6 { clear:both;}
+            ol, ul { margin:0; padding:0;}
+            li { list-style: none; margin:0; padding:0;}
+            span.footnodeNumber { padding-right:1em; }
+            span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+            span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
+            .tblheadtxt { font-size:12pt; line-height:108%; margin-bottom:5px; margin-top:5px; text-align:center ! important; font-family:'Liberation Sans'; writing-mode:horizontal-tb; direction:ltr; color:#ffffff; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:bold; }
+            .cnttxt { font-size:12pt; line-height:108%; margin-bottom:5px; margin-top:5px; text-align:center ! important; font-family:'Liberation Sans'; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
+            .Table1 { width:auto; margin:0px;writing-mode:horizontal-tb; direction:ltr; }
+            .tblhead { vertical-align:middle; border-color:#0B763E; background-color:#0B763E; padding:2px; border-width:0.74pt; border-style:solid; border-bottom-style:none; writing-mode:horizontal-tb; margin-top:10px; margin-bottom:0px; direction:ltr;}
+            .cllblnk { border-style:solid; border-color:#0B763E; border-width:0.74pt; vertical-align:middle; background-color:white; padding:0mm; writing-mode:horizontal-tb; direction:ltr;}
+            .cllshd { border-style:solid; border-color:#0B763E; border-width:0.74pt; vertical-align:middle; background-color:#dddddd; padding:0mm; writing-mode:horizontal-tb; direction:ltr;}
+            .cllshdgrn { border-style:solid; border-color:#0B763E; border-width:0.74pt; vertical-align:middle; background-color:#4aad45A0; padding:0mm; writing-mode:horizontal-tb; direction:ltr;}
+          </style>
+          <table border="0" cellspacing="0" cellpadding="0" class="Table1" id="tblProgram">
+            <colgroup>
+              <col width="55" />
+              <col width="97" />
+              <col width="188" />
+              <col width="96" />
+              <col width="56" />
+              <col width="78" />
+              <col width="181" />
+              <col width="90" />
+            </colgroup>
+            <tr class="Table1">
+              <td style="text-align:left;width:90px;" class="tblhead">
+                <p class="tblheadtxt"><span class="T1">SEMESTER</span></p>
+              </td>
+              <td colspan="2" style="text-align:left;width:450px;" class="tblhead">
+                <p class="tblheadtxt"><span class="T1">COURSE</span></p>
+              </td>
+              <td style="text-align:left;width:120px;" class="tblhead">
+                <p class="tblheadtxt"><span class="T1">PREREQUISITE</span></p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="5" style="text-align:left;width:90px;" class="cllshd">
+                <p class="cnttxt">1</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">CPIT 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Programming and</p>
+                <p class="cnttxt">Problem-Solving</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">ELIS 101</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">English Language I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">ELIS 102</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">English Language II</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">ELIS 101</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">MATH 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">General Mathematics (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">PHYS 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">General Physics (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="6" style="text-align:left;width:90px;" class="cllshdgrn">
+                <p class="cnttxt">2</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">BIO 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">General Biology (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">CHEM 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">General Chemistry I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">COMM 101</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Communication Skills</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">ELIS 103</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">English Language III</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">ELIS 102</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">ELIS 104</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">English Language IV</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">ELIS 103</p>
+              </td>
+            </tr>
+            <tr class="tblRecord112">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">STAT 110</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">General Statistics (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="6" style="text-align:left;width:90px;" class="cllshd">
+                <p class="cnttxt">3</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">ARAB 101</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Arabic Language (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 201</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Structured Computer Programing</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">MATH110</p>
+                <p class="cnttxt">CPIT110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">IE 200</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Technical Communication Skills</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">ELIS 104</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">MATH 206</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Calculus II for Engineers</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">MATH 110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">MENG 102</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Engineering Graphics</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">PHYS 281</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">General Physics Lab</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">PHYS 110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="6" style="text-align:left;width:90px;" class="cllshdgrn">
+                <p class="cnttxt">4</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">CHEM 281</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">General Chemistry Lab</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">CHEM 110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">IE 201</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Introduction to</p>
+                <p class="cnttxt">Engineering Design I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">ELIS 104</p>
+                <p class="cnttxt">COMM 101</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">IE 255</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Engineering Economy</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">MATH 110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">ISLS 101</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Islamic Culture (1)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">MATH 207</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Calculus III for Engineers</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">MATH 206</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">PHYS 202</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">General Physics II</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">PHYS 110</p>
+                <p class="cnttxt">MATH110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="5" style="text-align:left;width:90px;" class="cllshd">
+                <p class="cnttxt">5</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">ARAB 201</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Arabic Language (2)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">ARAB 101</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 202</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Object-Oriented</p>
+                <p class="cnttxt">Computer Programming</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 201</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">MATH 204</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Differential Equations I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">MATH 207</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 250</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Basic Electrical Circuits</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">PHYS 202</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">ISLS 201</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Islamic Culture (2)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">ISLS 101</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="5" style="text-align:left;width:90px;" class="cllshdgrn">
+                <p class="cnttxt">6</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">BIO 321</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Biology for</p>
+                <p class="cnttxt"> Biomedical Engineers</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">CHEM 281</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 300</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Analytical Methods</p>
+                <p class="cnttxt"> in Engineering</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">MATH 207</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">EE 301</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Electrical Circuits </p>
+                <p class="cnttxt">and Systems</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">MATH 204</p>
+                <p class="cnttxt">EE 250</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 306</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Electrical Engineering Technologies</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 250 STAT110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">IE 202</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">IE 202 Introduction to Engineering Design II</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">IE 200</p>
+                <p class="cnttxt">IE 201</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="5" style="text-align:left;width:90px;" class="cllshd">
+                <p class="cnttxt">7</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">EE 302</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Electromagnetic Fields</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">EE 250 MATH207</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 311</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Electronics I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 250</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">EE 360</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Digital Design I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">EE 250</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 374</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Experimentation and Data Analysis in Health Care</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">BIO 321 STAT 110</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">EE 372</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Physiology for</p>
+                <p class="cnttxt"> Biomedical Engineers</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">BIO 321</p>
+              </td>
+            </tr>
+            <tr class="tblRecord212" />
+            <tr class="tblRecord">
+              <td rowspan="6" style="text-align:left;width:90px;" class="cllshdgrn">
+                <p class="cnttxt">8</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">IE 256</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Engineering Management</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">IE 255</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 312</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Electronics II</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 311</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">EE 321</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Introduction to Communications</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">MATH204</p>
+                <p class="cnttxt">EE 300</p>
+                <p class="cnttxt">EE 301</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 366</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Microprocessors and Microcontrollers</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 202</p>
+                <p class="cnttxt">EE 360</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">EE 370</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Biomedical </p>
+                <p class="cnttxt">Engineering Primer</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">EE 306 BIO 321</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 390</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Summer Training</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="6" style="text-align:left;width:90px;" class="cllshd">
+                <p class="cnttxt">9</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">ISLS 301</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Islamic Culture (3)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">ISLS 201</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 470</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Biomedical </p>
+                <p class="cnttxt">Signals and Systems</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 301</p>
+                <p class="cnttxt">EE 370</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">EE 471</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">Biomedical Instrumentation</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">EE 312</p>
+                <p class="cnttxt">EE 370 EE 372</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 499</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Senior Project</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">Approval</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshd">
+                <p class="cnttxt">FREEXXX</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshd">
+                <p class="cnttxt">Free Course I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshd">
+                <p class="cnttxt">Approval</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE XXX</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Elective I</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">Approval</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td rowspan="5" style="text-align:left;width:90px;" class="cllshdgrn">
+                <p class="cnttxt">10</p>
+              </td>
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">ISLS 401</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Islamic Culture (4)</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">ISLS 301</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE 472</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Biomedical</p>
+                <p class="cnttxt"> Imaging Systems</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">EE 370</p>
+                <p class="cnttxt">EE 302</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">EE 474</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Safety, Reliability and Maintenance in Health Care</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">EE 370</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllblnk">
+                <p class="cnttxt">EE XXX</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllblnk">
+                <p class="cnttxt">Elective II</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllblnk">
+                <p class="cnttxt">Approval</p>
+              </td>
+            </tr>
+            <tr class="tblRecord">
+              <td style="text-align:left;width:150px;" class="cllshdgrn">
+                <p class="cnttxt">EE XXX</p>
+              </td>
+              <td style="text-align:left;width:300px;" class="cllshdgrn">
+                <p class="cnttxt">Elective III</p>
+              </td>
+              <td style="text-align:left;width:120px;" class="cllshdgrn">
+                <p class="cnttxt">Approval</p>
+              </td>
+            </tr>
+          </table>
+          <!-- Study Plan ##end## -->
         </div>
       </div>
     </div>
