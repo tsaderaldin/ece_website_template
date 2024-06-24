@@ -1,0 +1,180 @@
+<!-- Start: Global NavBar -->
+<style>
+    * {box-sizing: border-box;}
+
+    body { 
+        margin: 0;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+
+/* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+    #NavBarBG {
+        float: left;
+        overflow: visible;
+        background-color: #ffffff;
+        margin-top: 100px;
+        margin-left: 0px;
+        padding-left: 150px;
+        padding-top: 0px;
+        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 7.5vw;
+        top: 0;
+        z-index: 99;
+        text-align: center;
+    }
+/* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+    #NavBarBG h2{
+        text-align: left;
+        color: #179647;
+        font-size: 2.5vw;
+    }
+
+    #NavBar {
+        overflow: visible;
+        /* background-color: #ffffff; */
+        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        margin-top: 100px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        transition: 0.4s;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        text-align: center;
+    }
+
+    #navbarMenu {
+        float: left;
+        color: black;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0px;
+        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        text-decoration: none;
+    }
+
+    #NavBar #logo {
+        scale: 1;
+        position: fixed;
+        left: 10px;
+        z-index: 100;
+    }
+/* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+    @media screen and (max-width: 580px) {
+        #NavBar {
+        position: absolute;
+        text-align: center;
+        }
+
+        #NavBar #logo{
+        position: absolute;
+        align-items: center;
+        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
+        scale: 0.5;
+        }
+
+        #NavBarBG {
+        visibility: hidden;
+        }
+    }
+    /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+</style>
+
+<div>
+    <div id="NavBar">
+        <img id="logo" src="../assets/imgs/logos/mark_wbg.png" alt="" class="">
+    </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div id="NavBarBG">
+            <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+            <!-- Menu bar -->
+            <div class="container-fluid">
+                <h2 class="d-flex">Department of Eelectrical and Computer Engineering</h2>
+                <div id="navbarMenu" class="d-none d-sm-block">
+                <!-- Home -->
+                <a class="btn btn-success" href="./index.html" style="margin-top: 2px; margin-bottom: 2px;"><i class="fa fa-home text-white" style="font-size: 15pt;"></i></a>
+                <!-- Academics -->
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">Academics</button>
+                    <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../en/academics/academics_main.html"><i class="fa-solid fa-graduation-cap" style="color: #179647;"></i>  Academic Programs</a></li>
+                    <li><a class="dropdown-item" href="./academics/projects/projects_main.html"><i class="fa-solid fa-diagram-project" style="color: #179647;"></i>  Projects</a></li>
+                    </ul>
+                </div>
+                <!-- Research -->
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">Research</button>
+                    <ul class="dropdown-menu">
+                        <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                        <li><a class="dropdown-item" href="https://dsr.kau.edu.sa/Default-305-EN"><i class="fa-solid fa-flask-vial" style="color: #179647;"></i>  Scientific Research</a></li>
+                        <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285327"><i class="fa-solid fa-seedling" style="color: #179647;"></i>  Life at KAU</a></li>
+                        <li><a class="dropdown-item" href="https://www.kau.edu.sa/Content-0-EN-285332"><i class="fa-solid fa-school" style="color: #179647;"></i>  Admission</a></li>
+                    </ul>
+                </div>
+                <!-- People -->
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">People</button>
+                    <ul class="dropdown-menu">
+                        <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                        <li><a class="dropdown-item" href="./academics/academics_biomedical_members.html"><i class="fa-solid fa-dna" style="color: #179647;"></i>  Biomedical</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_computer_members.html"><i class="fa-solid fa-computer" style="color: #179647;"></i>  Computer</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_electronics_members.html"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics & Communications</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_power_members.html"><i class="fa-solid fa-plug-circle-bolt" style="color: #179647;"></i>  Power & Machines</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_secretary.html"><i class="fa-solid fa-users-gear" style="color: #179647;"></i>  Administrative Staff</a></li>
+                    </ul>
+                </div>
+                <!-- Facilities -->
+                <div class="btn-group" >
+                    <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">Facilities</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./facilities/facilities_biomedical.html"><i class="fa-solid fa-microscope" style="color: #179647;"></i>  Biomedical Labs</a></li>
+                        <li><a class="dropdown-item" href="./facilities/facilities_computer.html"><i class="fa-solid fa-network-wired" style="color: #179647;"></i>  Computer Labs</a></li>
+                        <li><a class="dropdown-item" href="./facilities/facilities_electronic.html"><i class="fa-solid fa-microchip" style="color: #179647;"></i>  Electronics Labs</a></li>
+                        <li><a class="dropdown-item" href="./facilities/facilities_communication.html"><i class="fa-solid fa-satellite-dish" style="color: #179647;"></i>  Communications Labs</a></li>
+                        <li><a class="dropdown-item" href="./facilities/facilities_power.html"><i class="fa-solid fa-charging-station" style="color: #179647;"></i>  Power Labs</a></li>
+                        <li><a class="dropdown-item" href="./facilities/facilities_machine.html"><i class="fa-solid fa-industry" style="color: #179647;"></i>  Machines Labs</a></li>
+                    </ul>
+                    <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                </div>
+                <!-- Chairman -->
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">Chairman</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./academics/academics_chairman.html"><i class="fa-solid fa-user-tie" style="color: #179647;"></i>  Meet The Chairman</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_chairmanmessage.html"><i class="fa-solid fa-scroll" style="color: #179647;"></i>  Chairman Message</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_previous_chairs.html"><i class="fa-solid fa-users-line" style="color: #179647;"></i>  Previous Deprtment Chairs</a></li>
+                    </ul>
+                    <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                </div>
+                <!-- About -->
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false">About</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./history.html"><i class="fa-solid fa-landmark" style="color: #179647;"></i>  History</a></li>
+                        <li><a class="dropdown-item" href="./academics/academics_acreditations.html"><i class="fa-solid fa-award" style="color: #179647;"></i>  Acreditation</a></li>
+                        <li><a class="dropdown-item" href="./about_ece_website.html"><i class="fa-solid fa-globe" style="color: #179647;"></i>  ECE Website</a></li>
+                        <li><a class="dropdown-item" href="./contactus.html"><i class="fa-solid fa-address-book" style="color: #179647;"></i>  Contact Us</a></li>
+                        <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- End: Global NavBar -->
+  <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
