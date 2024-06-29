@@ -1,0 +1,14 @@
+## Images links  for admins (CMSplus) ##
+https://cmsplus.kau.edu.sa/Images/135005/assets/imgs/<folders-and-files>
+
+===============================================
+
+## Images links  for members only (portal) ##
+https://portal.kau.edu.sa/Images/135005/assets/imgs/<folders-and-files>
+
+===============================================
+
+## Images links  for anyone (public) ##
+https://kau.edu.sa/Images/135005/assets/imgs/<folders-and-files>
+
+===============================================
