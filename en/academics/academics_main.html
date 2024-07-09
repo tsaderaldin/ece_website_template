@@ -8391,409 +8391,367 @@
 <!-- javascripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<div id="wrapper" class="clearfix" style="margin-top:100px;">
-  <!-- start: page-content -->
+<!-- Start: page-content -->
+<div id="wrapper" class="clearfix" style="margin-top:180px;">
   
   <!-- Start: Include Global NavBar -->
-
-  <script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain attribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-  </script>  
-  
   <!-- Start: Header Logo  -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>  
   <div w3-include-html="../gnb.html"></div> 
   <script>includeHTML();</script>
   <!-- End: Header Logo  -->
-
   <!-- End: Include Global NavBar -->
 
-<!-- Start: main-content -->
-
-<div class="main-content">
-  <!-- Section: inner-header -->
-  <section class="inner-header divider parallax bg-theme-colored" >
-    <div class="container pt-0 pb-0">
-      <!-- Section Content -->
-      <div class="section-content">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="title text-white text-center">Academics</h2>
-            <ol class="breadcrumb text-left text-black mt-10">
-              <li><a href="#"></a></li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Stats  -->
-  <section class="divider parallax layer-overlay" data-bg-img="../../assets/imgs/banner1.jpg"  data-parallax-ratio="0.0" style="background-image: url(&quot;../../assets/imgs/banner1.jpg&quot;); background-position: 50% 50%; background-size: 100% 50%;">
-    <div class="container pt-0 pb-5">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa  fa-graduation-cap mt-5 text-white"></i>
-            <div class="counter-container">
-              <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="4"></div></h2>
-            </div>
-            <h4 class="text-white text-uppercase">Academic Programs</h4>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-book mt-5 text-white"></i>
-            <div class="counter-container">
-              <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="40"></div></h2>
-            </div>
-            <h4 class="text-white text-uppercase">Courses</h4>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-gear mt-5 text-white"></i>
-            <div class="counter-container">
-              <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="10"></div></h2>
-            </div>
-            <h4 class="text-white text-uppercase">Educational Laboratories</h4>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-          <div class="funfact text-center">
-            <i class="fa fa-users mt-5 text-white"></i>
-            <div class="counter-container">
-              <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="20"></div></h2>
-            </div>
-            <h4 class="text-white text-uppercase">Students Activities</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- start: Sections -->
-  <section id="blog2">
-    <div class="container pb-10 pt-10 pb-sm-10">
+  <!-- Start: main-content -->
+  <div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax bg-theme-colored" >
+      <div class="container pt-0 pb-0">
+        <!-- Section Content -->
         <div class="section-content">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="./academics_biomedical_main.html">
-                <article class="post clearfix mb-sm-30">
-                  <div class="entry-header">
-                    <div class="post-thumb thumb"> 
-                      <img src="../../assets/imgs/grps/bio.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                    </div>
-                  </div>
-                  <div class="entry-content p-20 pr-10" style="min-height: 100px; border-radius: 0 0 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                          <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Biomedical Engineering<br>Program</h4>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="./academics_computer_main.html">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-header">
-                    <div class="post-thumb thumb"> 
-                      <img src="../../assets/imgs/grps/comp.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                    </div>
-                  </div>
-                  <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                          <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Computer Engineering<br>Program</h4>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="./academics_electronics_main.html">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-header">
-                    <div class="post-thumb thumb"> 
-                      <img src="../../assets/imgs/grps/comm.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                    </div>
-                  </div>
-                  <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                          <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Electronics & Communication<br>Engineering Program</h4>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="./academics_power_main.html">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-header">
-                    <div class="post-thumb thumb"> 
-                      <img src="../../assets/imgs/grps/pow.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
-                    </div>
-                  </div>
-                  <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                          <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Power & Machines<br>Engineering Program</h4>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </article>
-              </a>
+            <div class="col-md-12">
+              <h2 class="title text-white text-center">Academics</h2>
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <!-- end: Sections -->
+    </section>
     
-  
-  <!-- start: Programs Info -->
-  <style>
-    #ad{
-      background-size: 100% auto;
-    }
-      @media screen and (max-width: 768px) {
+    <!-- Stats  -->
+    <section class="divider parallax layer-overlay" data-bg-img="../../assets/imgs/banner1.jpg"  data-parallax-ratio="0.0" style="background-image: url(&quot;../../assets/imgs/banner1.jpg&quot;); background-position: 50% 50%; background-size: 100% 50%;">
+      <div class="container pt-0 pb-5">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa  fa-graduation-cap mt-5 text-white"></i>
+              <div class="counter-container">
+                <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="4"></div></h2>
+              </div>
+              <h4 class="text-white text-uppercase">Academic Programs</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-book mt-5 text-white"></i>
+              <div class="counter-container">
+                <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="40"></div></h2>
+              </div>
+              <h4 class="text-white text-uppercase">Courses</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-gear mt-5 text-white"></i>
+              <div class="counter-container">
+                <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="10"></div></h2>
+              </div>
+              <h4 class="text-white text-uppercase">Educational Laboratories</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-users mt-5 text-white"></i>
+              <div class="counter-container">
+                <h2 class="text-white mt-0 font-38font-weight-500 appeared"><div class="counter" data-target="20"></div></h2>
+              </div>
+              <h4 class="text-white text-uppercase">Students Activities</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start: Sections -->
+    <section id="blog2">
+      <div class="container pb-5 pt-5 pb-sm-5">
+          <div class="section-content">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./academics_biomedical_main.html">
+                  <article class="post clearfix mb-sm-30">
+                    <div class="entry-header">
+                      <div class="post-thumb thumb"> 
+                        <img src="../../assets/imgs/grps/bio.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                      </div>
+                    </div>
+                    <div class="entry-content p-20 pr-10" style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                            <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Biomedical Engineering<br>Program</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./academics_computer_main.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-header">
+                      <div class="post-thumb thumb"> 
+                        <img src="../../assets/imgs/grps/comp.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                      </div>
+                    </div>
+                    <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                            <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Computer Engineering<br>Program</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./academics_electronics_main.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-header">
+                      <div class="post-thumb thumb"> 
+                        <img src="../../assets/imgs/grps/comm.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                      </div>
+                    </div>
+                    <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                            <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Electronics & Communication<br>Engineering Program</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./academics_power_main.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-header">
+                      <div class="post-thumb thumb"> 
+                        <img src="../../assets/imgs/grps/pow.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                      </div>
+                    </div>
+                    <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                            <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Power & Machines<br>Engineering Program</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end: Sections -->
+      
+    
+    <!-- start: Programs Info -->
+    <style>
       #ad{
-        background-size: auto 100%;
+        background-size: 100% auto;
       }
-      }
-  </style>
+        @media screen and (max-width: 768px) {
+        #ad{
+          background-size: auto 100%;
+        }
+        }
+    </style>
 
-  <!-- Section: biomedical -->
-  <section id="mission">
-    <div class="container-fluid pt-0 pb-0">
-      <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_biomedical.png');">
+    <!-- Section: biomedical -->
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_biomedical.png');">
+            <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
+                <h2 class="title text-white  line-bottom mt-0 mb-30">Biomedical Engineering Program</h2>
+                <ol class="text-white">
+                  <li>
+                    <h3 style="color: #EDD299;">Vision:</h3> To be a trailblazer in Biomedical Engineering education, research, and innovation, inspiring a generation of engineers committed to advancing healthcare through cutting-edge technologies and interdisciplinary collaboration.
+                  </li>
+                  <li>
+                    <h3 style="color: #EDD299;">Mission:</h3> The Biomedical Engineering program aims to integrate advanced biomedical engineering solutions into clinical practice, foster global perspectives through international collaborations, and cultivate an entrepreneurial mindset. 
+                    It aims to produce skilled professionals and innovative leaders capable of positively impacting healthcare outcomes and communities worldwide.
+                  </li>
+                </ol>
+                <br>
+                <h5 class="text-white" >
+                  <b>BME Coordinator:</b>
+                  <a class="btn btn-info btn-sm" style="color: whitesmoke; font-weight: bold; font-size: medium;" href="https://www.kau.edu.sa/CVEn.aspx?Lng=EN&Site_ID=0015839" role="button"> Dr. Eyad Talal Attar</a>
+                </h5>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: computer -->
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+          <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_computer.png');">
+            <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
+                <h2 class="title text-white  line-bottom mt-0 mb-30">Computer Engineering Program</h2>
+                <ol class="text-white">
+                  <li>
+                    <h3 style="color: #EDD299;">Vision:</h3> The Computer Engineering program aims to be a global leader in computing, renowned for excellence in education, research, and innovation. It focuses on producing graduates with deep understanding of hardware and software systems, fostering creativity, critical thinking, and problem-solving. The program also focuses on cutting-edge research in artificial intelligence, cybersecurity, embedded systems, and emerging computing paradigms.
+                  </li>
+                  <li>
+                    <h3 style="color: #EDD299;">Mission:</h3> The Computer Engineering program aims to offer a comprehensive education, combining theoretical knowledge with practical experience, to equip students with industry-ready skills, ethical and social responsibility, and a global perspective, fostering continuous learning and career success.
+                  </li>
+                </ol>
+                <br>
+                <h5 class="text-white" >
+                  <b>CE Coordinator:</b>
+                  <a class="btn btn-info btn-sm" style="color: whitesmoke; font-weight: bold; font-size: medium;" href="https://www.kau.edu.sa/CVEn.aspx?Lng=EN&Site_ID=0003652" role="button"> Dr. Abdullah Balamesh</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Section: communication -->
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department9.jpg');">          
           <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white  line-bottom mt-0 mb-30">Biomedical Engineering Program</h2>
+              <h2 class="title text-white  line-bottom mt-0 mb-30">Electronics & Communication Engineering Program</h2>
               <ol class="text-white">
                 <li>
-                  <h3 style="color: #EDD299;">Vision:</h3> To be a trailblazer in Biomedical Engineering education, research, and innovation, inspiring a generation of engineers committed to advancing healthcare through cutting-edge technologies and interdisciplinary collaboration.
+                  <h3 style="color: #EDD299;">Vision:</h3> The Electronics and Communication Engineering program aims to be a global leader in the field, producing graduates who are technically proficient, creative thinkers, and problem solvers. It aims to contribute to advancements in electronics and communication technologies, shaping the future of communication systems and electronic devices.
                 </li>
                 <li>
-                  <h3 style="color: #EDD299;">Mission:</h3> The Biomedical Engineering program aims to integrate advanced biomedical engineering solutions into clinical practice, foster global perspectives through international collaborations, and cultivate an entrepreneurial mindset. 
-                  It aims to produce skilled professionals and innovative leaders capable of positively impacting healthcare outcomes and communities worldwide.
+                  <h3 style="color: #EDD299;">Mission:</h3> The Electronics and Communication Engineering program aims to provide a dynamic educational experience, fostering analytical and problem-solving skills through hands-on learning, practical applications, and innovation. It aims to produce graduates adept in designing and implementing cutting-edge electronic systems, contributing to technological advancements and societal needs.
                 </li>
               </ol>
               <br>
               <h5 class="text-white" >
-                <b>BME Coordinator:</b> Dr. Eyad Talal Attar
+                <b>ECE Coordinator:</b>
+                <a class="btn btn-info btn-sm" style="color: whitesmoke; font-weight: bold; font-size: medium;" href="https://www.kau.edu.sa/CVEn.aspx?Lng=EN&Site_ID=0016606" role="button"> Dr. Mohammed Abduulaal</a>
               </h5>
             </div>
           </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section: computer -->
-  <section id="mission">
-    <div class="container-fluid pt-0 pb-0">
-        <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_computer.png');">
-          <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+    <!-- Section: Power -->
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_power.png');">
+          <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
             <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-              <h2 class="title text-white  line-bottom mt-0 mb-30">Computer Engineering Program</h2>
+              <h2 class="title text-white  line-bottom mt-0 mb-30">Power & Machine Engineering Program</h2>
               <ol class="text-white">
                 <li>
-                  <h3 style="color: #EDD299;">Vision:</h3> The Computer Engineering program aims to be a global leader in computing, renowned for excellence in education, research, and innovation. It focuses on producing graduates with deep understanding of hardware and software systems, fostering creativity, critical thinking, and problem-solving. The program also focuses on cutting-edge research in artificial intelligence, cybersecurity, embedded systems, and emerging computing paradigms.
+                  <h3 style="color: #EDD299;">Vision:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
                 </li>
                 <li>
-                  <h3 style="color: #EDD299;">Mission:</h3> The Computer Engineering program aims to offer a comprehensive education, combining theoretical knowledge with practical experience, to equip students with industry-ready skills, ethical and social responsibility, and a global perspective, fostering continuous learning and career success.
+                  <h3 style="color: #EDD299;">Mission:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
                 </li>
               </ol>
               <br>
               <h5 class="text-white" >
-                <b>CE Coordinator:</b> Dr. Abdullah Balamesh
+                <b>PME Coordinator:</b>
+                <a class="btn btn-info btn-sm" style="color: whitesmoke; font-weight: bold; font-size: medium;" href="https://www.kau.edu.sa/Default-0009760-EN" role="button"> Dr. Muhyaddin Rawa</a>
               </h5>
             </div>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Section: communication -->
-  <section id="mission">
-    <div class="container-fluid pt-0 pb-0">
-      <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department9.jpg');">          
-        <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-            <h2 class="title text-white  line-bottom mt-0 mb-30">Electronics & Communication Engineering Program</h2>
-            <ol class="text-white">
-              <li>
-                <h3 style="color: #EDD299;">Vision:</h3> The Electronics and Communication Engineering program aims to be a global leader in the field, producing graduates who are technically proficient, creative thinkers, and problem solvers. It aims to contribute to advancements in electronics and communication technologies, shaping the future of communication systems and electronic devices.
-              </li>
-              <li>
-                <h3 style="color: #EDD299;">Mission:</h3> The Electronics and Communication Engineering program aims to provide a dynamic educational experience, fostering analytical and problem-solving skills through hands-on learning, practical applications, and innovation. It aims to produce graduates adept in designing and implementing cutting-edge electronic systems, contributing to technological advancements and societal needs.
-              </li>
-            </ol>
-            <br>
-            <h5 class="text-white" >
-              <b>ECE Coordinator:</b> Dr. Mohammed Abduulaal
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- end: Programs Info -->
 
-  <!-- Section: Power -->
-  <section id="mission">
-    <div class="container-fluid pt-0 pb-0">
-      <div class="row equal-height bg-theme-colored bg-image shadow-1-strong" id="ad" style="background-image: url('../../assets/imgs/grps/department_power.png');">
-        <div class="col-sm-12 col-md-6 pull-right xs-pull-none wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 15px;">
-          <div class="pt-60 pb-40 pl-30 pr-30 p-md-30">
-            <h2 class="title text-white  line-bottom mt-0 mb-30">Power & Machine Engineering Program</h2>
-            <ol class="text-white">
-              <li>
-                <h3 style="color: #EDD299;">Vision:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
-              </li>
-              <li>
-                <h3 style="color: #EDD299;">Mission:</h3> To prepare strategic leadership in graduate education that advances humanity, supports community, and furthers knowledge to shape the future.
-              </li>
-            </ol>
-            <br>
-            <h5 class="text-white" >
-              <b>PME Coordinator:</b> Dr. Muhyaddin Rawa
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end: Programs Info -->
-
-</div>
-
-<!-- End: main-content -->
-    
-<!-- Footer  -->
-<style>
-  @media screen and (max-width: 580px) { 
-    #footer_div {
-      padding-top: 40px;
-      padding-bottom: 30px;
-      align-items: center;
-      text-align: center;
-    }
-    #footer_contactus {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-left: 10px;
-      padding-top: 20px;
-    }
-  }
-  @media screen and (min-width: 581px){
-    #footer_div {
-      padding-top: 20px;
-      /* padding-bottom: 20px; */
-      align-items: center;
-      text-align: center;
-    }
-    #footer_contactus {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-right: 10px;
-      padding-top: 0px;
-    }
-  }
-  #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    display: none;
-    background-color: #17963f8e;
-    color: #ffffff;
-  }
-</style>
-<footer id="footer" class="footer">
-  <div class="footer-bottom position-relative">
-    <div id="footer_div" class="container">
-      <div class="row">
-        <div class="col-md-12 pb-30">
-            <h4 class="font-14 m-0  text-theme-colored">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
-            <span class="font-14 m-0">Webmaster: Engr. Turky Abdulaziz Abdulhafiz</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 pb-30">
-          <div id="footer_contactus" class="position-relative align-items-center">
-            <a href="./contactus.html" target="_blank" class="font-20 text-center" style="color: #bf8948; font-weight: bold;">Contact us</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-</footer>
-<button type="button" class="backToTop btn btn-floating btn-lg font-36" id="backToTop"><i class="fa fa-angle-up"></i></button>
+  <!-- End: main-content -->
+    
+  <!-- Footer  -->
+  <style>
+    @media screen and (max-width: 580px) { 
+      #footer_div {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        align-items: center;
+        text-align: center;
+      }
+      #footer_contactus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 10px;
+        padding-top: 20px;
+      }
+    }
+    @media screen and (min-width: 581px){
+      #footer_div {
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
+        align-items: center;
+        text-align: center;
+      }
+      #footer_contactus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+        padding-top: 0px;
+      }
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      display: none;
+      background-color: #17963f8e;
+      color: #ffffff;
+    }
+  </style>
+  <footer id="footer" class="footer ">
+    <div class="footer-bottom position-relative">
+      <div id="footer_div" class="container">
+        <div class="row">
+          <div class="col-md-12 pb-30">
+              <h4 class="font-14 m-0 text-theme-colored">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="backToTop btn btn-floating btn-lg" style="font-size:30pt; padding: 0px 10px 0px 10px;" id="backToTop"><i class="fa fa-angle-up"></i></button>
 </div>
 
 <!-- Footer Scripts --> 
-<!-- Start: scrollToTop script -->
-<script>
-//Get the button
-let mybutton = document.getElementById("backToTop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-<!-- End: scrollToTop script -->
-
-<!-- Counter number animation javascript -->
+<!-- Start: Counter number animation javascript -->
 <script>
   const counters = document.querySelectorAll(".counter");
-  
+
 counters.forEach((counter) => {
   counter.innerText = "0";
   const updateCounter = () => {
@@ -8808,5 +8766,34 @@ counters.forEach((counter) => {
   updateCounter();
 });
 </script>
+<!-- End: Counter number animation javascript -->
+<!-- Start: scrollToTop script -->
+<script>
+  //Get the button
+  let mybutton = document.getElementById("backToTop");
 
-<!-- end: page-content -->
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- End: scrollToTop script -->
+<!-- End: page-content -->
