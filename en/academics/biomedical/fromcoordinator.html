@@ -139,7 +139,6 @@
   body {
     line-height: 1.7;
     color: #666666;
-    font-size: 14px;
     font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
     background-color: #fff;
   }
@@ -8461,103 +8460,170 @@
       </div>
     </section>
 
-    <div class="main-content">
-      <section>
-        <div class="container pt-0 pb-0" id="sections_menu"> 
-          <!-- Start: Instructions + Menu (left) -->
-          <div class="row">
-            <ol class="breadcrumb text-left text-black">
-              <li><a href="#"></a></li>
-            </ol>
-            <div class="col-sm-12 col-md-3" id="secList">
-              <div class="sidebar sidebar-left mt-sm-30 d-print-none">
-                <!-- Pages Menu -->
-                <div class="widget">
-                  <h5 class="widget-title line-bottom"><i class="fa-solid fa-diagram-project"></i> <span class="text-theme-color-2">Pages</span></h5>
-                  <div class="categories">
-                    <ul class="list list-border angle-double-right">
-                      <a href="../academics_biomedical_main.html" style="color: #0C5933; "><li><i class="fa-solid fa-chalkboard-user"></i>&nbsp;Main</li></a>
-                      <a href="./bachelor.html" style="color: #0C5933; "><li><i class="fa-solid fa-bullhorn"></i>&nbsp;Bachelor Degree</li></a>
-                      <a href="./master.html" style="color: #0C5933; "><li><i class="fa-solid fa-book-open-reader"></i>&nbsp;Master Degree</li></a>
-                      <a href="./phd.html" style="color: #0C5933; "><li><i class="fa-solid fa-user-graduate"></i>&nbsp;Doctorate Degree</li></a>
-                      <a href="../../facilities/facilities_biomedical.html" style="color: #0C5933; "><li><i class="fa-solid fa-microscope"></i>&nbsp;BME Laboratories</li></a>
-                      <a class="disabled" href="" onclick="return false;" style="color: white; font-weight: bold;"><li class="bg-theme-colored-transparent"><i class="fa-solid fa-house-chimney"></i>&nbsp;From Coordinator</a></li>
-                      <a href="./bmehistory.html" style="color: #0C5933; "><li><i class="fa-solid fa-book"></i>&nbsp;History</li></a>
-                      <a href="./socialmedia.html" style="color: #0C5933; "><li><i class="fa-solid fa-share-nodes"></i>&nbsp;Social Media</li></a>
-                      <a href="./newsletter.html" style="color: #0C5933; "><li><i class="fa-solid fa-scroll"></i>&nbsp;Newsletter</li></a>
-                    </ul>
-                  </div>
+    <!-- Start: Sections -->
+    <style>
+      @media screen and (max-width: 580px) {
+        #sections * {
+          visibility: hidden;
+          height: 0px;
+          display: none;
+        }
+      }
+    </style>
+    <section id="blog2">
+      <div class="container pb-0 pt-0 pb-sm-0" id="sections">
+          <div class="section-content">
+            <div class="row d-flex justify-content-center">
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./bachelor.html">
+                  <article class="post clearfix mb-sm-30">
+                    <div class="entry-content p-20 pr-10" style="min-height: 50px; border-radius: 20px 20px 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Bachelor Degree</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./master.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-content p-20 pr-10"  style="min-height: 50px; border-radius: 20px 20px 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Master Degree</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="./phd.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-content p-20 pr-10"  style="min-height: 50px; border-radius: 20px 20px 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Doctorate Degree</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+                <a href="../academics_biomedical_members.html">
+                  <article class="post clearfix mb-md-30 mb-sm-30">
+                    <div class="entry-content p-20 pr-10"  style="min-height: 50px; border-radius: 20px 20px 20px 20px;">
+                      <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Members</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- End: Sections -->
+
+    <section>
+      <div class="container pt-0 pb-0" id="sections_menu"> 
+        <!-- Start: Instructions + Menu (left) -->
+        <div class="row">
+          <ol class="breadcrumb text-left text-black">
+            <li><a href="#"></a></li>
+          </ol>
+          <div class="col-sm-12 col-md-3" id="secList">
+            <div class="sidebar sidebar-left mt-sm-30 d-print-none">
+              <!-- Pages Menu -->
+              <div class="widget">
+                <h5 class="widget-title line-bottom"><i class="fa-solid fa-diagram-project"></i> <span class="text-theme-color-2">Pages</span></h5>
+                <div class="categories">
+                  <ul class="list list-border angle-double-right">
+                    <a href="../academics_biomedical_main.html" style="color: #0C5933; "><li><i class="fa-solid fa-house-chimney"></i>&nbsp;Main</li></a>
+                    <a href="./bachelor.html" style="color: #0C5933; "><li><i class="fa-solid fa-chalkboard-user"></i>&nbsp;Bachelor Degree</li></a>
+                    <a href="./master.html" style="color: #0C5933; "><li><i class="fa-solid fa-book-open-reader"></i>&nbsp;Master Degree</li></a>
+                    <a href="./phd.html" style="color: #0C5933; "><li><i class="fa-solid fa-user-graduate"></i>&nbsp;Doctorate Degree</li></a>
+                    <a href="../../facilities/facilities_biomedical.html" style="color: #0C5933; "><li><i class="fa-solid fa-microscope"></i>&nbsp;BME Laboratories</li></a>
+                    <a class="disabled" onclick="return false;" href="" style="color: white; font-weight: bold;"><li class="bg-theme-colored-transparent"><i class="fa-solid fa-bullhorn"></i>&nbsp;From Coordinator</li></a>
+                    <a href="./bmehistory.html" style="color: #0C5933; "><li><i class="fa-solid fa-book"></i>&nbsp;History</li></a>
+                    <a href="./socialmedia.html" style="color: #0C5933; "><li><i class="fa-solid fa-share-nodes"></i>&nbsp;Social Media</li></a>
+                    <a href="./newsletter.html" style="color: #0C5933; "><li><i class="fa-solid fa-scroll"></i>&nbsp;News Letter</li></a>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-9 blog-pull-right" id="Program">
-              <!-- Start: Coordinator -->
-              <section id="teachers">
-                <div class="container">
-                  <div class="row mtli-row-clearfix">
-                    <div class="col-md-12">
-                      <div class="owl-carousel-4col">
-                        <div class="item">
-                          <div class="team-members border-bottom-theme-color-2px text-center maxwidth200">
-                            <div class="team-thumb">
-                              <img class="rounded-4" style="height: 200px;" alt="" src="../../../assets/imgs/mbrs/bio/Eyad.png">
-                              <div class="team-overlay"></div>
-                            </div>
-                            <div class="team-details bg-silver-light pt-10 pb-10">
-                              <h4 class="text-theme-colored font-15 font-weight-400 mt-0"><i class="fa-solid fa-circle-info"></i></h4>
-                              <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
-                                <li><a href="https://www.kau.edu.sa/CVEn.aspx?Lng=EN&Site_ID=0015839" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a></li>
-                                <li><a href="#" target="_blank" title="Office"><i class="fa-solid fa-building"></i></a></li>
-                                <li><a href="#" target="_blank" title="Social Media"><i class="fa-solid fa-share-nodes"></i></a></li>
-                              </ul>
-                            </div>
+          </div>
+          <div class="col-md-9 blog-pull-right" id="Program">
+            <!-- Start: Coordinator -->
+            <section id="teachers">
+              <div class="container">
+                <div class="row mtli-row-clearfix">
+                  <div class="col-md-12">
+                    <div class="owl-carousel-4col">
+                      <div class="item">
+                        <div class="team-members border-bottom-theme-color-2px text-center maxwidth200">
+                          <div class="team-thumb">
+                            <img class="rounded-4" style="height: 200px;" alt="" src="../../../assets/imgs/mbrs/bio/Eyad.png">
+                            <div class="team-overlay"></div>
+                          </div>
+                          <div class="team-details bg-silver-light pt-10 pb-10">
+                            <h4 class="text-theme-colored font-15 font-weight-400 mt-0"><i class="fa-solid fa-circle-info"></i></h4>
+                            <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                              <li><a href="https://www.kau.edu.sa/CVEn.aspx?Lng=EN&Site_ID=0015839" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a></li>
+                              <li><a href="#" target="_blank" title="Office"><i class="fa-solid fa-building"></i></a></li>
+                              <li><a href="#" target="_blank" title="Social Media"><i class="fa-solid fa-share-nodes"></i></a></li>
+                            </ul>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-              <style>
-                /* Target the numbered list group specifically */
-                ol.list-group {
-                border: 0; /* Remove all borders from the entire list group */
-                }
-
-                /* Style individual list items for better appearance */
-                ol.list-group li.list-group-item {
-                border-top: 0; /* Remove top borders from list items (except the first) */
-                border-bottom: 0;
-                /* padding-left: 2.5rem; Adjust left padding for the number counter */
-                }
-
-                /* Target the first list item to remove its top border */
-                ol.list-group li.list-group-item:first-child {
-                border-top: 0; 
-                }
-              </style>
-              <div>
-                <br>
-                <h4 class="text-theme-colored">Dear Visitor's,</h4>
-                    <p>We are delighted to extend a warm welcome to you as you visit the Biomedical Engineering Program Website. Whether you are a seasoned professional, a student, a researcher, or simply curious about the fascinating field of biomedical engineering, we're thrilled to have you here.</p>
-                    <p>Our website serves as a hub for cutting-edge information, resources, and insights related to biomedical engineering, a discipline that blends the principles of engineering with the intricacies of biology and medicine.</p>
-                    <p>We hope that your visit to our website is both informative and enjoyable. If you have any questions, or suggestions, or if there's anything specific you're looking for, feel free to reach out to us. Your feedback is invaluable as we strive to create a dynamic and user-friendly platform for the biomedical engineering community.</p>
-                    <p>We look forward to being a valuable resource on your journey through the exciting world of biomedical engineering at KAU.</p>
               </div>
-              <div>
-                <br>
-                <h5 class="text-theme-colored">Best regards,</h5>
-                <h4 class="name font-24 mt-0 mb-0 text-shadow text-theme-colored">Dr.Eyad Talal Attar</h4>
-                <h5 class="text-theme-colored">Biomedical Engineering Coordinator, Department of Electrical and Computer Engineering</h5>
-                <h6 class="text-theme-colored"><a href="mailto:etattar@kau.edu.sa" class="btn btn-outline-success" role="button">etattar@kau.edu.sa</a></h6>
-              </div>
-              <!-- End: Instructions -->
+            </section>
+            <style>
+              /* Target the numbered list group specifically */
+              ol.list-group {
+              border: 0; /* Remove all borders from the entire list group */
+              }
+
+              /* Style individual list items for better appearance */
+              ol.list-group li.list-group-item {
+              border-top: 0; /* Remove top borders from list items (except the first) */
+              border-bottom: 0;
+              /* padding-left: 2.5rem; Adjust left padding for the number counter */
+              }
+
+              /* Target the first list item to remove its top border */
+              ol.list-group li.list-group-item:first-child {
+              border-top: 0; 
+              }
+            </style>
+            <div>
+              <br>
+              <h4 class="text-theme-colored">Dear Visitor's,</h4>
+                  <p>We are delighted to extend a warm welcome to you as you visit the Biomedical Engineering Program Website. Whether you are a seasoned professional, a student, a researcher, or simply curious about the fascinating field of biomedical engineering, we're thrilled to have you here.</p>
+                  <p>Our website serves as a hub for cutting-edge information, resources, and insights related to biomedical engineering, a discipline that blends the principles of engineering with the intricacies of biology and medicine.</p>
+                  <p>We hope that your visit to our website is both informative and enjoyable. If you have any questions, or suggestions, or if there's anything specific you're looking for, feel free to reach out to us. Your feedback is invaluable as we strive to create a dynamic and user-friendly platform for the biomedical engineering community.</p>
+                  <p>We look forward to being a valuable resource on your journey through the exciting world of biomedical engineering at KAU.</p>
             </div>
+            <div>
+              <br>
+              <h5 class="text-theme-colored">Best regards,</h5>
+              <h4 class="name font-24 mt-0 mb-0 text-shadow text-theme-colored">Dr.Eyad Talal Attar</h4>
+              <h5 class="text-theme-colored">Biomedical Engineering Coordinator, Department of Electrical and Computer Engineering</h5>
+              <h6 class="text-theme-colored"><a href="mailto:etattar@kau.edu.sa" class="btn btn-outline-success" role="button">etattar@kau.edu.sa</a></h6>
+            </div>
+            <!-- End: Instructions -->
           </div>
-          <!-- End: Instructions + Menu (left) -->
         </div>
-      </section>
-    </div>
+        <!-- End: Instructions + Menu (left) -->
+      </div>
+    </section>
+
     <br><br><br>
   </div>
   <!-- End: main-content -->
