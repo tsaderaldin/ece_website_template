@@ -6,17 +6,99 @@
 <meta name="author" content="EngTurkyGary" />
 
 <!-- Page Title -->
-<title>KAU>ECE>Facilities_Power_Labs</title>
+<title>KAU>ECE>Template</title>
 
 <!-- Stylesheet -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" type="text/css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
- 
-<!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
-<style>
+
+<!-- Local -->
+ <!-- Start: style-main.css -->
+  <style>
   @charset "utf-8";
+  /*------------------------------------------------------------------
+  [Master Stylesheet]
+
+  Project:        LearnPress
+  Version:        1.0
+  Primary use:    LearnPress | Education & Courses HTML Template
+  Author:         ThemeMascot
+  URL:            http://themeforest.net/user/ThemeMascot
+  -------------------------------------------------------------------*/
+  /*
+  This file contains the common styles of this theme.
+  */
+  /*------------------------------------------------------------------
+  [Table of contents]
+
+      * Typography.less
+      * Common.less
+      * Extra.less
+      * Header.less
+      * Nav.less
+      * Inner-Header-Title.less
+      * Vertical-Nav.less
+      * menu-full-page.less
+      * Boxed-layout.less
+      * Form.less
+      * Side-Push-Panel.less
+      * Box-Hover-Effect.less
+      * Work-Gallery.less
+      * gallery-isotope.less
+      * Slider.less
+      * Home.less
+      * About.less
+      * Contact.less
+      * Services.less
+      * Shop.less
+      * Blog.less
+      * Shortcode.less 
+        * Alerts.less
+        * Buttons.less
+        * Blockquote.less
+        * Clients.less
+        * Countdown.less
+        * Countdown-Timer.less
+        * Dividers.less
+        * Facebook-Disqus-Comments.less
+        * Faqs.less
+        * Flexslider.less
+        * Flip-Box.less
+        * Font-Icons-Style.less
+        * Funfacts.less
+        * Icon-Boxes.less
+        * Infinitescroll.less
+        * Instagram.less
+        * Light-Box.less
+        * Map.less
+        * Pegination.less
+        * Pricing.less
+        * Process-Steps.less
+        * Progress-Bar.less
+        * Promo.less
+        * Section-Title.less
+        * Separators.less
+        * styled-icons.less
+        * Tabs.less
+        * Teams.less
+        * Testimonials.less
+        * Timetable-fullcalendar.less
+        * Toggles-Accordions.less
+        * Vertical-Timeline.less
+        * Working-Process.less
+        * Widgets.less
+    * Footer
+  * ===============================================
+  */
+  /*@import "../css/font-awesome.min.css";
+  @import "../css/font-awesome-animation.min.css";*/
+  /*@import "../css/pe-icon-7-stroke.css";*/
+  /* @import "../css/elegant-icons.css"; */
+  /* @import "../css/stroke-gap-icons.css"; */
+  /* @import "../css/flaticon-set-carfixing.css"; */
+  /* @import "../css/utility-classes.css"; */
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@300,400,600,700,800&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Raleway:wght@200,300,400,500,600,700,800,900&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Titillium+Web:wght@400,200,300,600,700,900&display=swap');
@@ -26,8 +108,10 @@
 
 
 
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Typography.less
+  * -----------------------------------------------
+  */
   ::selection {
     background: #333333;
     color: #fff;
@@ -35,13 +119,13 @@
   }
   ::-moz-selection {
     background: #333333;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* Firefox */
     color: #fff;
     text-shadow: none;
   }
   ::-webkit-selection {
     background: #333333;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* Safari */
     color: #fff;
     text-shadow: none;
   }
@@ -76,7 +160,7 @@
   iframe {
     border: none !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Headings ---------- */
   h1,
   .h1 {
     font-size: 3.4rem;
@@ -105,7 +189,7 @@
   h2,
   .h1,
   .h2 {
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* font-family: 'Open Sans', sans-serif; */
     font-weight: 700;
     line-height: 1.42857143;
     color: #333333;
@@ -174,7 +258,7 @@
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6, span {
     font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Body Text ---------- */
   p,
   pre,
   ul,
@@ -188,7 +272,7 @@
   form {
     margin-bottom: 10px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Custom Font Family ---------- */
   .font-opensans {
     font-family: 'Cairo', 'Noto Kufi Arabic', 'Open Sans', sans-serif;
   }
@@ -198,7 +282,7 @@
   .font-titillium {
     font-family: 'Cairo', 'Noto Kufi Arabic', 'Titillium Web', sans-serif;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* breadcrumb */
   .breadcrumb {
     background-color: transparent;
     padding-left: 0;
@@ -223,7 +307,7 @@
       text-align: right !important;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*Drop Caps*/
   .drop-caps p {
     text-align: justify;
   }
@@ -279,7 +363,7 @@
     padding: 15px 20px;
     border-radius: 50%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*Text Highlight*/
   .text-highlight {
     background: none repeat scroll 0 0 #111111;
     border-radius: 4px;
@@ -289,7 +373,11 @@
   .text-highlight.light {
     background: #808080;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * common.less
+  * -----------------------------------------------
+  */
+  /* -------- Basic Structure ---------- */
   html {
     font-size: 100%;
     max-width: 100%;
@@ -361,11 +449,11 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* Text-decoration */
   .text-underline {
     text-decoration: underline;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Line-Bottom ---------- */
   .heading-line-bottom {
     border-bottom: 1px dashed #808080;
     display: inline-block;
@@ -440,7 +528,7 @@
     top: 10px;
     width: 30px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- List ---------- */
   ul,
   ol {
     list-style: none;
@@ -472,7 +560,7 @@
     -o-transition: all 300ms ease-in;
     transition: all 300ms ease-in;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- List White ---------- */
   ul.list.list-white li:before {
     color: #fff;
   }
@@ -487,7 +575,7 @@
     -o-transition: all 300ms ease-in;
     transition: all 300ms ease-in;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- List border bottom ---------- */
   ul.list-border-bottom li {
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
@@ -501,7 +589,7 @@
   ul.list-border-bottom.no-padding li:last-child {
     border-bottom: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- List Icons ---------- */
   .list-border li {
     border-bottom: 1px dashed #d3d3d3;
     padding: 10px 0;
@@ -549,7 +637,7 @@
   .list-icon.theme-colored.rounded li i {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Personal Info List ---------- */
   .list-info li {
     clear: both;
     position: relative;
@@ -611,13 +699,13 @@
     font-family: fontawesome;
     font-size: 14px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Call To Actions ---------- */
   .call-to-action {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Section & Divider ---------- */
   section {
     position: relative;
   }
@@ -626,7 +714,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Background Video ---------- */
   .bg-video {
     height: 100%;
     position: absolute;
@@ -645,7 +733,7 @@
   .bg-video .video .mbYTP_wrapper {
     z-index: -1 !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Box Table ---------- */
   .display-table-parent {
     height: 100%;
     left: 0;
@@ -664,7 +752,7 @@
     height: 100%;
     vertical-align: middle;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Scroll To Top ---------- */
   .scrollToTop {
     background: rgba(0, 0, 0, 0.1);
     bottom: 15px;
@@ -686,33 +774,40 @@
     background: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- magnific popup ---------- */
   .mfp-close-btn-in .mfp-close {
     color: #eee;
     font-size: 64px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*  
+  * Extra.less 
+  * -----------------------------------------------
+  */
+  /* -------- Heading Style ---------- */
   .heading-border {
     border-bottom: 1px solid #d3d3d3;
     margin: 30px 0;
     padding: 20px 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- FullCalendar - Plugin ---------- */
   .fc-day-number {
     color: #333333;
   }
   .fc-day-number.fc-other-month {
     opacity: 0.4;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* scrolltofixed-container */
   .scrolltofixed-container {
     position: static;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Overlays.less
+  * -----------------------------------------------
+  */
   .layer-overlay {
     position: relative;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* overlay-dark */
+    /* overlay-white */
   }
   .layer-overlay::before {
     background: #0c5933d4;
@@ -857,8 +952,10 @@
     top: 0;
     width: 50%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Header.less
+  * -----------------------------------------------
+  */
   .header-top {
     padding: 5px 0;
   }
@@ -884,7 +981,7 @@
   .menuzord-brand img {
     max-height: 58px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Custom theme style ---------- */
   .header-nav .header-nav-wrapper .menuzord {
     padding: 0;
     
@@ -892,7 +989,11 @@
   .header-nav.navbar-transparent.animated-active {
     background-color: rgba(0, 0, 0, 0.25);
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * nav.less
+  * -----------------------------------------------
+  */
+  /* -------- nav sidebar ---------- */
   .nav-sidebar li {
     background: #f1f1f1;
     padding-bottom: 0;
@@ -907,7 +1008,7 @@
     background: #d3d3d3;
     color: #777777;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Header Nav ---------- */
   .header-nav {
     position: relative;
     
@@ -923,7 +1024,7 @@
   .header-nav .header-nav-wrapper .menuzord {
     padding: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Menuzord ---------- */
   .menuzord-menu > li {
     padding: 24px 0;
   }
@@ -954,7 +1055,7 @@
   .menuzord-menu ul.dropdown li .indicator {
     top: 4px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Megamenu-Row ---------- */
   .menuzord-menu > li > .megamenu .megamenu-row li {
     border: 0 none;
     clear: both;
@@ -988,7 +1089,7 @@
       background: #fff;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Scrolltofixed ---------- */
   .header-nav .header-nav-wrapper.scroll-to-fixed-fixed.scroll-to-fixed-fixed {
     border-bottom: 1px solid #eee;
   }
@@ -1013,7 +1114,7 @@
       bottom: auto;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Navbar Fixed  ---------- */
   .header-nav {
     -webkit-transition: all 0.4s ease-in-out 0s;
     -o-transition: all 0.4s ease-in-out 0s;
@@ -1026,13 +1127,13 @@
     width: 100%;
     z-index: 1030;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Navbar Sticky Animated ---------- */
   .navbar-sticky-animated .header-nav-wrapper .container {
     -webkit-transition: all 0.4s ease-in-out 0s;
     -o-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Header White ---------- */
   .header-nav.navbar-white {
     background-color: rgba(255, 255, 255, 0.95);
     border: none none;
@@ -1040,7 +1141,7 @@
   .header-nav.navbar-white .menuzord {
     background: transparent;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Header Transparent ---------- */
   .header-nav.navbar-transparent .menuzord {
     background: transparent;
   }
@@ -1061,6 +1162,10 @@
       color: #888;
     }
   }
+  /*
+  * Topbar.less
+  * -----------------------------------------------
+  */
   #top-search-bar {
     background: #eee;
   }
@@ -1095,12 +1200,20 @@
   #top-search-bar button i {
     color: #777;
   }
+  /*
+  * Inner-Header-Title.less
+  * -----------------------------------------------
+  */
   .inner-header .title {
     font-size: 34px;
     font-family: 'Cairo', 'Noto Kufi Arabic', 'Titillium Web', sans-serif;
   }
+  /*
+  *  Vertical-Nav.less
+  * -----------------------------------------------
+  */
   .vertical-nav {
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* vertical-nav-black*/
   }
   .vertical-nav .header {
     width: 260px;
@@ -1234,14 +1347,22 @@
       margin-right: 0;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  *  menu-full-page.less
+  * -----------------------------------------------
+  */
+  /* menu-full-page plugin code */
   .menu-full-page #fullpage-nav {
     background: rgba(255, 255, 255, 0.97);
     z-index: -1;
     position: fixed;
+    /*left: -100%;*/
+    /*left or right and the width of your navigation panel*/
     left: 0 !important;
+    /*left or right and the width of your navigation panel*/
     opacity: 0;
     width: 100%;
+    /*should match the above value*/
     -webkit-transition: all 0.5s ease-in-out !important;
     -moz-transition: all 0.5s ease-in-out !important;
     -ms-transition: all 0.5s ease-in-out !important;
@@ -1322,7 +1443,7 @@
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
     background-color: transparent;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* active state, i.e. menu open */
   }
   .menu-full-page .fullpage-nav-toggle i {
     text-decoration: none;
@@ -1393,7 +1514,7 @@
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* menu-full-page custom code */
   .menu-full-page .header #fullpage-nav li {
     padding: 5px 0;
   }
@@ -1432,6 +1553,10 @@
   .menu-full-page .header #fullpage-nav ul li:hover .dropdown {
     max-height: 700px;
   }
+  /*
+  *  Boxed-layout.less
+  * -----------------------------------------------
+  */
   @media only screen and (min-width: 768px) {
     .boxed-layout .container {
       max-width: 1170px;
@@ -1542,7 +1667,11 @@
   .boxed-layout .service-block:hover .thumb .desc {
     bottom: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Form.less
+  * -----------------------------------------------
+  */
+  /* -------- Form ---------- */
   .input-group-lg > .form-control,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .btn {
@@ -1614,21 +1743,22 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* form error */
   form .form-control.error {
     border: 2px solid #ee163b;
   }
   form .error {
     color: #ee163b;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Donation Form ---------- */
   .donation-form .form-group label.radio-inline {
     color: #808080 !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*-------- form-text-white ---------*/
   .form-text-white .form-group label {
     color: #fff;
   }
+  /*-------- ddslick form ---------*/
   .dd-container,
   .dd-select {
     width: 100% !important;
@@ -1695,6 +1825,10 @@
     top: 9px;
     width: 6px;
   }
+  /*
+  *  Side-Push-Panel.less
+  * -----------------------------------------------
+  */
   .side-push-panel {
     overflow-x: hidden;
   }
@@ -1727,10 +1861,11 @@
     left: 300px;
     right: auto;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Has Side Panel ---------- */
   .side-push-panel.has-side-panel .menuzord .showhide {
     float: left;
   }
+  /* -------- Body Overlay ---------- */
   .has-side-panel .body-overlay {
     -webkit-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
@@ -1753,7 +1888,7 @@
   .side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-overlay:hover {
     cursor: url('') 15 15, default;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Side Panel ---------- */
   #side-panel {
     -webkit-backface-visibility: hidden;
     background-color: #f3f3f3;
@@ -1803,7 +1938,7 @@
   .device-touch #side-panel .side-panel-wrap {
     overflow-y: scroll;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Side-Panel-Nav ---------- */
   #side-panel .side-panel-nav .nav li a {
     padding: 5px 0;
   }
@@ -1815,7 +1950,7 @@
     display: none;
     margin-left: 15px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Side-Panel-Trigger And Close ---------- */
   #side-panel-trigger {
     cursor: pointer;
     display: block;
@@ -1836,13 +1971,17 @@
     position: absolute;
     top: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Transition ---------- */
   .side-push-panel.fullwidth-page #wrapper,
   .side-push-panel.fullwidth-page header .header-nav-wrapper.scroll-to-fixed-fixed .container {
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
+  /*
+  *  Box-Hover-Effect.less
+  * -----------------------------------------------
+  */
   .box-hover-effect {
     position: relative;
     overflow: hidden;
@@ -1956,7 +2095,8 @@
     position: absolute;
     width: 100%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* Individual effects */
+  /* -------- effect1 ---------- */
   .box-hover-effect.effect1 .thumb {
     position: relative;
     overflow: hidden;
@@ -1989,7 +2129,7 @@
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- effect2 ---------- */
   .box-hover-effect.effect2 .thumb {
     position: relative;
     overflow: hidden;
@@ -2023,7 +2163,7 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- effect3 ---------- */
   .box-hover-effect.effect3 .overlay {
     position: relative;
   }
@@ -2063,10 +2203,14 @@
     -o-transition: all 0.4s ease-out 0s;
     transition: all 0.4s ease-out 0s;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Custom Theme Style ---------- */
   .box-hover-effect.effect2 .overlay.white .overlay-details p {
     color: #777777;
   }
+  /*
+  * Work-Gallery.less
+  * -----------------------------------------------
+  */
   .work-gallery {
     margin: 0 auto 30px;
     max-width: 400px;
@@ -2158,7 +2302,11 @@
   .work-gallery:hover .gallery-bottom-part .sub-title {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * gallery-isotope.less
+  * -----------------------------------------------
+  */
+  /* -------- Portfolio Isotop Filter ---------- */
   .portfolio-filter {
     margin-bottom: 30px;
   }
@@ -2181,9 +2329,20 @@
   .portfolio-filter a:hover {
     color: #fff !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Portfolio Isotop Gallery ---------- */
   .gallery-isotope {
-    
+    /*gutter*/
+    /* by default 4 grids */
+    /*portfolio 2 grids*/
+    /*portfolio 2 grids*/
+    /*portfolio 3 grids*/
+    /*portfolio 4 grids*/
+    /*portfolio 5 grids*/
+    /*portfolio 6 grids*/
+    /*portfolio 7 grids*/
+    /*portfolio 8 grids*/
+    /*portfolio 9 grids*/
+    /*portfolio 10 grids*/
   }
   .gallery-isotope.gutter .gallery-item {
     padding-right: 5px;
@@ -2275,7 +2434,7 @@
   .gallery-isotope.grid-10 .gallery-item.wide {
     width: 20%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Portfolio Isotop Item Media Query ---------- */
   @media only screen and (max-width: 991px) {
     .gallery-isotope .gallery-item {
       width: 33.333% !important;
@@ -2300,7 +2459,7 @@
       width: 100% !important;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Portfolio Isotop Overlay Effect ---------- */
   .gallery-isotope .gallery-item {
     overflow: hidden;
   }
@@ -2408,10 +2567,15 @@
   .gallery-isotope .flex-control-nav {
     z-index: 111;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Slider.less
+  * -----------------------------------------------
+  */
+  /* -------- Rev Slider ---------- */
   #home .revslider-fullscreen {
     min-height: auto;
   }
+  /* -------- Home Revolution Slider For Minimal Layouts ---------- */
   .minimal-revslider-wrapper {
     left: 0!important;
     width: 100%!important;
@@ -2422,7 +2586,7 @@
   .minimal-revslider-wrapper .tp-rightarrow {
     right: 0!important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Tab-Slider ---------- */
   .tab-slider .tab-content {
     padding: 0;
     border: 0;
@@ -2449,13 +2613,15 @@
   .tab-slider .nav.nav-pills a.active h6 {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- MaxImage Slider ---------- */
   .maximage-slider .fullscreen-controls .img-prev,
   .maximage-slider .fullscreen-controls .img-next {
     background: rgba(0, 0, 0, 0.3);
   }
+  /* -------- Testimonial-Carousel ---------- */
   .testimonial-carousel,
   .testimonial-carousel-style2 {
+    /* fullwidth */
   }
   .testimonial-carousel .quote,
   .testimonial-carousel-style2 .quote,
@@ -2541,11 +2707,12 @@
   .testimonial-carousel-style2.boxed.owl-theme .owl-dots .owl-dot:hover span {
     opacity: 1;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Widget-Testimonial-Carousel ---------- */
   .widget-testimonial-carousel .item img {
     max-width: 75px;
     float: right;
   }
+  /* -------- Owl Carousel ---------- */
   .owl-controls {
     margin: 0;
   }
@@ -2579,7 +2746,7 @@
     display: inline-block;
     width: 75px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* owl dots */
   .owl-theme .owl-dots {
     text-align: center;
     margin-top: 10px;
@@ -2601,14 +2768,14 @@
     transition: all 0.4s ease 0s;
     width: 12px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* Image Carousel */
   .image-carousel .owl-controls .owl-nav > div {
     opacity: 0;
   }
   .image-carousel:hover .owl-controls .owl-nav > div {
     opacity: 1;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* Owl top nav style */
   .owl-carousel.owl-nav-top.bullet-white .owl-dots span {
     background: #fff;
   }
@@ -2692,7 +2859,7 @@
   .image-carousel:hover .owl-controls .owl-nav > div {
     opacity: 1;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Owl Fullwidth Carousel ---------- */
   .fullwidth-carousel .owl-controls .owl-nav > div {
     top: 45%;
   }
@@ -2708,13 +2875,13 @@
   .fullwidth-carousel.blog-fullwidth-carousel .owl-controls .owl-nav > div {
     background: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Twitter Feed Carousel ---------- */
   .owl-dots-bottom-right .owl-dots {
     bottom: -10px;
     position: absolute;
     right: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Twitter Feed Carousel ---------- */
   .twitter-feed.twitter-carousel {
     color: #111111;
     font-size: 16px;
@@ -2729,7 +2896,7 @@
   .twitter-feed.twitter-white a {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- BX Slider ---------- */
   .bx-wrapper {
     margin: 0 auto 7px;
     padding: 0;
@@ -2742,7 +2909,7 @@
     left: 0;
     transform: translateZ(0px);
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* bx top nav style */
   .bx-controls .bx-controls-direction > a {
     background: #eee none repeat scroll 0 0;
     border: medium none;
@@ -2767,7 +2934,7 @@
   .bx-controls .bx-controls-direction .bx-next {
     right: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Typed Animation Slider ---------- */
   .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -2807,7 +2974,11 @@
       opacity: 1;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Home.less
+  * -----------------------------------------------
+  */
+  /* -------- Setion-Bottom-Absolute-Div ---------- */
   .setion-bottom-absolute-div {
     background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
     bottom: 0;
@@ -2815,7 +2986,11 @@
     position: absolute;
     right: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * About.less
+  * -----------------------------------------------
+  */
+  /* -------- Bg Img Box ---------- */
   .bg-img-box {
     position: relative;
   }
@@ -2833,6 +3008,10 @@
   .bg-img-box .caption p {
     max-width: 280px;
   }
+  /*
+  * Contact.less
+  * -----------------------------------------------
+  */
   .contact-wrapper {
     padding: 50px 50px 50px 100px;
   }
@@ -2865,6 +3044,10 @@
   textarea {
     resize: none;
   }
+  /*
+  * Services.less
+  * -----------------------------------------------
+  */
   .service-block {
     margin: 0 auto 30px;
     max-width: 400px;
@@ -2899,7 +3082,11 @@
     border: 1px solid #eeeeee;
     padding: 12px 20px 20px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * shop.less
+  * -----------------------------------------------
+  */
+  /* -------- Product Details Page ---------- */
   .product {
     margin-left: auto;
     margin-right: auto;
@@ -2947,7 +3134,7 @@
     opacity: 1;
     right: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Price ---------- */
   .product .price {
     margin-top: 5px;
   }
@@ -2964,7 +3151,7 @@
     margin-left: 10px;
     text-decoration: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Product-Summary ---------- */
   .product .product-summary .product-title {
     margin-top: 0;
   }
@@ -3045,7 +3232,7 @@
     text-align: center;
     width: 40px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Star-Rating ---------- */
   .star-rating {
     font-size: 14px;
     height: 16px;
@@ -3078,7 +3265,7 @@
   .star-rating span::before {
     color: #ffc300 !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Tag Sale ---------- */
   .product .tag-sale {
     margin: 0;
     top: 0;
@@ -3110,7 +3297,7 @@
     top: 1px;
     width: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Cart Page ---------- */
   .tbl-shopping-cart .product-thumbnail img {
     max-width: 72px;
     max-height: 72px;
@@ -3135,7 +3322,7 @@
   table.no-border td {
     border: medium none !important;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Checkout Page ---------- */
   .payment-method .radio {
     border: 1px solid #eee;
     padding: 10px;
@@ -3154,7 +3341,7 @@
   #checkout-shipping-address {
     display: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Top Nav Search And Cart ---------- */
   .top-nav-search-box .indicator,
   .top-nav-cart-box .indicator {
     display: none;
@@ -3251,6 +3438,10 @@
     border-radius: 30px;
     padding: 0 8px 0 3px;
   }
+  /*
+  * blog.less 
+  * -----------------------------------------------
+  */
   .post {
     position: relative;
   }
@@ -3259,7 +3450,7 @@
   }
   .post .entry-content {
     position: relative;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /*background: #f8f8f8;*/
     background: #4AAD45;
     padding: 15px;
   }
@@ -3294,7 +3485,7 @@
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Entry-Meta Absolute ---------- */
   .post .entry-header {
     position: relative;
   }
@@ -3314,6 +3505,10 @@
     display: block;
     font-size: 28px;
   }
+  /*
+  * Blog Style 2
+  * -----------------------------------------------
+  */
   .post.style2,
   .post.style3 {
     position: relative;
@@ -3321,7 +3516,7 @@
   }
   .post.style2 .entry-content,
   .post.style3 .entry-content {
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /*background-color: rgba(0, 0, 0, 0.8);*/
     background-color: #4AAD45a8;
     bottom: -30px;
     left: 0;
@@ -3370,6 +3565,10 @@
   .featured-blog:hover .featured-blog-details {
     bottom: 0;
   }
+  /*
+  * our-services-gallery
+  * -----------------------------------------------
+  */
   .our-services-gallery .gallery-item {
     position: relative;
     overflow: hidden;
@@ -3471,7 +3670,11 @@
   .our-services-gallery .gallery-item:hover .text-holder {
     opacity: 1;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * causes.less
+  * -----------------------------------------------
+  */
+  /* -------- Recent Causes ---------- */
   .causes .progress-item .progress-bar .percent {
     background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid;
@@ -3491,6 +3694,10 @@
     box-shadow: none;
     height: 15px;
   }
+  /*
+  * 3.6  -> Causes
+  * -----------------------------------------------
+  */
   .causes .thumb {
     position: relative;
   }
@@ -3538,6 +3745,10 @@
     line-height: 77px;
     position: relative;
   }
+  /*
+  * 3.29  -> Pie Charts
+  * -----------------------------------------------
+  */
   .piechart {
     position: relative;
     margin: 0 auto;
@@ -3558,6 +3769,10 @@
     right: 0;
     margin: 0 auto;
   }
+  /*
+  * 3.29  -> Featured Causes
+  * -----------------------------------------------
+  */
   .project-conditions {
     padding: 8px;
   }
@@ -3574,6 +3789,10 @@
     font-weight: 600;
     color: #222222;
   }
+  /*
+  * project.less
+  * -----------------------------------------------
+  */
   .project .thumb {
     position: relative;
     overflow: hidden;
@@ -3622,6 +3841,10 @@
   .project:hover .project-details .sub-title {
     color: #fff;
   }
+  /*
+  * hover-effect.less
+  * -----------------------------------------------
+  */
   .hover-effect .thumb {
     position: relative;
     overflow: hidden;
@@ -3678,6 +3901,10 @@
   .hover-effect:hover .details .sub-title {
     color: #fff;
   }
+  /*
+  * event.less
+  * -----------------------------------------------
+  */
   .event {
     background: #f6f6f6;
     border: 1px solid transparent;
@@ -3705,7 +3932,7 @@
   .event .event-date ul li:first-child {
     margin-bottom: 10px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Schedule-Box Style ---------- */
   .schedule-box .thumb {
     position: relative;
     overflow-x: hidden;
@@ -3754,7 +3981,7 @@
     opacity: 1;
     top: 40%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Event-Table ---------- */
   .table-schedule thead tr th {
     color: #fff;
     font-size: 16px;
@@ -3797,7 +4024,19 @@
   .table-schedule .session-details {
     display: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Shortcode.less
+  * -----------------------------------------------
+  */
+  /*
+  * Shortcode: Alerts.less
+  * -----------------------------------------------
+  */
+  /*
+  * Shortcode: Buttons.less
+  * -----------------------------------------------
+  */
+  /* -------- Btn-Default ---------- */
   .btn-default {
     color: #333;
     background-color: #fff;
@@ -3859,7 +4098,7 @@
     background-color: #eeeeee;
     border-color: #eeeeee;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-Border ---------- */
   .btn-border {
     color: #222222;
     background-color: #fff;
@@ -3927,7 +4166,7 @@
     border-color: #222222;
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-Dark ---------- */
   .btn-dark {
     color: #fff;
     background-color: #222222;
@@ -3985,7 +4224,7 @@
     color: #222222;
     background-color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-Gray ---------- */
   .btn-gray {
     color: #333333;
     background-color: #eeeeee;
@@ -4049,42 +4288,42 @@
   .btn-flat {
     border-radius: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-Default ---------- */
   .btn {
     font-size: 13px;
     padding: 8px 22px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-xs ---------- */
   .btn-xs {
     font-size: 11px;
     padding: 3px 14px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-sm ---------- */
   .btn-sm {
     font-size: 12px;
     padding: 5px 17px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-lg ---------- */
   .btn-lg {
     font-size: 14px;
     padding: 10px 26px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-xl ---------- */
   .btn-xl {
     font-size: 16px;
     padding: 13px 32px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-transparent ---------- */
   .btn-transparent {
     background-color: transparent;
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Btn-Quick-contact ---------- */
   .btn-quick-contact {
     background-color: rgba(5, 15, 5, 0.1);
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* btn read more*/
   .btn-read-more {
     padding: 0;
   }
@@ -4105,6 +4344,10 @@
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
+  /*
+  * Blockquote.less
+  * -----------------------------------------------
+  */
   blockquote {
     border-left: 3px solid #eeeeee;
     margin: 20px 0;
@@ -4131,6 +4374,10 @@
     font-size: 16px;
     font-style: italic;
   }
+  /*
+  * Shortcode: Clients.less
+  * -----------------------------------------------
+  */
   .clients-logo .item {
     background: #eeeeee;
     border-color: transparent;
@@ -4184,6 +4431,10 @@
   .clients-logo.transparent img {
     opacity: 0.9;
   }
+  /*
+  * Shortcode: Countdown.less
+  * -----------------------------------------------
+  */
   .countdown-timer li {
     color: #808080;
     display: inline-block;
@@ -4229,6 +4480,14 @@
       font-size: 12px;
     }
   }
+  /*
+  * Shortcode: Countdown-Timer.less
+  * -----------------------------------------------
+  */
+  /*
+  * Shortcode: Dividers.less
+  * -----------------------------------------------
+  */
   .divider,
   .parallax {
     background-repeat: repeat;
@@ -4245,10 +4504,10 @@
     overflow: hidden;
     width: 100%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Parallax ---------- */
   .parallax {
     width: 100%;
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* height: 100%;*/
     margin: 0 auto;
     background-size: cover;
     background-attachment: fixed;
@@ -4272,6 +4531,10 @@
     padding-top: 180px;
     padding-bottom: 180px;
   }
+  /*
+  * Shortcode: Facebook-Disqus-Comments.less
+  * -----------------------------------------------
+  */
   .fb-comments,
   .fb_iframe_widget,
   .fb-comments > span,
@@ -4282,6 +4545,14 @@
     margin: 0;
     width: 100% !important;
   }
+  /*
+  * Shortcode: Faqs.less
+  * -----------------------------------------------
+  */
+  /*
+  * Shortcode: Flexslider.less
+  * -----------------------------------------------
+  */
   .flex-container a:active,
   .flexslider a:active,
   .flex-container a:focus,
@@ -4339,6 +4610,10 @@
   .flex-control-nav li a.flex-active {
     background-color: #fff;
   }
+  /*
+  * Shortcode: Flip-Box.less
+  * -----------------------------------------------
+  */
   .card {
     float: left;
     min-height: 300px;
@@ -4407,7 +4682,11 @@
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Shortcode: Font-Icons-Style.less
+  * -----------------------------------------------
+  */
+  /* common style */
   .styled-icons a {
     color: #333333;
     font-size: 18px;
@@ -4508,6 +4787,10 @@
     margin-bottom: 0;
     margin-top: 0;
   }
+  /*
+  * Shortcode: Funfacts.less
+  * -----------------------------------------------
+  */
   .funfact {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -4545,7 +4828,7 @@
     color: #eeeeee;
     font-size: 18px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* funfact style-1*/
   .funfact.style-1 i,
   .funfact.style-1 .funfact-title {
     -webkit-transition: all 0.5s ease;
@@ -4564,6 +4847,10 @@
   .funfact.style-1:hover .funfact-title {
     color: #333333 !important;
   }
+  /*
+  * Shortcode: Icon-Boxes.less
+  * -----------------------------------------------
+  */
   .icon-box {
     padding: 40px 17px;
   }
@@ -4765,6 +5052,10 @@
   .icon-box .icon-box-details {
     margin-left: 80px;
   }
+  /*
+  * Shortcode: Infinitescroll.less
+  * -----------------------------------------------
+  */
   #infscr-loading {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 3px;
@@ -4782,7 +5073,11 @@
   #infscr-loading img {
     display: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Shortcode: Instagram.less
+  * -----------------------------------------------
+  */
+  /* -------- Instagram-Feed ---------- */
   .instagram-feed-carousel figure,
   .instagram-feed figure {
     position: relative;
@@ -4808,13 +5103,17 @@
   .instagram-feed figure:hover .link-out {
     opacity: 1;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Instagram-Feed ---------- */
   .instagram-feed .item {
     width: 100px;
     float: left;
     margin-bottom: 2px;
     margin-right: 2px;
   }
+  /*
+  * Shortcode: Light-Box.less
+  * -----------------------------------------------
+  */
   .nivo-lightbox-theme-default .nivo-lightbox-nav {
     height: 100%;
     top: 0;
@@ -4825,6 +5124,10 @@
     right: 0;
     top: -45px;
   }
+  /*
+  * Shortcode: Map.less
+  * -----------------------------------------------
+  */
   .toggle-map {
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -4877,8 +5180,10 @@
   .btn-show-map i {
     font-size: 48px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Pegination.less
+  * -----------------------------------------------
+  */
   .pagination.theme-colored li.active a {
     background: #BF9E58;
     color: #fff;
@@ -4901,8 +5206,10 @@
     background-color: #333;
     border: 1px solid transparent;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Pricing.less
+  * -----------------------------------------------
+  */
   .pricing-table {
     margin-bottom: 30px;
     position: relative;
@@ -4963,7 +5270,7 @@
   }
   .pricing .table-price {
     font-size: 4rem !important;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* =64px */
     line-height: 1.2;
     font-family: 'Cairo', 'Noto Kufi Arabic', "Open Sans", sans-serif;
     margin: 0 0 20px;
@@ -4979,7 +5286,14 @@
   .pricing.table-horizontal {
     background-color: #3FB179;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Shortcode: Process-Steps.less
+  * -----------------------------------------------
+  */
+  /*
+  * Shortcode: Progress-Bar.less
+  * -----------------------------------------------
+  */
   .progress-item {
     margin-top: 20px;
   }
@@ -5021,15 +5335,19 @@
     color: #555555;
     font-size: 14px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Promo.less
+  * -----------------------------------------------
+  */
   .modal-promo-box {
     max-width: 700px;
     padding: 90px 60px;
     margin: 0 auto;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Section-Title.less
+  * -----------------------------------------------
+  */
   .small-title {
     position: relative;
   }
@@ -5124,7 +5442,7 @@
     border-right: 2px solid #c0c0c0;
     padding-right: 10px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*Theme Section Title*/
   .section-title {
     margin-bottom: 30px;
     position: relative;
@@ -5173,8 +5491,10 @@
     font-size: 11px;
     line-height: 23px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Separators.less
+  * -----------------------------------------------
+  */
   .title-separator {
     border-top-style: solid;
     border-top-width: 1px;
@@ -5267,7 +5587,11 @@
   .separator.dotted::after {
     border-bottom: 2px dotted #ccc;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Shortcode: styled-icons.less
+  * -----------------------------------------------
+  */
+  /* common style */
   .styled-icons a {
     color: #333333;
     font-size: 18px;
@@ -5368,8 +5692,10 @@
     margin-bottom: 0;
     margin-top: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Tabs.less
+  * -----------------------------------------------
+  */
   .tab-content {
     padding: 15px;
     border: 1px solid #eeeeee;
@@ -5408,7 +5734,7 @@
     margin-right: 20px;
     vertical-align: middle;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Nav Tabs ---------- */
   .nav-tabs > li {
     text-align: center;
   }
@@ -5419,7 +5745,7 @@
     margin-bottom: 10px;
     vertical-align: middle;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Horizontal-Tab-Centered ---------- */
   .horizontal-tab-centered .nav-pills {
     display: inline-block;
   }
@@ -5444,11 +5770,11 @@
   .horizontal-tab-centered .nav-pills > li.active > a:focus {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Horizontal-Tab Fullwide ---------- */
   .horizontal-tab.fullwide .nav-tabs > li {
     width: 20%;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Vertical Nav-Tabs ---------- */
   .vertical-tab .tab-content {
     padding: 5px 5px 20px 20px;
     border: none;
@@ -5539,8 +5865,10 @@
     color: #000;
     padding: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Teams.less
+  * -----------------------------------------------
+  */
   .team-members {
     overflow: hidden;
     position: relative;
@@ -5774,8 +6102,10 @@
   .team-block:hover .team-overlay {
     top: 0;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Testimonials.less
+  * -----------------------------------------------
+  */
   .testimonial .content {
     position: relative;
   }
@@ -5789,8 +6119,10 @@
     right: 20px;
     top: -15px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: timetable-fullcalendar.less
+  * -----------------------------------------------
+  */
   .fc-timetable-wrapper .fc-scroller {
     height: auto;
     overflow: hidden;
@@ -5974,8 +6306,10 @@
       padding-top: 0;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Toggles-Accordions.less
+  * -----------------------------------------------
+  */
   .panel-group .panel {
     box-shadow: none;
     -webkit-border-radius: 0 0 0 0;
@@ -6047,7 +6381,7 @@
   .panel-group.white .panel-title a {
     background-color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Toggle ---------- */
   .panel-group.toggle .panel-heading {
     padding: 0;
     border-bottom: 0;
@@ -6080,8 +6414,10 @@
   .panel-group.toggle .panel-heading + .panel-collapse > .list-group {
     border-top: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Vertical-Timeline.less
+  * -----------------------------------------------
+  */
   .cd-timeline-content {
     background: #f1f1f1;
   }
@@ -6143,7 +6479,7 @@
       font-size: 14px;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* Vertical Masonry Timeline */
   .vertical-masonry-timeline .each-masonry-item {
     position: relative;
     width: 50%;
@@ -6340,8 +6676,10 @@
       left: 44px;
     }
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-  
+  /*
+  * Shortcode: Working-Process.less
+  * -----------------------------------------------
+  */
   .working-process > li {
     float: left;
     overflow: hidden;
@@ -6414,6 +6752,10 @@
   .working-process.theme-colored li a {
     color: #fff;
   }
+  /*  
+  * home-boxes.less 
+  * -----------------------------------------------
+  */
   .home-boxes .each-box {
     overflow-x: hidden;
   }
@@ -6427,10 +6769,14 @@
     right: 30px;
     transform: rotate(-40deg);
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Widgets.less
+  * -----------------------------------------------
+  */
+  /* -------- Top Search Bar ---------- */
   .search-form-wrapper {
     position: relative;
-    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    /* form absolute */
   }
   .search-form-wrapper.toggle {
     display: none;
@@ -6481,7 +6827,7 @@
     width: 370px;
     z-index: 99;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Form Round ---------- */
   .search-form-wrapper.round form input[type="text"] {
     border-radius: 30px;
     border-width: 4px;
@@ -6501,7 +6847,7 @@
   .widget.dark .list-border li {
     border-bottom: 1px dashed #404040;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Footer & Sidebar Widgets ---------- */
   .widget {
     margin-bottom: 30px;
   }
@@ -6680,7 +7026,7 @@
   .widget.dark ul.list li::before {
     display: none;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* --------Horizontal Contact Widget  ---------- */
   .horizontal-contact-widget {
     border-top: 1px dashed #666666;
   }
@@ -6692,14 +7038,14 @@
     right: 0;
     top: -42px;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Horizontal Contact Widget Dark ---------- */
   .horizontal-contact-widget.dark {
     border-top: 1px dashed #333333;
   }
   .widget.dark .btn.btn-default {
     border-color: #333;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Flickr-Feed ---------- */
   #flickr-feed img {
     background: none repeat scroll 0 0 #000;
     float: left;
@@ -6725,7 +7071,21 @@
   .widget .services-list li.active a {
     color: #fff;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /*
+  * Footer.less
+  * -----------------------------------------------
+  *//*
+  .footer {
+    background: #fafafa;
+  }
+  .footer a {
+    color: #808080;
+  }
+  .footer a:focus,
+  .footer a:hover,
+  .footer a:active {
+    color: #666666;
+  }*/
   .footer hr{
     float: left !important;
   }
@@ -6742,7 +7102,7 @@
     border-color: #eeeeee;
     color: #333333;
   }
-  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  /* -------- Custom Theme Style ---------- */
   .footer-box {
     padding: 20px 15px;
   }
@@ -6781,1209 +7141,1250 @@
   .styled-icons.icon-circled a i {
     line-height: 2.1 !important;
   }
-</style>
+  </style>
+ <!-- End: style-main.css -->
 
-<!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+<!-- Start: theme-skin-color-set-1.css -->
+ <style>
+  /* --------------------------------------
+  @Author: ThemeMascot
+  @URL: http://themeforest.net/user/ThemeMascot
+
+  Default COLOR :  Color Set 1
+  COLOR : Green 
+  COLOR CODE: #179647 
+  COLOR CODE2: #149948 
+  ----------------------------------------- */
+  /*Theme Colored Red Text-color*/
+  .text-theme-color-2,
+  .work-gallery .gallery-bottom-part .title {
+    color: #149948;
+  }
+  .text-theme-color-3,
+  .work-gallery .gallery-bottom-part .title {
+    color: #0E592F;
+  }
+  /*Theme Colored Red Bg-color*/
+  /* background-theme-color */
+  .bg-theme-colored {
+    background-color: #179647 !important;
+  }
+  .bg-theme-colored-lighter2 {
+    background-color: #179647 !important;
+  }
+  .bg-theme-colored-lighter3 {
+    background-color: #0C5933 !important;
+  }
+  .bg-theme-colored-lighter4 {
+    background-color: #347A41 !important;
+  }
+  .bg-theme-colored-darker2 {
+    background-color: #0B763E !important;
+  }
+  .bg-theme-colored-darker3 {
+    background-color: #4AAD45 !important;
+  }
+  .bg-theme-colored-darker4 {
+    background-color: #4AAD45 !important;
+  }
+  /* background-color-transparent */
+  .bg-theme-colored-transparent-9 {
+    background-color: #0C59339f;
+  }
+  .bg-theme-colored-transparent-8 {
+    background-color: #0C59339f;
+  }
+  .bg-theme-colored-transparent-7 {
+    background-color: #0C59338f;
+  }
+  .bg-theme-colored-transparent-6 {
+    background-color: #0C59337f;
+  }
+  .bg-theme-colored-transparent-5 {
+    background-color: #0C59336f;
+  }
+  .bg-theme-colored-transparent-4 {
+    background-color: #0C59335f;
+  }
+  .bg-theme-colored-transparent-3 {
+    background-color: #347A414f;
+  }
+  .bg-theme-colored-transparent-2 {
+    background-color: #347A413f;
+  }
+  .bg-theme-colored-transparent-1 {
+    background-color: #0b763f2f;
+  }
+  .bg-theme-colored-transparent {
+    background-color: #0b763f1f !important;
+  }
+  .bg-theme-color-2 {
+    background: #149948 !important;
+  }
+  .team-block .team-thumb .styled-icons a:hover,
+  .work-gallery .gallery-thumb .styled-icons a:hover,
+  .work-gallery:hover .gallery-bottom-part,
+  .line-bottom-theme-colored-2:after,
+  .panel-group .panel-title a.active::after {
+    background: #149948;
+  }
+  .panel-group .panel-title a.active::after {
+    background-color: #149948 !important;
+  }
+  .schedule-box:hover .schedule-details .title a {
+    color: #179647;
+  }
+  .btn-theme-color-2 {
+    background-color: #149948;
+  }
+  /*Theme Colored Red Bg-transparent-color*/
+  /*Theme Colored Red Border-top-color*/
+  .border-theme-color-2-1px {
+    border: 1px solid #149948 !important;
+  }
+  .border-top-theme-color-2-1px {
+    border-top: 1px solid #149948 !important;
+  }
+  .border-top-theme-color-2-2px {
+    border-top: 2px solid #149948 !important;
+  }
+  .border-top-theme-color-2-3px {
+    border-top: 3px solid #149948 !important;
+  }
+  .border-top-theme-color-2-4px {
+    border-top: 4px solid #149948 !important;
+  }
+  .border-top-theme-color-2-5px {
+    border-top: 5px solid #149948 !important;
+  }
+  .border-top-theme-color-2-6px {
+    border-top: 6px solid #149948 !important;
+  }
+  .border-top-theme-color-2-7px {
+    border-top: 7px solid #149948 !important;
+  }
+  .border-top-theme-color-2-8px {
+    border-top: 8px solid #149948 !important;
+  }
+  .border-top-theme-color-2-9px {
+    border-top: 9px solid #149948 !important;
+  }
+  .border-top-theme-color-2-10px {
+    border-top: 10px solid #149948 !important;
+  }
+  /*Theme Colored Red Border-bottom-color*/
+  .border-bottom-theme-color-2-1px {
+    border-bottom: 1px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-2px {
+    border-bottom: 2px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-3px {
+    border-bottom: 3px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-4px {
+    border-bottom: 4px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-5px {
+    border-bottom: 5px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-6px {
+    border-bottom: 6px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-7px {
+    border-bottom: 7px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-8px {
+    border-bottom: 8px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-9px {
+    border-bottom: 9px solid #149948 !important;
+  }
+  .border-bottom-theme-color-2-10px {
+    border-bottom: 10px solid #149948 !important;
+  }
+  /*Theme Colored Red Border-left-color*/
+  .border-left-theme-color-2-1px {
+    border-left: 1px solid #149948 !important;
+  }
+  .border-left-theme-color-2-2px {
+    border-left: 2px solid #149948 !important;
+  }
+  .border-left-theme-color-2-3px {
+    border-left: 3px solid #149948 !important;
+  }
+  .border-left-theme-color-2-4px {
+    border-left: 4px solid #149948 !important;
+  }
+  .border-left-theme-color-2-5px {
+    border-left: 5px solid #149948 !important;
+  }
+  .border-left-theme-color-2-6px {
+    border-left: 6px solid #149948 !important;
+  }
+  .border-left-theme-color-2-7px {
+    border-left: 7px solid #149948 !important;
+  }
+  .border-left-theme-color-2-8px {
+    border-left: 8px solid #149948 !important;
+  }
+  .border-left-theme-color-2-9px {
+    border-left: 9px solid #149948 !important;
+  }
+  .border-left-theme-color-2-10px {
+    border-left: 10px solid #149948 !important;
+  }
+  /*Theme Colored Red Border-right-color*/
+  .border-right-theme-color-2-1px {
+    border-right: 1px solid #149948 !important;
+  }
+  .border-right-theme-color-2-2px {
+    border-right: 2px solid #149948 !important;
+  }
+  .border-right-theme-color-2-3px {
+    border-right: 3px solid #149948 !important;
+  }
+  .border-right-theme-color-2-4px {
+    border-right: 4px solid #149948 !important;
+  }
+  .border-right-theme-color-2-5px {
+    border-right: 5px solid #149948 !important;
+  }
+  .border-right-theme-color-2-6px {
+    border-right: 6px solid #149948 !important;
+  }
+  .border-right-theme-color-2-7px {
+    border-right: 7px solid #149948 !important;
+  }
+  .border-right-theme-color-2-8px {
+    border-right: 8px solid #149948 !important;
+  }
+  .border-right-theme-color-2-9px {
+    border-right: 9px solid #149948 !important;
+  }
+  .border-right-theme-color-2-10px {
+    border-right: 10px solid #149948 !important;
+  }
+  .service-block .thumb .desc {
+    border-top: 4px solid #149948;
+  }
+  /*Theme Colored Red Border-right-color*/
+  .service-block .thumb .price {
+    border-right: 3px solid #149948;
+  }
+  /*Theme Colored Red Border-left-color*/
+  .portfolio-filter a.active,
+  .portfolio-filter a:hover {
+    border-left: 3px solid #149948;
+  }
+  .widget.dark .tags a:hover,
+  .title-dots span {
+    background-color: #149948;
+  }
+  .horizontal-contact-widget .widget::before,
+  .horizontal-contact-widget .each-widget::before {
+    color: #149948;
+  }
+  .hover-effect:hover .details {
+    background-color: #179647 !important;
+    border-bottom-color: #4AAD45 !important;
+  }
+  .hover-effect:hover .thumb::after {
+    border-color: #4AAD45 !important;
+  }
+  .hover-effect:hover a {
+    background: #4AAD45 !important;
+  }
+  /*
+  * background: theme-color
+  * -----------------------------------------------
+  */
+  .tab-slider .nav.nav-pills a:hover,
+  .tab-slider .nav.nav-pills a.active,
+  .custom-nav-tabs > li > a:hover,
+  .widget .tags a:hover,
+  .progress-item .progress-bar,
+  .small-title .title::after,
+  .testimonial .item::after,
+  .drop-caps.colored-square p:first-child:first-letter,
+  .drop-caps.colored-rounded p:first-child:first-letter,
+  .list-icon.theme-colored.square li i,
+  .list-icon.theme-colored.rounded li i,
+  .working-process.theme-colored a,
+  .blog-posts .post .entry-content .post-date.right,
+  .horizontal-tab-centered .nav-pills > li > a:hover,
+  .horizontal-tab-centered .nav-pills > li.active > a,
+  .horizontal-tab-centered .nav-pills > li.active > a:hover,
+  .horizontal-tab-centered .nav-pills > li.active > a:focus,
+  .owl-theme.dot-theme-colored .owl-controls .owl-dot span,
+  .pagination.theme-colored li.active a,
+  .section-title .both-side-line::after,
+  .section-title .both-side-line::before,
+  .section-title .top-side-line::after,
+  .section-title .left-side-line::before,
+  .section-title .right-side-line::before,
+  .product .tag-sale,
+  .owl-theme .owl-dots .owl-dot.active span,
+  .line-bottom:after,
+  .line-bottom-center:after,
+  .progress-item .progress-bar .percent,
+  .progress-item .progress-bar,
+  .pricing.table-horizontal:hover,
+  .pricing:hover,
+  .portfolio-filter a.active,
+  .portfolio-filter a:hover,
+  .project .hover-link i {
+    background: #4AAD45 !important;
+  }
+  .pricing.table-horizontal,
+  .pricing {
+    background: #0C5933 !important;
+  }
+  .panel-group .panel-title a.active {
+    background-color: #179647 !important;
+  }
+  /* Theme-color for dark */
+  .dark .service-icon-box:hover li.active a {
+    background: #179647 !important;
+  }
+  /*Footer Styles*/
+  .footer-box-one > div {
+    background: #179647;
+  }
+  .footer-box-two > div {
+    background: #4AAD45 !important;
+  }
+  .footer-box-three > div {
+    background: #4AAD45 !important;
+  }
+  .ui-state-highlight {
+    background: #179647 !important;
+    color: #fff !important;
+  }
+  .border-theme-colored,
+  .causes .progress-item .progress-bar .percent {
+    border-color: #179647 !important;
+  }
+  /*
+  * text: theme-color
+  * -----------------------------------------------
+  */
+  ul.list.theme-colored li:before,
+  ul.list.theme-colored.angle-double-right li:before,
+  ul.list.theme-colored.angle-right li:before,
+  ul.list.theme-colored.check-circle li:before,
+  ul.list.theme-colored.check li:before,
+  .list-icon.theme-colored li i,
+  .menuzord-menu > li > .megamenu .megamenu-row li:hover > a,
+  .menuzord-menu > li > .megamenu .megamenu-row .post a:hover,
+  .menuzord-menu > li > .megamenu .megamenu-row li:hover > a i,
+  .menuzord-menu > li > .megamenu .megamenu-row .post a:hover i,
+  .pricing-table .table-list li i,
+  .testimonial-carousel.boxed .content::after,
+  .blog-posts .post .entry-meta li i,
+  .widget .address li i,
+  .icon-box.box-style1.practice-style3 i,
+  .attorney-carousel .content .contact-area i,
+  .attorney-address li i,
+  .icon-box.services-style1:hover .heading,
+  .small-title i,
+  .drop-caps.text-colored p:first-child:first-letter,
+  .schedule-box:hover .schedule-details .title a,
+  .widget.dark .nav-tabs li.active a,
+  .pagination.theme-colored li a,
+  .pager.theme-colored a,
+  .widget .post-title a:hover,
+  .volunteer .info .name a,
+  .donation-form .form-group label,
+  .team-block .team-thumb .team-overlay .styled-icons a:hover i,
+  .section-title .title-icon i,
+  .panel-group .panel-title a {
+    color: #179647 !important;
+  }
+  .menuzord .menuzord-menu > li.active > a,
+  .menuzord .menuzord-menu > li:hover > a,
+  .menuzord .menuzord-menu ul.dropdown li:hover > a {
+    background: #179647 none repeat scroll 0 0;
+    color: #fff;
+  }
+  .menuzord .menuzord-menu > li.active > a i,
+  .menuzord .menuzord-menu > li:hover > a i,
+  .menuzord .menuzord-menu ul.dropdown li:hover > a i {
+    color: #fff;
+  }
+  /*Theme Colored Red Border-left-color*/
+  .portfolio-filter a.active,
+  .portfolio-filter a:hover {
+    border-left: 3px solid #149948;
+  }
+  /* text-theme-color */
+  .text-theme-colored {
+    color: #179647 !important;
+  }
+  /* text-hover-theme-color */
+  .text-hover-theme-colored:hover {
+    color: #179647 !important;
+  }
+  /* background-theme-color */
+  .bg-theme-colored {
+    background-color: #0C5933 !important;
+  }
+  /* bg-hover-theme-color */
+  .bg-hover-theme-colored:hover {
+    background: #179647 !important;
+    border-color: #179647 !important;
+    color: #fff !important;
+  }
+  .bg-hover-theme-colored:hover h1,
+  .bg-hover-theme-colored:hover h2,
+  .bg-hover-theme-colored:hover h3,
+  .bg-hover-theme-colored:hover h4,
+  .bg-hover-theme-colored:hover h5,
+  .bg-hover-theme-colored:hover h6,
+  .bg-hover-theme-colored:hover p,
+  .bg-hover-theme-colored:hover a,
+  .bg-hover-theme-colored:hover i {
+    color: #fff !important;
+  }
+  .hover-text-theme-color-2:hover {
+    color: #111e38;
+  }
+  /* border-theme-color */
+  .border-theme-colored {
+    border-color: #179647 !important;
+  }
+  .widget .services-list li.active::after {
+    border-color: transparent #179647 transparent transparent;
+  }
+  .widget .services-list li.active {
+    background-color: #179647 !important;
+    border-right: 6px solid #149948 !important;
+  }
+  /* background-color-transparent */
+  .bg-theme-colored-transparent,
+  .piechart-block {
+    background-color: #0B763E !important;
+  }
+  .service-block .thumb .price,
+  .service-block .thumb .desc,
+  .team-block .team-thumb .team-overlay,
+  .team-block .team-thumb .styled-icons,
+  .work-gallery .gallery-thumb .gallery-overlay {
+    background: 0C5933;
+  }
+  .team-block .team-thumb .team-overlay::after {
+    border-color: #0B763E transparent transparent rgba(13, 39, 86, 0.75);
+  }
+  .team-block .team-thumb .styled-icons::after {
+    border-color: transparent #0B763E rgba(13, 39, 86, 0.75) transparent;
+  }
+  /* Layer-overlay */
+  .overlay-theme-colored-1:before {
+    background-color: #0B763E !important;
+  }
+  .overlay-theme-colored-2:before {
+    background-color: #347A41 !important;
+  }
+  .overlay-theme-colored-3:before {
+    background-color: #1f68391e !important;
+  }
+  .overlay-theme-colored-4:before {
+    background-color: #0C5933 !important;
+  }
+  .overlay-theme-colored-5:before {
+    background-color: #0C5933 !important;
+  }
+  .overlay-theme-colored-6:before {
+    background-color: #0C5933 !important;
+  }
+  .overlay-theme-colored-7:before {
+    background-color: #0C5933 !important;
+  }
+  .overlay-theme-colored-8:before {
+    background-color: #0C5933 !important;
+  }
+  .overlay-theme-colored-9:before {
+    background-color: #0C5933 !important;
+  }
+  /* border-theme-color */
+  .border-theme-colored {
+    border-color: #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 1px solid #179647 !important;
+  }
+  .border-theme-color-2px {
+    border: 2px solid #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 3px solid #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 4px solid #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 1px solid #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 1px solid #179647 !important;
+  }
+  .border-theme-color-1px {
+    border: 1px solid #179647 !important;
+  }
+  .border-top-theme-color-1px {
+    border-top: 1px solid #179647 !important;
+  }
+  .border-top-theme-color-2px {
+    border-top: 2px solid #179647 !important;
+  }
+  .border-top-theme-color-3px {
+    border-top: 3px solid #179647 !important;
+  }
+  .border-top-theme-color-4px {
+    border-top: 4px solid #179647 !important;
+  }
+  .border-top-theme-color-5px {
+    border-top: 5px solid #179647 !important;
+  }
+  .border-top-theme-color-6px {
+    border-top: 6px solid #179647 !important;
+  }
+  .border-top-theme-color-7px {
+    border-top: 7px solid #179647 !important;
+  }
+  .border-top-theme-color-8px {
+    border-top: 8px solid #179647 !important;
+  }
+  .border-top-theme-color-9px {
+    border-top: 9px solid #179647 !important;
+  }
+  .border-top-theme-color-10px {
+    border-top: 10px solid #179647 !important;
+  }
+  /*Theme Colored Red Border-bottom-color*/
+  .border-bottom-theme-color-1px {
+    border-bottom: 1px solid #179647 !important;
+  }
+  .border-bottom-theme-color-2px {
+    border-bottom: 2px solid #179647 !important;
+  }
+  .border-bottom-theme-color-3px {
+    border-bottom: 3px solid #179647 !important;
+  }
+  .border-bottom-theme-color-4px {
+    border-bottom: 4px solid #179647 !important;
+  }
+  .border-bottom-theme-color-5px {
+    border-bottom: 5px solid #179647 !important;
+  }
+  .border-bottom-theme-color-6px {
+    border-bottom: 6px solid #179647 !important;
+  }
+  .border-bottom-theme-color-7px {
+    border-bottom: 7px solid #179647 !important;
+  }
+  .border-bottom-theme-color-8px {
+    border-bottom: 8px solid #179647 !important;
+  }
+  .border-bottom-theme-color-9px {
+    border-bottom: 9px solid #179647 !important;
+  }
+  .border-bottom-theme-color-10px {
+    border-bottom: 10px solid #179647 !important;
+  }
+  .project .project-details {
+    border-bottom: 3px solid #179647 !important;
+  }
+  /*Theme Colored Red Border-left-color*/
+  .border-left-theme-color-1px {
+    border-left: 1px solid #179647 !important;
+  }
+  .border-left-theme-color-2px {
+    border-left: 2px solid #179647 !important;
+  }
+  .border-left-theme-color-3px {
+    border-left: 3px solid #179647 !important;
+  }
+  .border-left-theme-color-4px {
+    border-left: 4px solid #179647 !important;
+  }
+  .border-left-theme-color-5px {
+    border-left: 5px solid #179647 !important;
+  }
+  .border-left-theme-color-6px {
+    border-left: 6px solid #179647 !important;
+  }
+  .border-left-theme-color-7px {
+    border-left: 7px solid #179647 !important;
+  }
+  .border-left-theme-color-8px {
+    border-left: 8px solid #179647 !important;
+  }
+  .border-left-theme-color-9px {
+    border-left: 9px solid #179647 !important;
+  }
+  .border-left-theme-color-10px {
+    border-left: 10px solid #179647 !important;
+  }
+  /*Theme Colored Red Border-right-color*/
+  .border-right-theme-color-1px {
+    border-right: 1px solid #179647 !important;
+  }
+  .border-right-theme-color-2px {
+    border-right: 2px solid #179647 !important;
+  }
+  .border-right-theme-color-3px {
+    border-right: 3px solid #179647 !important;
+  }
+  .border-right-theme-color-4px {
+    border-right: 4px solid #179647 !important;
+  }
+  .border-right-theme-color-5px {
+    border-right: 5px solid #179647 !important;
+  }
+  .border-right-theme-color-6px {
+    border-right: 6px solid #179647 !important;
+  }
+  .border-right-theme-color-7px {
+    border-right: 7px solid #179647 !important;
+  }
+  .border-right-theme-color-8px {
+    border-right: 8px solid #179647 !important;
+  }
+  .border-right-theme-color-9px {
+    border-right: 9px solid #179647 !important;
+  }
+  .border-right-theme-color-10px {
+    border-right: 10px solid #179647 !important;
+  }
+  /* Layeroverlay */
+  .post .entry-meta.meta-absolute,
+  .volunteer .overlay,
+  .bg-theme-colored-transparent-deep {
+    background-color: 0C5933 !important;
+  }
+  .icon-box.box-style1.practice-style3:hover .icon-wrapper,
+  .zeus .tp-bullet::after {
+    background-color: #179647;
+  }
+  .preloader-dot-loading .cssload-loading i {
+    background: #179647 !important;
+  }
+  /*
+  * border: theme-color
+  * -----------------------------------------------
+  */
+  .icon-box.icon-rounded-bordered i,
+  .widget .line-bottom:after,
+  .widget .line-bottom:after,
+  .pager.theme-colored a {
+    border: 1px solid #179647;
+  }
+  .border-theme-colored,
+  .owl-theme .owl-dots .owl-dot span {
+    border-color: #179647;
+  }
+  .icon-box.box-style1.practice-style3:hover .icon-wrapper::after {
+    border-color: #179647 transparent transparent;
+  }
+  .opening-hours ul li {
+    border-bottom: 1px dashed #179647;
+  }
+  /* border-left-color */
+  blockquote.theme-colored {
+    border-left: 3px solid #179647;
+  }
+  blockquote.bg-theme-colored {
+    border-left: 3px solid #4AAD45;
+    color: #fff;
+  }
+  blockquote.bg-theme-colored footer {
+    color: #eeeeee;
+  }
+  blockquote.gray.bg-theme-colored {
+    background-color: #eeeeee !important;
+    border-left: 3px solid #179647;
+    color: #179647;
+  }
+  blockquote.gray.bg-theme-colored footer {
+    color: #777777;
+  }
+  .attorney-address li {
+    border-left: 1px solid #179647;
+  }
+  .section-title.title-border {
+    border-left: 4px solid #179647;
+  }
+  /* border-top-color */
+  .member-info {
+    border-top: 3px outset #179647;
+  }
+  .cssload-tri {
+    border-top: 27px solid #179647;
+  }
+  /* border-right-color */
+  .border-right-theme-color-2 {
+    border-right: 1px solid #179647;
+  }
+  .section-title.title-border.title-right {
+    border-right: 4px solid #179647;
+  }
+  /* border-bottom-color */
+  .event {
+    border-bottom-color: #179647;
+  }
+  .cssload-tri.cssload-invert {
+    border-bottom: 27px solid #179647;
+  }
+  /* box-shadow */
+  /*
+  * btn-default: theme-color
+  * -----------------------------------------------
+  */
+  .btn-default.btn-theme-colored {
+    color: #149948;
+    background-color: #fff;
+    border-color: #0C5933;
+  }
+  .btn-default.btn-theme-colored:focus,
+  .btn-default.btn-theme-colored.focus {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #0C5933;
+  }
+  .btn-default.btn-theme-colored:hover {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #4AAD45;
+  }
+  .btn-default.btn-theme-colored:active,
+  .btn-default.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-default.btn-theme-colored {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #4AAD45;
+  }
+  .btn-default.btn-theme-colored:active:hover,
+  .btn-default.btn-theme-colored.active:hover,
+  .open > .dropdown-toggle.btn-default.btn-theme-colored:hover,
+  .btn-default.btn-theme-colored:active:focus,
+  .btn-default.btn-theme-colored.active:focus,
+  .open > .dropdown-toggle.btn-default.btn-theme-colored:focus,
+  .btn-default.btn-theme-colored:active.focus,
+  .btn-default.btn-theme-colored.active.focus,
+  .open > .dropdown-toggle.btn-default.btn-theme-colored.focus {
+    color: #149948;
+    background-color: #d4d4d4;
+    border-color: #0C5933;
+  }
+  .btn-default.btn-theme-colored:active,
+  .btn-default.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-default.btn-theme-colored {
+    background-image: none;
+  }
+  .btn-default.btn-theme-colored.disabled:hover,
+  .btn-default.btn-theme-colored[disabled]:hover,
+  fieldset[disabled] .btn-default.btn-theme-colored:hover,
+  .btn-default.btn-theme-colored.disabled:focus,
+  .btn-default.btn-theme-colored[disabled]:focus,
+  fieldset[disabled] .btn-default.btn-theme-colored:focus,
+  .btn-default.btn-theme-colored.disabled.focus,
+  .btn-default.btn-theme-colored[disabled].focus,
+  fieldset[disabled] .btn-default.btn-theme-colored.focus {
+    background-color: #fff;
+    border-color: #179647;
+  }
+  .btn-default.btn-theme-colored .badge {
+    color: #fff;
+    background-color: #179647;
+  }
+  .btn-default.btn-theme-colored:hover,
+  .btn-default.btn-theme-colored:active,
+  .btn-default.btn-theme-colored:focus {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  /*
+  * btn-border
+  * -----------------------------------------------
+  */
+  .btn-border.btn-theme-colored {
+    color: #149948;
+    background-color: #fff;
+    border-color: #179647;
+  }
+  .btn-border.btn-theme-colored:focus,
+  .btn-border.btn-theme-colored.focus {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #0C5933;
+  }
+  .btn-border.btn-theme-colored:hover {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #4AAD45;
+  }
+  .btn-border.btn-theme-colored:active,
+  .btn-border.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-border.btn-theme-colored {
+    color: #149948;
+    background-color: #e6e6e6;
+    border-color: #4AAD45;
+  }
+  .btn-border.btn-theme-colored:active:hover,
+  .btn-border.btn-theme-colored.active:hover,
+  .open > .dropdown-toggle.btn-border.btn-theme-colored:hover,
+  .btn-border.btn-theme-colored:active:focus,
+  .btn-border.btn-theme-colored.active:focus,
+  .open > .dropdown-toggle.btn-border.btn-theme-colored:focus,
+  .btn-border.btn-theme-colored:active.focus,
+  .btn-border.btn-theme-colored.active.focus,
+  .open > .dropdown-toggle.btn-border.btn-theme-colored.focus {
+    color: #149948;
+    background-color: #d4d4d4;
+    border-color: #0C5933;
+  }
+  .btn-border.btn-theme-colored:active,
+  .btn-border.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-border.btn-theme-colored {
+    background-image: none;
+  }
+  .btn-border.btn-theme-colored.disabled:hover,
+  .btn-border.btn-theme-colored[disabled]:hover,
+  fieldset[disabled] .btn-border.btn-theme-colored:hover,
+  .btn-border.btn-theme-colored.disabled:focus,
+  .btn-border.btn-theme-colored[disabled]:focus,
+  fieldset[disabled] .btn-border.btn-theme-colored:focus,
+  .btn-border.btn-theme-colored.disabled.focus,
+  .btn-border.btn-theme-colored[disabled].focus,
+  fieldset[disabled] .btn-border.btn-theme-colored.focus {
+    background-color: #fff;
+    border-color: #179647;
+  }
+  .btn-border.btn-theme-colored .badge {
+    color: #fff;
+    background-color: #179647;
+  }
+  .btn-border.btn-theme-colored:hover,
+  .btn-border.btn-theme-colored:active,
+  .btn-border.btn-theme-colored:focus {
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+    color: #fff;
+  }
+  /*
+  * btn-dark
+  * -----------------------------------------------
+  */
+  .btn-dark.btn-theme-colored {
+    color: #fff;
+    background-color: #179647;
+    border-color: #179647;
+  }
+  .btn-dark.btn-theme-colored:focus,
+  .btn-dark.btn-theme-colored.focus {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #0C5933;
+  }
+  .btn-dark.btn-theme-colored:hover {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-dark.btn-theme-colored:active,
+  .btn-dark.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-dark.btn-theme-colored {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-dark.btn-theme-colored:active:hover,
+  .btn-dark.btn-theme-colored.active:hover,
+  .open > .dropdown-toggle.btn-dark.btn-theme-colored:hover,
+  .btn-dark.btn-theme-colored:active:focus,
+  .btn-dark.btn-theme-colored.active:focus,
+  .open > .dropdown-toggle.btn-dark.btn-theme-colored:focus,
+  .btn-dark.btn-theme-colored:active.focus,
+  .btn-dark.btn-theme-colored.active.focus,
+  .open > .dropdown-toggle.btn-dark.btn-theme-colored.focus {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #0C5933;
+  }
+  .btn-dark.btn-theme-colored:active,
+  .btn-dark.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-dark.btn-theme-colored {
+    background-image: none;
+  }
+  .btn-dark.btn-theme-colored.disabled:hover,
+  .btn-dark.btn-theme-colored[disabled]:hover,
+  fieldset[disabled] .btn-dark.btn-theme-colored:hover,
+  .btn-dark.btn-theme-colored.disabled:focus,
+  .btn-dark.btn-theme-colored[disabled]:focus,
+  fieldset[disabled] .btn-dark.btn-theme-colored:focus,
+  .btn-dark.btn-theme-colored.disabled.focus,
+  .btn-dark.btn-theme-colored[disabled].focus,
+  fieldset[disabled] .btn-dark.btn-theme-colored.focus {
+    background-color: #179647;
+    border-color: #179647;
+  }
+  .btn-dark.btn-theme-colored .badge {
+    color: #149948;
+    background-color: #fff;
+  }
+  /*
+  * btn-gray
+  * -----------------------------------------------
+  */
+  .btn-gray.btn-theme-colored {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-gray.btn-theme-colored:focus,
+  .btn-gray.btn-theme-colored.focus {
+    color: #fff;
+    background-color: #179647;
+    border-color: #0c59331e;
+  }
+  .btn-gray.btn-theme-colored:hover {
+    color: #fff;
+    background-color: #179647;
+    border-color: #0c59331e;
+  }
+  .btn-gray.btn-theme-colored:active,
+  .btn-gray.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-gray.btn-theme-colored {
+    color: #fff;
+    background-color: #179647;
+    border-color: #0c59331e;
+  }
+  .btn-gray.btn-theme-colored:active:hover,
+  .btn-gray.btn-theme-colored.active:hover,
+  .open > .dropdown-toggle.btn-gray.btn-theme-colored:hover,
+  .btn-gray.btn-theme-colored:active:focus,
+  .btn-gray.btn-theme-colored.active:focus,
+  .open > .dropdown-toggle.btn-gray.btn-theme-colored:focus,
+  .btn-gray.btn-theme-colored:active.focus,
+  .btn-gray.btn-theme-colored.active.focus,
+  .open > .dropdown-toggle.btn-gray.btn-theme-colored.focus {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #0C5933;
+  }
+  .btn-gray.btn-theme-colored:active,
+  .btn-gray.btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-gray.btn-theme-colored {
+    background-image: none;
+  }
+  .btn-gray.btn-theme-colored.disabled:hover,
+  .btn-gray.btn-theme-colored[disabled]:hover,
+  fieldset[disabled] .btn-gray.btn-theme-colored:hover,
+  .btn-gray.btn-theme-colored.disabled:focus,
+  .btn-gray.btn-theme-colored[disabled]:focus,
+  fieldset[disabled] .btn-gray.btn-theme-colored:focus,
+  .btn-gray.btn-theme-colored.disabled.focus,
+  .btn-gray.btn-theme-colored[disabled].focus,
+  fieldset[disabled] .btn-gray.btn-theme-colored.focus {
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-gray.btn-theme-colored .badge {
+    color: #4AAD45;
+    background-color: #fff;
+  }
+  /*
+  * btn-primary: theme-color
+  * -----------------------------------------------
+  */
+  .btn-theme-colored {
+    color: #fff;
+    background-color: #179647;
+    border-color: #179647;
+  }
+  .btn-theme-colored:focus,
+  .btn-theme-colored.focus {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #0C5933;
+  }
+  .btn-theme-colored:hover {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-theme-colored:active,
+  .btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-theme-colored {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-theme-colored:active:hover,
+  .btn-theme-colored.active:hover,
+  .open > .dropdown-toggle.btn-theme-colored:hover,
+  .btn-theme-colored:active:focus,
+  .btn-theme-colored.active:focus,
+  .open > .dropdown-toggle.btn-theme-colored:focus,
+  .btn-theme-colored:active.focus,
+  .btn-theme-colored.active.focus,
+  .open > .dropdown-toggle.btn-theme-colored.focus {
+    color: #fff;
+    background-color: #4AAD45;
+    border-color: #0C5933;
+  }
+  .btn-theme-colored:active,
+  .btn-theme-colored.active,
+  .open > .dropdown-toggle.btn-theme-colored {
+    background-image: none;
+  }
+  .btn-theme-colored.disabled:hover,
+  .btn-theme-colored[disabled]:hover,
+  fieldset[disabled] .btn-theme-colored:hover,
+  .btn-theme-colored.disabled:focus,
+  .btn-theme-colored[disabled]:focus,
+  fieldset[disabled] .btn-theme-colored:focus,
+  .btn-theme-colored.disabled.focus,
+  .btn-theme-colored[disabled].focus,
+  fieldset[disabled] .btn-theme-colored.focus {
+    background-color: #179647;
+    border-color: #179647;
+  }
+  .btn-theme-colored .badge {
+    color: #149948;
+    background-color: #fff;
+  }
+  /*
+  * btn-transparent
+  * -----------------------------------------------
+  */
+  .btn-transparent {
+    background-color: transparent;
+    color: #fff;
+  }
+  .btn-transparent.btn-theme-colored {
+    background-color: transparent;
+  }
+  .btn-transparent.btn-dark {
+    background-color: #111111;
+    border-color: #111111;
+  }
+  .btn-transparent.btn-dark:hover {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .btn-transparent.btn-dark.btn-theme-colored {
+    background-color: #179647;
+    border-color: #179647;
+  }
+  .btn-transparent.btn-dark.btn-theme-colored:hover {
+    background-color: #4AAD45;
+    border-color: #4AAD45;
+  }
+  .btn-transparent.btn-border {
+    background-color: transparent;
+    border-color: #eeeeee;
+  }
+  .btn-transparent.btn-border:hover {
+    background-color: #eeeeee;
+    color: #000;
+  }
+  .btn-transparent.btn-border.btn-theme-colored {
+    background-color: transparent;
+    border-color: #179647;
+  }
+  .btn-transparent.btn-border.btn-theme-colored:hover {
+    background-color: #179647;
+    color: #fff;
+  }
+  .btn-gray.btn-transparent {
+    background-color: #d3d3d3;
+    color: #333333;
+  }
+  .btn-gray.btn-transparent:hover {
+    background-color: #ececec;
+    color: #1a1a1a;
+  }
+  .btn-gray.btn-transparent.btn-theme-colored {
+    background-color: #4AAD45;
+    color: #fff;
+  }
+  .btn-gray.btn-transparent.btn-theme-colored:hover {
+    background-color: #4AAD45;
+    color: #e6e6e6;
+  }
+  .btn-hover-theme-colored:hover {
+    background-color: #149948;
+    border-color: #7198e2;
+    color: #fff;
+  }
+  /*
+  * Shortcode: styled-icons Theme Colored
+  * -----------------------------------------------
+  */
+  .icon-theme-colored a {
+    color: #149948; 
+  }
+  .icon-theme-colored.icon-bordered a {
+    border-color: #179647;
+  }
+  .icon-theme-colored.icon-bordered a:hover {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-theme-colored.icon-dark a {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-theme-colored.icon-dark a:hover {
+    background-color: #4AAD45;
+    color: #e6e6e6;
+  }
+  .icon-theme-colored.icon-dark.icon-bordered a {
+    border-color: #179647;
+    color: #179647;
+  }
+  .icon-theme-colored.icon-dark.icon-bordered a:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  .icon-theme-colored.icon-gray a {
+    color: #179647;
+  }
+  .icon-theme-colored.icon-gray a:hover {
+    color: #4AAD45;
+  }
+  .icon-theme-colored.icon-gray.icon-bordered a {
+    color: #179647;
+  }
+  .icon-theme-colored.icon-gray.icon-bordered a:hover {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    color: #179647;
+  }
+  .icon-theme-colored a:hover {
+    color: #4AAD45;
+  }
+  .icon-hover-theme-colored a:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  .styled-icons.icon-hover-theme-colored a:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  /* box-shadow */
+  .box-shadow,
+  .icon-box .icon.icon-border-effect::after {
+    -webkit-box-shadow: #179647;
+    -moz-box-shadow: #179647;
+    box-shadow: 0 0 0 3px #179647;
+  }
+  /*
+  * Shortcode: Icon Boxes Theme Colored
+  * -----------------------------------------------
+  */
+  .icon-box.iconbox-theme-colored .icon {
+    color: #179647;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-border-effect::after {
+    box-shadow: 0 0 0 3px #179647;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-bordered {
+    border-color: #179647;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-bordered:hover {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-gray:hover {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-gray.icon-bordered {
+    border-color: #eeeeee;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-gray.icon-bordered:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-dark {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-dark:hover {
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-dark.icon-bordered {
+    background-color: transparent;
+    border-color: #179647;
+    color: #179647;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-dark.icon-bordered:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-white {
+    background-color: #fff;
+    color: #179647;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-white:hover {
+    background-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-white.icon-bordered {
+    background-color: transparent;
+    border-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored .icon.icon-white.icon-bordered:hover {
+    background-color: #179647;
+    border-color: #179647;
+    color: #fff;
+  }
+  .icon-box.iconbox-theme-colored.iconbox-border {
+    border-color: #179647;
+  }
+
+ </style>
+<!-- End: theme-skin-color-set-1.css -->
+
 <style>
-.text-theme-color-2,
-.work-gallery .gallery-bottom-part .title {
-  color: #149948;
-}
-.text-theme-color-3,
-.work-gallery .gallery-bottom-part .title {
-  color: #0E592F;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.bg-theme-colored {
-  background-color: #179647 !important;
-}
-.bg-theme-colored-lighter2 {
-  background-color: #179647 !important;
-}
-.bg-theme-colored-lighter3 {
-  background-color: #0C5933 !important;
-}
-.bg-theme-colored-lighter4 {
-  background-color: #347A41 !important;
-}
-.bg-theme-colored-darker2 {
-  background-color: #0B763E !important;
-}
-.bg-theme-colored-darker3 {
-  background-color: #4AAD45 !important;
-}
-.bg-theme-colored-darker4 {
-  background-color: #4AAD45 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.bg-theme-colored-transparent-9 {
-  background-color: #0C59339f;
-}
-.bg-theme-colored-transparent-8 {
-  background-color: #0C59339f;
-}
-.bg-theme-colored-transparent-7 {
-  background-color: #0C59338f;
-}
-.bg-theme-colored-transparent-6 {
-  background-color: #0C59337f;
-}
-.bg-theme-colored-transparent-5 {
-  background-color: #0C59336f;
-}
-.bg-theme-colored-transparent-4 {
-  background-color: #0C59335f;
-}
-.bg-theme-colored-transparent-3 {
-  background-color: #347A414f;
-}
-.bg-theme-colored-transparent-2 {
-  background-color: #347A413f;
-}
-.bg-theme-colored-transparent-1 {
-  background-color: #0b763f2f;
-}
-.bg-theme-colored-transparent {
-  background-color: #0b763f1f !important;
-}
-.bg-theme-color-2 {
-  background: #149948 !important;
-}
-.team-block .team-thumb .styled-icons a:hover,
-.work-gallery .gallery-thumb .styled-icons a:hover,
-.work-gallery:hover .gallery-bottom-part,
-.line-bottom-theme-colored-2:after,
-.panel-group .panel-title a.active::after {
-  background: #149948;
-}
-.panel-group .panel-title a.active::after {
-  background-color: #149948 !important;
-}
-.schedule-box:hover .schedule-details .title a {
-  color: #179647;
-}
-.btn-theme-color-2 {
-  background-color: #149948;
-}
-.border-theme-color-2-1px {
-  border: 1px solid #149948 !important;
-}
-.border-top-theme-color-2-1px {
-  border-top: 1px solid #149948 !important;
-}
-.border-top-theme-color-2-2px {
-  border-top: 2px solid #149948 !important;
-}
-.border-top-theme-color-2-3px {
-  border-top: 3px solid #149948 !important;
-}
-.border-top-theme-color-2-4px {
-  border-top: 4px solid #149948 !important;
-}
-.border-top-theme-color-2-5px {
-  border-top: 5px solid #149948 !important;
-}
-.border-top-theme-color-2-6px {
-  border-top: 6px solid #149948 !important;
-}
-.border-top-theme-color-2-7px {
-  border-top: 7px solid #149948 !important;
-}
-.border-top-theme-color-2-8px {
-  border-top: 8px solid #149948 !important;
-}
-.border-top-theme-color-2-9px {
-  border-top: 9px solid #149948 !important;
-}
-.border-top-theme-color-2-10px {
-  border-top: 10px solid #149948 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-bottom-theme-color-2-1px {
-  border-bottom: 1px solid #149948 !important;
-}
-.border-bottom-theme-color-2-2px {
-  border-bottom: 2px solid #149948 !important;
-}
-.border-bottom-theme-color-2-3px {
-  border-bottom: 3px solid #149948 !important;
-}
-.border-bottom-theme-color-2-4px {
-  border-bottom: 4px solid #149948 !important;
-}
-.border-bottom-theme-color-2-5px {
-  border-bottom: 5px solid #149948 !important;
-}
-.border-bottom-theme-color-2-6px {
-  border-bottom: 6px solid #149948 !important;
-}
-.border-bottom-theme-color-2-7px {
-  border-bottom: 7px solid #149948 !important;
-}
-.border-bottom-theme-color-2-8px {
-  border-bottom: 8px solid #149948 !important;
-}
-.border-bottom-theme-color-2-9px {
-  border-bottom: 9px solid #149948 !important;
-}
-.border-bottom-theme-color-2-10px {
-  border-bottom: 10px solid #149948 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-left-theme-color-2-1px {
-  border-left: 1px solid #149948 !important;
-}
-.border-left-theme-color-2-2px {
-  border-left: 2px solid #149948 !important;
-}
-.border-left-theme-color-2-3px {
-  border-left: 3px solid #149948 !important;
-}
-.border-left-theme-color-2-4px {
-  border-left: 4px solid #149948 !important;
-}
-.border-left-theme-color-2-5px {
-  border-left: 5px solid #149948 !important;
-}
-.border-left-theme-color-2-6px {
-  border-left: 6px solid #149948 !important;
-}
-.border-left-theme-color-2-7px {
-  border-left: 7px solid #149948 !important;
-}
-.border-left-theme-color-2-8px {
-  border-left: 8px solid #149948 !important;
-}
-.border-left-theme-color-2-9px {
-  border-left: 9px solid #149948 !important;
-}
-.border-left-theme-color-2-10px {
-  border-left: 10px solid #149948 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-right-theme-color-2-1px {
-  border-right: 1px solid #149948 !important;
-}
-.border-right-theme-color-2-2px {
-  border-right: 2px solid #149948 !important;
-}
-.border-right-theme-color-2-3px {
-  border-right: 3px solid #149948 !important;
-}
-.border-right-theme-color-2-4px {
-  border-right: 4px solid #149948 !important;
-}
-.border-right-theme-color-2-5px {
-  border-right: 5px solid #149948 !important;
-}
-.border-right-theme-color-2-6px {
-  border-right: 6px solid #149948 !important;
-}
-.border-right-theme-color-2-7px {
-  border-right: 7px solid #149948 !important;
-}
-.border-right-theme-color-2-8px {
-  border-right: 8px solid #149948 !important;
-}
-.border-right-theme-color-2-9px {
-  border-right: 9px solid #149948 !important;
-}
-.border-right-theme-color-2-10px {
-  border-right: 10px solid #149948 !important;
-}
-.service-block .thumb .desc {
-  border-top: 4px solid #149948;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.service-block .thumb .price {
-  border-right: 3px solid #149948;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.portfolio-filter a.active,
-.portfolio-filter a:hover {
-  border-left: 3px solid #149948;
-}
-.widget.dark .tags a:hover,
-.title-dots span {
-  background-color: #149948;
-}
-.horizontal-contact-widget .widget::before,
-.horizontal-contact-widget .each-widget::before {
-  color: #149948;
-}
-.hover-effect:hover .details {
-  background-color: #179647 !important;
-  border-bottom-color: #4AAD45 !important;
-}
-.hover-effect:hover .thumb::after {
-  border-color: #4AAD45 !important;
-}
-.hover-effect:hover a {
-  background: #4AAD45 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.tab-slider .nav.nav-pills a:hover,
-.tab-slider .nav.nav-pills a.active,
-.custom-nav-tabs > li > a:hover,
-.widget .tags a:hover,
-.progress-item .progress-bar,
-.small-title .title::after,
-.testimonial .item::after,
-.drop-caps.colored-square p:first-child:first-letter,
-.drop-caps.colored-rounded p:first-child:first-letter,
-.list-icon.theme-colored.square li i,
-.list-icon.theme-colored.rounded li i,
-.working-process.theme-colored a,
-.blog-posts .post .entry-content .post-date.right,
-.horizontal-tab-centered .nav-pills > li > a:hover,
-.horizontal-tab-centered .nav-pills > li.active > a,
-.horizontal-tab-centered .nav-pills > li.active > a:hover,
-.horizontal-tab-centered .nav-pills > li.active > a:focus,
-.owl-theme.dot-theme-colored .owl-controls .owl-dot span,
-.pagination.theme-colored li.active a,
-.section-title .both-side-line::after,
-.section-title .both-side-line::before,
-.section-title .top-side-line::after,
-.section-title .left-side-line::before,
-.section-title .right-side-line::before,
-.product .tag-sale,
-.owl-theme .owl-dots .owl-dot.active span,
-.line-bottom:after,
-.line-bottom-center:after,
-.progress-item .progress-bar .percent,
-.progress-item .progress-bar,
-.pricing.table-horizontal:hover,
-.pricing:hover,
-.portfolio-filter a.active,
-.portfolio-filter a:hover,
-.project .hover-link i {
-  background: #4AAD45 !important;
-}
-.pricing.table-horizontal,
-.pricing {
-  background: #0C5933 !important;
-}
-.panel-group .panel-title a.active {
-  background-color: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.dark .service-icon-box:hover li.active a {
-  background: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.footer-box-one > div {
-  background: #179647;
-}
-.footer-box-two > div {
-  background: #4AAD45 !important;
-}
-.footer-box-three > div {
-  background: #4AAD45 !important;
-}
-.ui-state-highlight {
-  background: #179647 !important;
-  color: #fff !important;
-}
-.border-theme-colored,
-.causes .progress-item .progress-bar .percent {
-  border-color: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-ul.list.theme-colored li:before,
-ul.list.theme-colored.angle-double-right li:before,
-ul.list.theme-colored.angle-right li:before,
-ul.list.theme-colored.check-circle li:before,
-ul.list.theme-colored.check li:before,
-.list-icon.theme-colored li i,
-.menuzord-menu > li > .megamenu .megamenu-row li:hover > a,
-.menuzord-menu > li > .megamenu .megamenu-row .post a:hover,
-.menuzord-menu > li > .megamenu .megamenu-row li:hover > a i,
-.menuzord-menu > li > .megamenu .megamenu-row .post a:hover i,
-.pricing-table .table-list li i,
-.testimonial-carousel.boxed .content::after,
-.blog-posts .post .entry-meta li i,
-.widget .address li i,
-.icon-box.box-style1.practice-style3 i,
-.attorney-carousel .content .contact-area i,
-.attorney-address li i,
-.icon-box.services-style1:hover .heading,
-.small-title i,
-.drop-caps.text-colored p:first-child:first-letter,
-.schedule-box:hover .schedule-details .title a,
-.widget.dark .nav-tabs li.active a,
-.pagination.theme-colored li a,
-.pager.theme-colored a,
-.widget .post-title a:hover,
-.volunteer .info .name a,
-.donation-form .form-group label,
-.team-block .team-thumb .team-overlay .styled-icons a:hover i,
-.section-title .title-icon i,
-.panel-group .panel-title a {
-  color: #179647 !important;
-}
-.menuzord .menuzord-menu > li.active > a,
-.menuzord .menuzord-menu > li:hover > a,
-.menuzord .menuzord-menu ul.dropdown li:hover > a {
-  background: #179647 none repeat scroll 0 0;
-  color: #fff;
-}
-.menuzord .menuzord-menu > li.active > a i,
-.menuzord .menuzord-menu > li:hover > a i,
-.menuzord .menuzord-menu ul.dropdown li:hover > a i {
-  color: #fff;
-}
-.portfolio-filter a.active,
-.portfolio-filter a:hover {
-  border-left: 3px solid #149948;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.text-theme-colored {
-  color: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.text-hover-theme-colored:hover {
-  color: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.bg-theme-colored {
-  background-color: #0C5933 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.bg-hover-theme-colored:hover {
-  background: #179647 !important;
-  border-color: #179647 !important;
-  color: #fff !important;
-}
-.bg-hover-theme-colored:hover h1,
-.bg-hover-theme-colored:hover h2,
-.bg-hover-theme-colored:hover h3,
-.bg-hover-theme-colored:hover h4,
-.bg-hover-theme-colored:hover h5,
-.bg-hover-theme-colored:hover h6,
-.bg-hover-theme-colored:hover p,
-.bg-hover-theme-colored:hover a,
-.bg-hover-theme-colored:hover i {
-  color: #fff !important;
-}
-.hover-text-theme-color-2:hover {
-  color: #111e38;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-theme-colored {
-  border-color: #179647 !important;
-}
-.widget .services-list li.active::after {
-  border-color: transparent #179647 transparent transparent;
-}
-.widget .services-list li.active {
-  background-color: #179647 !important;
-  border-right: 6px solid #149948 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.bg-theme-colored-transparent,
-.piechart-block {
-  background-color: #0B763E !important;
-}
-.service-block .thumb .price,
-.service-block .thumb .desc,
-.team-block .team-thumb .team-overlay,
-.team-block .team-thumb .styled-icons,
-.work-gallery .gallery-thumb .gallery-overlay {
-  background: 0C5933;
-}
-.team-block .team-thumb .team-overlay::after {
-  border-color: #0B763E transparent transparent rgba(13, 39, 86, 0.75);
-}
-.team-block .team-thumb .styled-icons::after {
-  border-color: transparent #0B763E rgba(13, 39, 86, 0.75) transparent;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.overlay-theme-colored-1:before {
-  background-color: #0B763E !important;
-}
-.overlay-theme-colored-2:before {
-  background-color: #347A41 !important;
-}
-.overlay-theme-colored-3:before {
-  background-color: #1f68391e !important;
-}
-.overlay-theme-colored-4:before {
-  background-color: #0C5933 !important;
-}
-.overlay-theme-colored-5:before {
-  background-color: #0C5933 !important;
-}
-.overlay-theme-colored-6:before {
-  background-color: #0C5933 !important;
-}
-.overlay-theme-colored-7:before {
-  background-color: #0C5933 !important;
-}
-.overlay-theme-colored-8:before {
-  background-color: #0C5933 !important;
-}
-.overlay-theme-colored-9:before {
-  background-color: #0C5933 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-theme-colored {
-  border-color: #179647 !important;
-}
-.border-theme-color-1px {
-  border: 1px solid #179647 !important;
-}
-.border-theme-color-2px {
-  border: 2px solid #179647 !important;
-}
-.border-theme-color-1px {
-  border: 3px solid #179647 !important;
-}
-.border-theme-color-1px {
-  border: 4px solid #179647 !important;
-}
-.border-theme-color-1px {
-  border: 1px solid #179647 !important;
-}
-.border-theme-color-1px {
-  border: 1px solid #179647 !important;
-}
-.border-theme-color-1px {
-  border: 1px solid #179647 !important;
-}
-.border-top-theme-color-1px {
-  border-top: 1px solid #179647 !important;
-}
-.border-top-theme-color-2px {
-  border-top: 2px solid #179647 !important;
-}
-.border-top-theme-color-3px {
-  border-top: 3px solid #179647 !important;
-}
-.border-top-theme-color-4px {
-  border-top: 4px solid #179647 !important;
-}
-.border-top-theme-color-5px {
-  border-top: 5px solid #179647 !important;
-}
-.border-top-theme-color-6px {
-  border-top: 6px solid #179647 !important;
-}
-.border-top-theme-color-7px {
-  border-top: 7px solid #179647 !important;
-}
-.border-top-theme-color-8px {
-  border-top: 8px solid #179647 !important;
-}
-.border-top-theme-color-9px {
-  border-top: 9px solid #179647 !important;
-}
-.border-top-theme-color-10px {
-  border-top: 10px solid #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-bottom-theme-color-1px {
-  border-bottom: 1px solid #179647 !important;
-}
-.border-bottom-theme-color-2px {
-  border-bottom: 2px solid #179647 !important;
-}
-.border-bottom-theme-color-3px {
-  border-bottom: 3px solid #179647 !important;
-}
-.border-bottom-theme-color-4px {
-  border-bottom: 4px solid #179647 !important;
-}
-.border-bottom-theme-color-5px {
-  border-bottom: 5px solid #179647 !important;
-}
-.border-bottom-theme-color-6px {
-  border-bottom: 6px solid #179647 !important;
-}
-.border-bottom-theme-color-7px {
-  border-bottom: 7px solid #179647 !important;
-}
-.border-bottom-theme-color-8px {
-  border-bottom: 8px solid #179647 !important;
-}
-.border-bottom-theme-color-9px {
-  border-bottom: 9px solid #179647 !important;
-}
-.border-bottom-theme-color-10px {
-  border-bottom: 10px solid #179647 !important;
-}
-.project .project-details {
-  border-bottom: 3px solid #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-left-theme-color-1px {
-  border-left: 1px solid #179647 !important;
-}
-.border-left-theme-color-2px {
-  border-left: 2px solid #179647 !important;
-}
-.border-left-theme-color-3px {
-  border-left: 3px solid #179647 !important;
-}
-.border-left-theme-color-4px {
-  border-left: 4px solid #179647 !important;
-}
-.border-left-theme-color-5px {
-  border-left: 5px solid #179647 !important;
-}
-.border-left-theme-color-6px {
-  border-left: 6px solid #179647 !important;
-}
-.border-left-theme-color-7px {
-  border-left: 7px solid #179647 !important;
-}
-.border-left-theme-color-8px {
-  border-left: 8px solid #179647 !important;
-}
-.border-left-theme-color-9px {
-  border-left: 9px solid #179647 !important;
-}
-.border-left-theme-color-10px {
-  border-left: 10px solid #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-right-theme-color-1px {
-  border-right: 1px solid #179647 !important;
-}
-.border-right-theme-color-2px {
-  border-right: 2px solid #179647 !important;
-}
-.border-right-theme-color-3px {
-  border-right: 3px solid #179647 !important;
-}
-.border-right-theme-color-4px {
-  border-right: 4px solid #179647 !important;
-}
-.border-right-theme-color-5px {
-  border-right: 5px solid #179647 !important;
-}
-.border-right-theme-color-6px {
-  border-right: 6px solid #179647 !important;
-}
-.border-right-theme-color-7px {
-  border-right: 7px solid #179647 !important;
-}
-.border-right-theme-color-8px {
-  border-right: 8px solid #179647 !important;
-}
-.border-right-theme-color-9px {
-  border-right: 9px solid #179647 !important;
-}
-.border-right-theme-color-10px {
-  border-right: 10px solid #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.post .entry-meta.meta-absolute,
-.volunteer .overlay,
-.bg-theme-colored-transparent-deep {
-  background-color: 0C5933 !important;
-}
-.icon-box.box-style1.practice-style3:hover .icon-wrapper,
-.zeus .tp-bullet::after {
-  background-color: #179647;
-}
-.preloader-dot-loading .cssload-loading i {
-  background: #179647 !important;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.icon-box.icon-rounded-bordered i,
-.widget .line-bottom:after,
-.widget .line-bottom:after,
-.pager.theme-colored a {
-  border: 1px solid #179647;
-}
-.border-theme-colored,
-.owl-theme .owl-dots .owl-dot span {
-  border-color: #179647;
-}
-.icon-box.box-style1.practice-style3:hover .icon-wrapper::after {
-  border-color: #179647 transparent transparent;
-}
-.opening-hours ul li {
-  border-bottom: 1px dashed #179647;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-blockquote.theme-colored {
-  border-left: 3px solid #179647;
-}
-blockquote.bg-theme-colored {
-  border-left: 3px solid #4AAD45;
-  color: #fff;
-}
-blockquote.bg-theme-colored footer {
-  color: #eeeeee;
-}
-blockquote.gray.bg-theme-colored {
-  background-color: #eeeeee !important;
-  border-left: 3px solid #179647;
-  color: #179647;
-}
-blockquote.gray.bg-theme-colored footer {
-  color: #777777;
-}
-.attorney-address li {
-  border-left: 1px solid #179647;
-}
-.section-title.title-border {
-  border-left: 4px solid #179647;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.member-info {
-  border-top: 3px outset #179647;
-}
-.cssload-tri {
-  border-top: 27px solid #179647;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.border-right-theme-color-2 {
-  border-right: 1px solid #179647;
-}
-.section-title.title-border.title-right {
-  border-right: 4px solid #179647;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.event {
-  border-bottom-color: #179647;
-}
-.cssload-tri.cssload-invert {
-  border-bottom: 27px solid #179647;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.btn-default.btn-theme-colored {
-  color: #149948;
-  background-color: #fff;
-  border-color: #0C5933;
-}
-.btn-default.btn-theme-colored:focus,
-.btn-default.btn-theme-colored.focus {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #0C5933;
-}
-.btn-default.btn-theme-colored:hover {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #4AAD45;
-}
-.btn-default.btn-theme-colored:active,
-.btn-default.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-default.btn-theme-colored {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #4AAD45;
-}
-.btn-default.btn-theme-colored:active:hover,
-.btn-default.btn-theme-colored.active:hover,
-.open > .dropdown-toggle.btn-default.btn-theme-colored:hover,
-.btn-default.btn-theme-colored:active:focus,
-.btn-default.btn-theme-colored.active:focus,
-.open > .dropdown-toggle.btn-default.btn-theme-colored:focus,
-.btn-default.btn-theme-colored:active.focus,
-.btn-default.btn-theme-colored.active.focus,
-.open > .dropdown-toggle.btn-default.btn-theme-colored.focus {
-  color: #149948;
-  background-color: #d4d4d4;
-  border-color: #0C5933;
-}
-.btn-default.btn-theme-colored:active,
-.btn-default.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-default.btn-theme-colored {
-  background-image: none;
-}
-.btn-default.btn-theme-colored.disabled:hover,
-.btn-default.btn-theme-colored[disabled]:hover,
-fieldset[disabled] .btn-default.btn-theme-colored:hover,
-.btn-default.btn-theme-colored.disabled:focus,
-.btn-default.btn-theme-colored[disabled]:focus,
-fieldset[disabled] .btn-default.btn-theme-colored:focus,
-.btn-default.btn-theme-colored.disabled.focus,
-.btn-default.btn-theme-colored[disabled].focus,
-fieldset[disabled] .btn-default.btn-theme-colored.focus {
-  background-color: #fff;
-  border-color: #179647;
-}
-.btn-default.btn-theme-colored .badge {
-  color: #fff;
-  background-color: #179647;
-}
-.btn-default.btn-theme-colored:hover,
-.btn-default.btn-theme-colored:active,
-.btn-default.btn-theme-colored:focus {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.btn-border.btn-theme-colored {
-  color: #149948;
-  background-color: #fff;
-  border-color: #179647;
-}
-.btn-border.btn-theme-colored:focus,
-.btn-border.btn-theme-colored.focus {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #0C5933;
-}
-.btn-border.btn-theme-colored:hover {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #4AAD45;
-}
-.btn-border.btn-theme-colored:active,
-.btn-border.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-border.btn-theme-colored {
-  color: #149948;
-  background-color: #e6e6e6;
-  border-color: #4AAD45;
-}
-.btn-border.btn-theme-colored:active:hover,
-.btn-border.btn-theme-colored.active:hover,
-.open > .dropdown-toggle.btn-border.btn-theme-colored:hover,
-.btn-border.btn-theme-colored:active:focus,
-.btn-border.btn-theme-colored.active:focus,
-.open > .dropdown-toggle.btn-border.btn-theme-colored:focus,
-.btn-border.btn-theme-colored:active.focus,
-.btn-border.btn-theme-colored.active.focus,
-.open > .dropdown-toggle.btn-border.btn-theme-colored.focus {
-  color: #149948;
-  background-color: #d4d4d4;
-  border-color: #0C5933;
-}
-.btn-border.btn-theme-colored:active,
-.btn-border.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-border.btn-theme-colored {
-  background-image: none;
-}
-.btn-border.btn-theme-colored.disabled:hover,
-.btn-border.btn-theme-colored[disabled]:hover,
-fieldset[disabled] .btn-border.btn-theme-colored:hover,
-.btn-border.btn-theme-colored.disabled:focus,
-.btn-border.btn-theme-colored[disabled]:focus,
-fieldset[disabled] .btn-border.btn-theme-colored:focus,
-.btn-border.btn-theme-colored.disabled.focus,
-.btn-border.btn-theme-colored[disabled].focus,
-fieldset[disabled] .btn-border.btn-theme-colored.focus {
-  background-color: #fff;
-  border-color: #179647;
-}
-.btn-border.btn-theme-colored .badge {
-  color: #fff;
-  background-color: #179647;
-}
-.btn-border.btn-theme-colored:hover,
-.btn-border.btn-theme-colored:active,
-.btn-border.btn-theme-colored:focus {
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-  color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.btn-dark.btn-theme-colored {
-  color: #fff;
-  background-color: #179647;
-  border-color: #179647;
-}
-.btn-dark.btn-theme-colored:focus,
-.btn-dark.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #0C5933;
-}
-.btn-dark.btn-theme-colored:hover {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-dark.btn-theme-colored:active,
-.btn-dark.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-dark.btn-theme-colored {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-dark.btn-theme-colored:active:hover,
-.btn-dark.btn-theme-colored.active:hover,
-.open > .dropdown-toggle.btn-dark.btn-theme-colored:hover,
-.btn-dark.btn-theme-colored:active:focus,
-.btn-dark.btn-theme-colored.active:focus,
-.open > .dropdown-toggle.btn-dark.btn-theme-colored:focus,
-.btn-dark.btn-theme-colored:active.focus,
-.btn-dark.btn-theme-colored.active.focus,
-.open > .dropdown-toggle.btn-dark.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #0C5933;
-}
-.btn-dark.btn-theme-colored:active,
-.btn-dark.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-dark.btn-theme-colored {
-  background-image: none;
-}
-.btn-dark.btn-theme-colored.disabled:hover,
-.btn-dark.btn-theme-colored[disabled]:hover,
-fieldset[disabled] .btn-dark.btn-theme-colored:hover,
-.btn-dark.btn-theme-colored.disabled:focus,
-.btn-dark.btn-theme-colored[disabled]:focus,
-fieldset[disabled] .btn-dark.btn-theme-colored:focus,
-.btn-dark.btn-theme-colored.disabled.focus,
-.btn-dark.btn-theme-colored[disabled].focus,
-fieldset[disabled] .btn-dark.btn-theme-colored.focus {
-  background-color: #179647;
-  border-color: #179647;
-}
-.btn-dark.btn-theme-colored .badge {
-  color: #149948;
-  background-color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.btn-gray.btn-theme-colored {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-gray.btn-theme-colored:focus,
-.btn-gray.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #179647;
-  border-color: #0c59331e;
-}
-.btn-gray.btn-theme-colored:hover {
-  color: #fff;
-  background-color: #179647;
-  border-color: #0c59331e;
-}
-.btn-gray.btn-theme-colored:active,
-.btn-gray.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-gray.btn-theme-colored {
-  color: #fff;
-  background-color: #179647;
-  border-color: #0c59331e;
-}
-.btn-gray.btn-theme-colored:active:hover,
-.btn-gray.btn-theme-colored.active:hover,
-.open > .dropdown-toggle.btn-gray.btn-theme-colored:hover,
-.btn-gray.btn-theme-colored:active:focus,
-.btn-gray.btn-theme-colored.active:focus,
-.open > .dropdown-toggle.btn-gray.btn-theme-colored:focus,
-.btn-gray.btn-theme-colored:active.focus,
-.btn-gray.btn-theme-colored.active.focus,
-.open > .dropdown-toggle.btn-gray.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #0C5933;
-}
-.btn-gray.btn-theme-colored:active,
-.btn-gray.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-gray.btn-theme-colored {
-  background-image: none;
-}
-.btn-gray.btn-theme-colored.disabled:hover,
-.btn-gray.btn-theme-colored[disabled]:hover,
-fieldset[disabled] .btn-gray.btn-theme-colored:hover,
-.btn-gray.btn-theme-colored.disabled:focus,
-.btn-gray.btn-theme-colored[disabled]:focus,
-fieldset[disabled] .btn-gray.btn-theme-colored:focus,
-.btn-gray.btn-theme-colored.disabled.focus,
-.btn-gray.btn-theme-colored[disabled].focus,
-fieldset[disabled] .btn-gray.btn-theme-colored.focus {
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-gray.btn-theme-colored .badge {
-  color: #4AAD45;
-  background-color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.btn-theme-colored {
-  color: #fff;
-  background-color: #179647;
-  border-color: #179647;
-}
-.btn-theme-colored:focus,
-.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #0C5933;
-}
-.btn-theme-colored:hover {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-theme-colored:active,
-.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-theme-colored {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-theme-colored:active:hover,
-.btn-theme-colored.active:hover,
-.open > .dropdown-toggle.btn-theme-colored:hover,
-.btn-theme-colored:active:focus,
-.btn-theme-colored.active:focus,
-.open > .dropdown-toggle.btn-theme-colored:focus,
-.btn-theme-colored:active.focus,
-.btn-theme-colored.active.focus,
-.open > .dropdown-toggle.btn-theme-colored.focus {
-  color: #fff;
-  background-color: #4AAD45;
-  border-color: #0C5933;
-}
-.btn-theme-colored:active,
-.btn-theme-colored.active,
-.open > .dropdown-toggle.btn-theme-colored {
-  background-image: none;
-}
-.btn-theme-colored.disabled:hover,
-.btn-theme-colored[disabled]:hover,
-fieldset[disabled] .btn-theme-colored:hover,
-.btn-theme-colored.disabled:focus,
-.btn-theme-colored[disabled]:focus,
-fieldset[disabled] .btn-theme-colored:focus,
-.btn-theme-colored.disabled.focus,
-.btn-theme-colored[disabled].focus,
-fieldset[disabled] .btn-theme-colored.focus {
-  background-color: #179647;
-  border-color: #179647;
-}
-.btn-theme-colored .badge {
-  color: #149948;
-  background-color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.btn-transparent {
-  background-color: transparent;
-  color: #fff;
-}
-.btn-transparent.btn-theme-colored {
-  background-color: transparent;
-}
-.btn-transparent.btn-dark {
-  background-color: #111111;
-  border-color: #111111;
-}
-.btn-transparent.btn-dark:hover {
-  background-color: #000000;
-  border-color: #000000;
-}
-.btn-transparent.btn-dark.btn-theme-colored {
-  background-color: #179647;
-  border-color: #179647;
-}
-.btn-transparent.btn-dark.btn-theme-colored:hover {
-  background-color: #4AAD45;
-  border-color: #4AAD45;
-}
-.btn-transparent.btn-border {
-  background-color: transparent;
-  border-color: #eeeeee;
-}
-.btn-transparent.btn-border:hover {
-  background-color: #eeeeee;
-  color: #000;
-}
-.btn-transparent.btn-border.btn-theme-colored {
-  background-color: transparent;
-  border-color: #179647;
-}
-.btn-transparent.btn-border.btn-theme-colored:hover {
-  background-color: #179647;
-  color: #fff;
-}
-.btn-gray.btn-transparent {
-  background-color: #d3d3d3;
-  color: #333333;
-}
-.btn-gray.btn-transparent:hover {
-  background-color: #ececec;
-  color: #1a1a1a;
-}
-.btn-gray.btn-transparent.btn-theme-colored {
-  background-color: #4AAD45;
-  color: #fff;
-}
-.btn-gray.btn-transparent.btn-theme-colored:hover {
-  background-color: #4AAD45;
-  color: #e6e6e6;
-}
-.btn-hover-theme-colored:hover {
-  background-color: #149948;
-  border-color: #7198e2;
-  color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-
-.icon-theme-colored a {
-  color: #149948; 
-}
-.icon-theme-colored.icon-bordered a {
-  border-color: #179647;
-}
-.icon-theme-colored.icon-bordered a:hover {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-theme-colored.icon-dark a {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-theme-colored.icon-dark a:hover {
-  background-color: #4AAD45;
-  color: #e6e6e6;
-}
-.icon-theme-colored.icon-dark.icon-bordered a {
-  border-color: #179647;
-  color: #179647;
-}
-.icon-theme-colored.icon-dark.icon-bordered a:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-.icon-theme-colored.icon-gray a {
-  color: #179647;
-}
-.icon-theme-colored.icon-gray a:hover {
-  color: #4AAD45;
-}
-.icon-theme-colored.icon-gray.icon-bordered a {
-  color: #179647;
-}
-.icon-theme-colored.icon-gray.icon-bordered a:hover {
-  background-color: #eeeeee;
-  border-color: #eeeeee;
-  color: #179647;
-}
-.icon-theme-colored a:hover {
-  color: #4AAD45;
-}
-.icon-hover-theme-colored a:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-.styled-icons.icon-hover-theme-colored a:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-.box-shadow,
-.icon-box .icon.icon-border-effect::after {
-  -webkit-box-shadow: #179647;
-  -moz-box-shadow: #179647;
-  box-shadow: 0 0 0 3px #179647;
-}
-.icon-box.iconbox-theme-colored .icon {
-  color: #179647;
-}
-.icon-box.iconbox-theme-colored .icon.icon-border-effect::after {
-  box-shadow: 0 0 0 3px #179647;
-}
-.icon-box.iconbox-theme-colored .icon.icon-bordered {
-  border-color: #179647;
-}
-.icon-box.iconbox-theme-colored .icon.icon-bordered:hover {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-gray:hover {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-gray.icon-bordered {
-  border-color: #eeeeee;
-}
-.icon-box.iconbox-theme-colored .icon.icon-gray.icon-bordered:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-dark {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-dark:hover {
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-dark.icon-bordered {
-  background-color: transparent;
-  border-color: #179647;
-  color: #179647;
-}
-.icon-box.iconbox-theme-colored .icon.icon-dark.icon-bordered:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-white {
-  background-color: #fff;
-  color: #179647;
-}
-.icon-box.iconbox-theme-colored .icon.icon-white:hover {
-  background-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-white.icon-bordered {
-  background-color: transparent;
-  border-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored .icon.icon-white.icon-bordered:hover {
-  background-color: #179647;
-  border-color: #179647;
-  color: #fff;
-}
-.icon-box.iconbox-theme-colored.iconbox-border {
-  border-color: #179647;
-}
-
-</style>
-<!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
-
-<style>
-:root {
---blue: #2264dc;
---green: #179647;
---btn-color: #0C5933;
-}
-* {
-margin: 0;
-padding: 0;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-::-webkit-scrollbar {
-width: 11px;
-transform: all 0.5s;
-}
-::-webkit-scrollbar-track {
-background: var(--btn-color);
-}
-::-webkit-scrollbar-thumb {
-background: var(--green);
-border-radius: 50px;
-height: 70px;
-}
-::-webkit-scrollbar-thumb:hover {
-background: var(--blue);
-transition: 0.3s ease-in-out;
-}
+  :root {
+  --blue: #2264dc;
+  --green: #179647;
+  --btn-color: #0C5933;
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+  width: 11px;
+  transform: all 0.5s;
+  }
+  ::-webkit-scrollbar-track {
+  background: var(--btn-color);
+  }
+  ::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 50px;
+  height: 70px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+  transition: 0.3s ease-in-out;
+  }
 </style>
 
 <!-- javascripts -->
@@ -8117,6 +8518,7 @@ transition: 0.3s ease-in-out;
     }
     /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
   </style>
+
   <div>
     <div id="NavBar">
         <img id="ImgLogo1" src="https://kau.edu.sa/Images/135005/assets/imgs/logos/mark_wbg.png" alt="" class="">
@@ -8136,7 +8538,7 @@ transition: 0.3s ease-in-out;
   </div>
   <!-- End: Global NavBar -->
   <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
-  <!-- End: Include Global NavBar --> 
+  <!-- End: Include Global NavBar -->
 
   
   <!-- Start main-content -->
@@ -8148,101 +8550,166 @@ transition: 0.3s ease-in-out;
       <div class="section-content">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="title text-white text-center">Power Labs</h2>
+            <h2 class="title text-white text-center">ECE Members</h2>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="section-content">
-        <div class="row">
-          <ol class="breadcrumb text-left text-black">
-            <li><br></li>
-          </ol>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Portfolio Filter -->
-            <!-- End Portfolio Filter -->
-            <!-- Gallery Grid -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-            <div class="photo-gallery">
-              <div class="container">
-                  <div class="row photos">
-                      <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_145339040.jpg" data-lightbox="photos"><img class="img-fluid" src="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_145339040.jpg"></a></div>
-                      <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_145355507.jpg" data-lightbox="photos"><img class="img-fluid" src="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_145355507.jpg"></a></div>
-                      <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_150111204.jpg" data-lightbox="photos"><img class="img-fluid" src="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_150111204.jpg"></a></div>
-                      <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_150135829.jpg" data-lightbox="photos"><img class="img-fluid" src="https://kau.edu.sa/Images/135005/assets/imgs/facilities/power/basic/IMG_20240122_150135829.jpg"></a></div>
+  <!-- Start: Members Bookmarks -->
+  <style>
+    @media screen and (min-width: 496px) {
+      .entry-content{
+        min-height: 82px; 
+      }
+      .members_link_1{
+        line-height: 41px;
+        text-align: center;
+      }
+      .members_link_2{
+        line-height: auto;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 495px) {
+      .entry-content{
+        min-height: 50px; 
+      }
+      .members_link_1{
+        line-height: auto;
+        text-align: center;
+      }
+      .members_link_2{
+        line-height: auto;
+        text-align: center;
+      }
+    }
+  </style>
+  <section id="blog2" class="d-print-none">
+    <div class="container pb-0 pt-0 pb-sm-0" id="sections">
+        <div class="section-content">
+          <div class="row d-flex justify-content-center">
+            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <a href="./academics_secretary.html" class="bookmark-link">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Administration</h4>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-              </div>
+                </article>
+              </a>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-            <!-- End Portfolio Gallery Grid -->
+            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <a href="./academics_biomedical_members.html" class="bookmark-link">
+                <article class="post clearfix mb-sm-30">
+                  <div class="entry-content p-20 pr-10" style="border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Biomedical</h4>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <a href="./academics_computer_members.html" class="bookmark-link">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Computer</h4>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <a href="./academics_electronics_members.html" class="bookmark-link">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0 members_link_2">Electronics & Communications</h4>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+              <a href="./academics_power_members.html" class="bookmark-link">
+                <article class="post clearfix mb-md-30 mb-sm-30">
+                  <div class="entry-content p-20 pr-10"  style="border-radius: 20px 20px 20px 20px;">
+                    <div class="entry-meta media mt-0 no-bg no-border">
+                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Power & Machine</h4>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- End: Members Bookmarks -->
+  </div>
+  <!-- End: main-content -->
+
+  <!-- Footer  -->
+  <style>
+    @media screen and (max-width: 580px) { 
+      #footer_div {
+        /*padding-top: 40px;
+        padding-bottom: 30px;*/
+        align-items: center;
+        text-align: center;
+      }
+      #footer_contactus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 10px;
+        padding-top: 20px;
+      }
+    }
+    @media screen and (min-width: 581px){
+      #footer_div {
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
+        align-items: center;
+        text-align: center;
+      }
+      #footer_contactus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+        padding-top: 0px;
+      }
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      display: none;
+      background-color: #17963f8e;
+      color: #ffffff;
+    }
+  </style>
+  <footer id="footer">
+    <div class="footer-bottom position-relative">
+      <div id="footer_div" class="container">
+        <div class="row">
+          <div class="col-md-12 pb-30">
+              <h4 class="font-14 m-0 text-theme-colored">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
-
-<!-- End: main-content -->
-
-<!-- Footer  -->
-<style>
-  @media screen and (max-width: 580px) { 
-    #footer_div {
-      padding-top: 40px;
-      padding-bottom: 30px;
-      align-items: center;
-      text-align: center;
-    }
-    #footer_contactus {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-left: 10px;
-      padding-top: 20px;
-    }
-  }
-  @media screen and (min-width: 581px){
-    #footer_div {
-      padding-top: 20px;
-      /* padding-bottom: 20px; */
-      align-items: center;
-      text-align: center;
-    }
-    #footer_contactus {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-right: 10px;
-      padding-top: 0px;
-    }
-  }
-  #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    display: none;
-    background-color: #17963f8e;
-    color: #ffffff;
-  }
-</style>
-<footer id="footer">
-  <div class="footer-bottom position-relative">
-    <div id="footer_div" class="container">
-      <div class="row">
-        <div class="col-md-12 pb-30">
-            <h4 class="font-14 m-0 text-theme-colored">&copy;<script>document.write( new Date().getUTCFullYear() );</script> Department of Electrical and Computer Engineering, King Abdulaziz University. All Right Reserved.</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<button type="button" class="backToTop btn btn-floating btn-lg" style="font-size:30pt; padding: 0px 10px 0px 10px;" id="backToTop"><i class="fa fa-angle-up"></i></button>
+  </footer>
+  <button type="button" class="backToTop btn btn-floating btn-lg" style="font-size:30pt; padding: 0px 10px 0px 10px;" id="backToTop"><i class="fa fa-angle-up"></i></button>
 </div>
 
 <!-- Footer Scripts --> 
@@ -8253,25 +8720,25 @@ let mybutton = document.getElementById("backToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-scrollFunction();
+  scrollFunction();
 };
 
 function scrollFunction() {
-if (
-document.body.scrollTop > 20 ||
-document.documentElement.scrollTop > 20
-) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 <!-- End: scrollToTop script -->
