@@ -3260,11 +3260,11 @@
     .post .entry-content {
       position: relative;
       /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-      background: #4AAD45;
+      background: #1F6838;
       padding: 15px;
     }
     .post .entry-content:hover{
-      background-color: #1F6838;
+      background-color: #4AAD45;
     }
     .post .entry-date {
       font-size: 13px;
@@ -7993,7 +7993,7 @@
 <style>
   @media screen {
     #wrapper {
-      margin-top: 80px;
+      margin-top: 115px;
     }
   }
   @media print {
@@ -8010,12 +8010,12 @@
   <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
   <style>
     * {box-sizing: border-box;}
-
+  
     body { 
         margin: 0;
         /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     }
-
+  
   /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     #NavBarBG {
         visibility: visible;
@@ -8038,19 +8038,20 @@
     }
   /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     #NavBarBG h2{
-        padding-top: 120px;
+        padding-top: 100px;
         padding-left: 30px;
         text-align: left;
         color: #179647;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
-
+  
     #NavBar {
         overflow: visible;
         /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
-        margin-top: 100px;
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
         margin-left: 0px;
-        
+        padding: 10px 10px;
         transition: 0.4s;
         position: fixed;
         left: 50%;
@@ -8058,13 +8059,14 @@
         width: 100%;
         top: 0;
         z-index: 100;
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         text-align: center;
     }
-
+  
     #NavBar #ImgLogo1 {
         display: inline;
         visibility: visible;
-        scale: 1;
+        scale: 0.8;
         position: fixed;
         left: 40px;
         z-index: 100;
@@ -8073,7 +8075,7 @@
         display: none;
         visibility: hidden;
     }
-
+  
     #navbarMenu {
         visibility: hidden;
         float: left;
@@ -8084,14 +8086,88 @@
         /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         text-decoration: none;
     }
-
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  @media screen and (max-width: 1366px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 90px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.7;
+        left: 40px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 125px;
+          padding-left: 10px;
+          font-size: 3vw;
+      }
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  @media screen and (max-width: 1024px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 90px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.65;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 130px;
+          padding-left: 10px;
+          font-size: 2.9vw;
+      }
+  }
+  @media screen and (max-width: 820px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.55;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 130px;
+          padding-left: 10px;
+          font-size: 2.6vw;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.5;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 135px;
+          padding-left: 0px;
+          font-size: 2.6vw;
+      }
+  }
+  
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     @media screen and (max-width: 580px) {
+      #wrapper {
+          margin-top: 100px;
+        }		
         #NavBar {
             position: absolute;
             text-align: center;
-            margin-top: 90px;
+        margin-top: 45px;				 
         }
-
+  
         #NavBar #ImgLogo1 {
             display:none;
             visibility: hidden;
@@ -8100,12 +8176,15 @@
             visibility: visible;
             display: flex;
             position: absolute;
+        align-items: flex-end;
+            /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
             /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
             left: 50%;
             transform: translateX(-50%);
             scale: 1;
+            padding-top: 35px !important;
         }
-
+  
         #NavBarBG {
             visibility: hidden;
         }
@@ -8144,103 +8223,87 @@
       </div>
     </div>
   </section>
-  <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
-  <style>
-    @media screen and (min-width: 496px) {
-      .entry-content{
-        min-height: 80px; 
-      }
-      .members_link_1{
-        text-align: center;
-      }
-      .members_link_2{
-        line-height: auto;
-        text-align: center;
-      }
-    }
-    @media screen and (max-width: 495px) {
-      .entry-content{
-        min-height: 50px; 
-      }
-      .members_link_1{
-        line-height: auto;
-        text-align: center;
-      }
-      .members_link_2{
-        line-height: auto;
-        text-align: center;
-      }
-    }
-  </style>
-  <section id="blog2" class="d-print-none">
-    <div class="container pb-0 pt-0 pb-sm-0" id="sections">
-        <div class="section-content">
-          <div class="row d-flex justify-content-center">
-            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="https://portal.kau.edu.sa/content-135005-EN-288796" class="bookmark-link">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-content p-20 pr-10 d-flex flex-column justify-content-center align-items-center"  style="border-radius: 20px 20px 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Administrators & Engineers</h4>
-                    </div>
-                    <div class="clearfix"></div>
+
+<!-- start: Sections -->
+<section id="blog2">
+  <div class="container pb-5 pt-5 pb-sm-5">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+            <a href="https://kau.edu.sa/content-135005-EN-288758">
+              <article class="post clearfix mb-sm-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> 
+                    <img src="https://kau.edu.sa/Images/135005/assets/imgs/grps/bio.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="https://kau.edu.sa/content-135005-EN-288758" class="bookmark-link">
-                <article class="post clearfix mb-sm-30">
-                  <div class="entry-content p-20 pr-10 d-flex flex-column justify-content-center align-items-center" style="border-radius: 20px 20px 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Biomedical</h4>
-                    </div>
-                    <div class="clearfix"></div>
+                </div>
+                <div class="entry-content p-20 pr-10" style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Biomedical Engineering<br>Members</h4>
                   </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="https://kau.edu.sa/content-135005-EN-288759" class="bookmark-link">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-content p-20 pr-10 d-flex flex-column justify-content-center align-items-center"  style="border-radius: 20px 20px 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Computer</h4>
-                    </div>
-                    <div class="clearfix"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+            <a href="https://kau.edu.sa/content-135005-EN-288759" class="" onclick="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> 
+                    <img src="https://kau.edu.sa/Images/135005/assets/imgs/grps/comp.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="https://kau.edu.sa/content-135005-EN-288760" class="bookmark-link">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-content p-20 pr-10 d-flex flex-column justify-content-center align-items-center"  style="border-radius: 20px 20px 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                      <h4 class="entry-title text-white text-capitalize m-0 members_link_2">Electronics & Communications</h4>
-                    </div>
-                    <div class="clearfix"></div>
+                </div>
+                <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Computer Engineering<br>Members</h4>
                   </div>
-                </article>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
-              <a href="https://kau.edu.sa/content-135005-EN-288763" class="bookmark-link">
-                <article class="post clearfix mb-md-30 mb-sm-30">
-                  <div class="entry-content p-20 pr-10 d-flex flex-column justify-content-center align-items-center"  style="border-radius: 20px 20px 20px 20px;">
-                    <div class="entry-meta media mt-0 no-bg no-border">
-                      <h4 class="entry-title text-white text-capitalize m-0 members_link_1">Power & Machine</h4>
-                    </div>
-                    <div class="clearfix"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+            <a href="https://kau.edu.sa/content-135005-EN-288760" class="" onclick="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> 
+                    <img src="https://kau.edu.sa/Images/135005/assets/imgs/grps/comm.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
                   </div>
-                </article>
-              </a>
-            </div>
+                </div>
+                <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Electronics & Communication<br>Engineering Members</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" style="padding: 10px;">
+            <a href="https://kau.edu.sa/content-135005-EN-288763" class="" onclick="">
+              <article class="post clearfix mb-md-30 mb-sm-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> 
+                    <img src="https://kau.edu.sa/Images/135005/assets/imgs/grps/pow.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10"  style="min-height: 100px; border-radius: 0 0 20px 20px;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">Power & Machines<br>Engineering Members</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </a>
           </div>
         </div>
+      </div>
     </div>
-  </section>
-  <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+</section>
+<!-- end: Sections -->
+
+  
   </div>
   <style>
     @media screen and (max-width: 580px) { 

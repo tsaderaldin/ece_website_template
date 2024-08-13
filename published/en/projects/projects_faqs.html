@@ -7991,19 +7991,186 @@ transition: 0.3s ease-in-out;
 
 <!-- Start: page-content -->
 <style>
-  @media screen {
-    #wrapper {
-      margin-top: 80px;
-    }
+  * {box-sizing: border-box;}
+
+  body { 
+      margin: 0;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
   }
-  @media print {
-    #wrapper {
+
+/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG {
+      visibility: visible;
+      float: left;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      background-color: #ffffff;
       margin-top: 0px;
-    }
-    #sections_menu {
-      padding-top: 10px;
-    }
+      margin-left: 0px;
+      padding-left: 150px;
+      padding-top: 0px;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 175px;
+      top: 0;
+      z-index: 99;
+      text-align: center;
   }
+/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG h2{
+      padding-top: 100px;
+      padding-left: 30px;
+      text-align: left;
+      color: #179647;
+      font-size: 3vw;
+  }
+
+  #NavBar {
+      overflow: visible;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      margin-top: 80px;
+      margin-left: 0px;
+      padding: 10px 10px;
+      transition: 0.4s;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      text-align: center;
+  }
+
+  #NavBar #ImgLogo1 {
+      display: inline;
+      visibility: visible;
+      scale: 0.8;
+      position: fixed;
+      left: 40px;
+      z-index: 100;
+  }
+  #NavBar #ImgLogo2 {
+      display: none;
+      visibility: hidden;
+  }
+
+  #navbarMenu {
+      visibility: hidden;
+      float: left;
+      color: black;
+      align-items: flex-start;
+      text-align: left;
+      padding: 0px;
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      text-decoration: none;
+  }
+/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+@media screen and (max-width: 1366px) {
+  #NavBar {
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      margin-top: 90px;
+  }
+
+  #NavBar #ImgLogo1 {
+      scale: 0.7;
+      left: 40px;
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG h2{
+        padding-top: 125px;
+        padding-left: 10px;
+        font-size: 3vw;
+    }
+}
+/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+@media screen and (max-width: 1024px) {
+  #NavBar {
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      margin-top: 90px;
+  }
+
+  #NavBar #ImgLogo1 {
+      scale: 0.65;
+      left: 50px;
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG h2{
+        padding-top: 130px;
+        padding-left: 10px;
+        font-size: 2.9vw;
+    }
+}
+@media screen and (max-width: 820px) {
+  #NavBar {
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      margin-top: 80px;
+  }
+
+  #NavBar #ImgLogo1 {
+      scale: 0.55;
+      left: 50px;
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG h2{
+        padding-top: 130px;
+        padding-left: 10px;
+        font-size: 2.6vw;
+    }
+}
+@media screen and (max-width: 768px) {
+  #NavBar {
+      /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+      margin-top: 80px;
+  }
+
+  #NavBar #ImgLogo1 {
+      scale: 0.5;
+      left: 50px;
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  #NavBarBG h2{
+        padding-top: 135px;
+        padding-left: 0px;
+        font-size: 2.6vw;
+    }
+}
+
+/*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  @media screen and (max-width: 580px) {
+    #wrapper {
+        margin-top: 100px;
+      }		
+      #NavBar {
+          position: absolute;
+          text-align: center;
+      margin-top: 45px;				 
+      }
+
+      #NavBar #ImgLogo1 {
+          display:none;
+          visibility: hidden;
+      }
+      #NavBar #ImgLogo2 {
+          visibility: visible;
+          display: flex;
+          position: absolute;
+      align-items: flex-end;
+          /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+          /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+          left: 50%;
+          transform: translateX(-50%);
+          scale: 1;
+      }
+
+      #NavBarBG {
+          visibility: hidden;
+      }
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
 </style>
 <div id="wrapper" class="clearfix">
 
@@ -8011,23 +8178,23 @@ transition: 0.3s ease-in-out;
   <!-- Start: Global NavBar -->
   <style>
     * {box-sizing: border-box;}
-
+  
     body { 
         margin: 0;
-        /* font-family: Arial, Helvetica, sans-serif; */
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     }
-
-  /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+  
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     #NavBarBG {
         visibility: visible;
         float: left;
-        /* overflow: visible; */
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         background-color: #ffffff;
         margin-top: 0px;
         margin-left: 0px;
         padding-left: 150px;
         padding-top: 0px;
-        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
@@ -8037,22 +8204,22 @@ transition: 0.3s ease-in-out;
         z-index: 99;
         text-align: center;
     }
-  /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     #NavBarBG h2{
-        padding-top: 120px;
+        padding-top: 100px;
         padding-left: 30px;
         text-align: left;
         color: #179647;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
-
+  
     #NavBar {
         overflow: visible;
-        /* background-color: #ffffff; */
-        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
-        margin-top: 100px;
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
         margin-left: 0px;
-        
+        padding: 10px 10px;
         transition: 0.4s;
         position: fixed;
         left: 50%;
@@ -8060,14 +8227,14 @@ transition: 0.3s ease-in-out;
         width: 100%;
         top: 0;
         z-index: 100;
-        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         text-align: center;
     }
-
+  
     #NavBar #ImgLogo1 {
         display: inline;
         visibility: visible;
-        scale: 1;
+        scale: 0.8;
         position: fixed;
         left: 40px;
         z-index: 100;
@@ -8076,7 +8243,7 @@ transition: 0.3s ease-in-out;
         display: none;
         visibility: hidden;
     }
-
+  
     #navbarMenu {
         visibility: hidden;
         float: left;
@@ -8084,18 +8251,91 @@ transition: 0.3s ease-in-out;
         align-items: flex-start;
         text-align: left;
         padding: 0px;
-        /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
         text-decoration: none;
     }
-
-  /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  @media screen and (max-width: 1366px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 90px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.7;
+        left: 40px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 125px;
+          padding-left: 10px;
+          font-size: 3vw;
+      }
+  }
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+  @media screen and (max-width: 1024px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 90px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.65;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 130px;
+          padding-left: 10px;
+          font-size: 2.9vw;
+      }
+  }
+  @media screen and (max-width: 820px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.55;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 130px;
+          padding-left: 10px;
+          font-size: 2.6vw;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    #NavBar {
+        /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+        margin-top: 80px;
+    }
+  
+    #NavBar #ImgLogo1 {
+        scale: 0.5;
+        left: 50px;
+    }
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+    #NavBarBG h2{
+          padding-top: 135px;
+          padding-left: 0px;
+          font-size: 2.6vw;
+      }
+  }
+  
+  /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
     @media screen and (max-width: 580px) {
+      #wrapper {
+          margin-top: 100px;
+        }		
         #NavBar {
             position: absolute;
             text-align: center;
-            margin-top: 90px;
+        margin-top: 45px;				 
         }
-
+  
         #NavBar #ImgLogo1 {
             display:none;
             visibility: hidden;
@@ -8104,18 +8344,20 @@ transition: 0.3s ease-in-out;
             visibility: visible;
             display: flex;
             position: absolute;
-            /* align-items: flex-start; */
-            /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+        align-items: flex-end;
+            /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
+            /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
             left: 50%;
             transform: translateX(-50%);
             scale: 1;
+            padding-top: 35px !important;
         }
-
+  
         #NavBarBG {
             visibility: hidden;
         }
     }
-    /* This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) */
+    /*-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) --*/
   </style>
   <div>
     <a href="https://ee.kau.edu.sa/Default-135005-EN" target="_self">
