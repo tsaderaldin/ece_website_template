@@ -1,0 +1,1126 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+<!-- Page Title -->
+<title></title>
+
+
+<!-- Stylesheet -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/animate.css" rel="stylesheet" type="text/css">
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/css-plugin-collections.css" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link id="menuzord-menu-skins" href="https://fcitweb.kau.edu.sa/center/assetseng/css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/style-main.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/responsive.css" rel="stylesheet" type="text/css">
+
+
+<!-- CSS | RTL Layout -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css">
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/style-main-rtl.css" rel="stylesheet" type="text/css">
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/style-main-rtl-extra.css" rel="stylesheet" type="text/css">
+
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+<!-- Revolution Slider 5.x CSS settings -->
+<link  href="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+<link  href="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+<link  href="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/>
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+<!-- CSS | Theme Color -->
+<link href="https://fcitweb.kau.edu.sa/center/assetseng/css/colors/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
+
+<!-- external javascripts -->
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/jquery-2.2.4.min.js"></script>
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/jquery-ui.min.js"></script>
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/bootstrap.min.js"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/jquery-plugin-collection.js"></script>
+
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Fonts  -->
+<!-- CSS | Main style file -->
+<link href="../assets/css/style-main.css" rel="stylesheet" type="text/css">
+
+
+
+<!-- style: youtube-container -->
+<style>
+  .youtube-container {
+	overflow: hidden;
+	width: 100%;
+  height: 550px;
+  position: relative;
+ 
+  
+	/* Keep it the right aspect-ratio */
+	aspect-ratio: 16/9;
+	/* No clicking/hover effects */
+	pointer-events: none;
+  	
+	iframe {
+		/* Extend it beyond the viewport... */
+		width: 300%;
+    height: 550px;
+		/* ...and bring it back again */
+    position: absolute;
+	}
+}
+</style>
+
+ <!-- navbar and logo -->
+ <style>
+  * {box-sizing: border-box;}
+  
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #topbar {
+  overflow: hidden;
+  /* background-color: #b5dca6; */
+  background-color: rgba(31, 107, 46, 0.75) !important;
+  padding: 0px 0px;
+  opacity: 0;
+  transition: 0.4s;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  top: 0;
+  z-index: 98;
+}
+
+  #navbar {
+    overflow: hidden;
+    /* background-color: #f1f1f1; */
+    /* padding: 30px 10px; */
+    transition: 0.4s;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 99;
+    text-align: center;
+  }
+  
+  #navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+  
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+    scale: 1;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  @media screen and (max-width: 580px) {
+    #navbar {
+      /* padding: 20px 10px !important; */
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  </style>
+
+<body class="rtl">
+
+
+<div id="wrapper" class="clearfix" style="margin-top:20px;">
+  <!-- preloader -->
+
+  
+  <!-- Header -->
+  <div id="navbar" style="margin-top:90px;">
+    <a href="#default" id="logo" class="navbar-brand">
+      <img href="#default" id="logo" src="https://kau.edu.sa/Images/135/New%20website%202024/Logos/eng_brand_logo.png" alt="" class="">
+    </a>
+  </div>
+  <div id="topbar" style="margin-top:80px;">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(31, 107, 46, 0) !important;">
+        <div class="container-fluid">
+          <h2 class="navbar-brand text-white">كلية الهندسة</h2>
+          <h2 class="d-flex text-white" style="text-align: left;">Faculty of Engineering</h2>
+        </div>
+      </nav>
+    </div>
+  </div>
+	<script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("topbar").style.opacity = "0.9"
+        document.getElementById("topbar").style.padding = "0px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+        document.getElementById("logo").style.scale = "0.85"
+		  } else {
+        document.getElementById("topbar").style.opacity = "0.0"
+        document.getElementById("topbar").style.padding = "0px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+        document.getElementById("logo").style.scale = "1"
+		  }
+		}
+	</script>
+
+  
+	</header>
+    <!-- <header id="header" class="header">
+	<div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+        <div class="container">
+          <nav id="menuzord-right" class="menuzord default">
+            <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
+              <img src="" alt="">
+            </a>
+          
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  
+  <!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: home -->
+    <section id="home">
+        
+      <!-- Slider Revolution Start -->
+      <div class="rev_slider_wrapper">
+        <div class="rev_slider" data-version="5.0">
+          <ul>
+
+            <!-- SLIDE 1 -->
+            <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./DJI_0080.jpg" data-rotate="1" data-saveperformance="off" data-title="" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="https://kau.edu.sa/Images/135/New%20website%202024/Slider/Education.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <!-- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                id="rs-1-layer-1"
+
+                data-x="['left']"
+                data-hoffset="['30']"
+                data-y="['middle']"
+                data-voffset="['-110']" 
+                data-fontsize="['100']"
+                data-lineheight="['110']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:700;">شعارنا
+              </div> -->
+
+              <!-- LAYER NR. 2 -->
+             <!--  <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-left-theme-color-2-6px pl-20 pr-20"
+                id="rs-1-layer-2"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['-25']" 
+                data-fontsize="['30']"
+                data-lineheight="['54']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:600;">التعليم للجميع 
+              </div>
+ -->
+              <!-- LAYER NR. 3 -->
+              <!-- <div class="tp-caption tp-resizeme text-white" 
+                id="rs-1-layer-3"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['35']"
+                data-fontsize="['25']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 100; white-space: nowrap; letter-spacing:0px; font-weight:600;">هدفنا تقديم أفضل تعليم لطلابنا 
+              </div> -->
+
+              <!-- LAYER NR. 4 -->
+              <!-- <div class="tp-caption tp-resizeme" 
+                id="rs-1-layer-4"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['100']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">اطلع على أقسامنا</a> 
+              </div> -->
+            </li>
+
+            <!-- SLIDE 2 -->
+            <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="https://kau.edu.sa/Images/135/New%20website%202024/Slider/Best_College.JPG"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <!-- <div class="tp-caption tp-resizeme text-uppercase  bg-theme-colored-transparent text-white font-raleway border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30"
+                id="rs-2-layer-1"
+              
+                data-x="['center']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['-90']" 
+                data-fontsize="['30]"
+                data-lineheight="['54']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px; !important">غذّي معرفتك</div> -->
+
+              <!-- LAYER NR. 2 -->
+              <!-- <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                id="rs-2-layer-2"
+
+                data-x="['center']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['-20']"
+                data-fontsize="['40']"
+                data-lineheight="['70']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;">أفضل كلية للهندسة في العالم العربي
+              </div>
+			   -->
+
+              <!-- LAYER NR. 3 -->
+              <!-- <div class="tp-caption tp-resizeme text-white text-center" 
+                id="rs-2-layer-3"
+
+                data-x="['center']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['50']"
+                data-fontsize="['25']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 20; white-space: nowrap; letter-spacing:0px; font-weight:800;"> نسعى جاهدين لكسب ثقة ورضا طلابنا
+              </div> -->
+
+              <!-- LAYER NR. 4 -->
+              <!-- <div class="tp-caption tp-resizeme" 
+                id="rs-2-layer-4"
+
+                data-x="['center']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['115']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="#">اطلع على برامجنا</a> 
+              </div> -->
+            </li>
+
+            <!-- SLIDE 3 -->
+            <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="https://kau.edu.sa/Images/135/New%20website%202024/Slider/Best_Education.jpg
+			  "  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <!-- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-right-theme-color-2-6px pr-20 pl-20"
+                id="rs-3-layer-1"
+
+                data-x="['right']"
+                data-hoffset="['30']"
+                data-y="['middle']"
+                data-voffset="['-90']" 
+                data-fontsize="['64']"
+                data-lineheight="['72']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:600;">التعليم الأمثل
+              </div> -->
+
+              <!-- LAYER NR. 2 -->
+              <!-- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                id="rs-3-layer-2"
+
+                data-x="['right']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['-25']" 
+                data-fontsize="['32']"
+                data-lineheight="['54']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:600;">لمستقبل أفضل 
+              </div> -->
+
+              <!-- LAYER NR. 3 -->
+              <!-- <div class="tp-caption tp-resizeme text-white text-right" 
+                id="rs-3-layer-3"
+
+                data-x="['right']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['30']"
+                data-fontsize="['25']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:600;">لمهنة هندسية ناجحة
+              </div> -->
+
+              <!-- LAYER NR. 4 -->
+              <!-- <div class="tp-caption tp-resizeme" 
+                id="rs-3-layer-4"
+
+                data-x="['right']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['95']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="#">إنضم إلى نخبة طلابنا</a> 
+              </div> -->
+            </li>
+
+          </ul>
+        </div>
+        <!-- end .rev_slider -->
+      </div>
+      <!-- end .rev_slider_wrapper -->
+      <script>
+        $(document).ready(function(e) {
+          $(".rev_slider").revolution({
+            sliderType:"standard",
+            sliderLayout: "100%",
+            dottedOverlay: "none",
+            delay: 5000,
+            navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                    touchenabled: "on",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 1,
+                    swipe_direction: "horizontal",
+                    drag_block_vertical: false
+                },
+              arrows: {
+                style:"zeus",
+                enable:true,
+                hide_onmobile:true,
+                hide_under:600,
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                left: {
+                  h_align:"left",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                },
+                right: {
+                  h_align:"right",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                }
+              },
+              bullets: {
+                enable:false,
+                hide_onmobile:true,
+                hide_under:600,
+                style:"metis",
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                direction:"horizontal",
+                h_align:"center",
+                v_align:"bottom",
+                h_offset:0,
+                v_offset:30,
+                space:5,
+                tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+              }
+            },
+            responsiveLevels: [1240, 1024, 778],
+            visibilityLevels: [1240, 1024, 778],
+            gridwidth: [1170, 1024, 778, 480],
+            gridheight: [650, 768, 960, 720],
+            lazyType: "none",
+            parallax: {
+                origo: "slidercenter",
+                speed: 1000,
+                levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                type: "scroll"
+            },
+            shadow: 0,
+            spinner: "off",
+            stopLoop: "on",
+            stopAfterLoops: 0,
+            stopAtSlide: -1,
+            shuffle: "off",
+            autoHeight: "off",
+            fullScreenAutoWidth: "off",
+            fullScreenAlignForce: "off",
+            fullScreenOffsetContainer: "",
+            fullScreenOffset: "0",
+            hideThumbsOnMobile: "off",
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            debugMode: false,
+            fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+            }
+          });
+        });
+      </script>
+      <!-- Slider Revolution Ends -->
+
+    <!-- Section: Blog -->
+    <section id="blog2">
+      <div class="container pb-70 pt-60 pb-sm-20">
+			<div class="section-title text-center" style="padding-right: 0;">
+				<div class="row">
+					<div class=" align-items-center justify-content-center">
+					<h2 class="mt-10 line-height-1 text-uppercase" style="text-align: center;">أقسام الكلية</h2>
+					</div>
+				</div>
+			</div>
+      <div class="section-content align-items-center justify-content-center">
+				<div class="raw align-items-center justify-content-center">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://ee.kau.edu.sa/Default-135005-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/EE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة الكهربائية وهندسة الحاسبات</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10"> يتميز القسم بحصوله على مراكز متقدمة عالمياً ويحتوي على أربع أقسام متنوعة وهي قسم الهندسة الطبية وقسم الألكترونيات والأتصالات وقسم القوى والآلات وقسم الحاسبات</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://ae.kau.edu.sa/Default-135002-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/AE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">هندسة الطيران والفضاء</h4>
+            <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">تم تغيير مسمى القسم إلى قسم هندسة الطيران والفضاء اتساقا مع المستجدات الاستراتيجية للمملكة المتمثلة في رؤية السعودية ٢٠٣٠ في العام 2019 ويهدف القسم إلى إعداد أجيال من مهندسي الطيران والفضاء</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://che.kau.edu.sa/Default-135003-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/CHE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body pl-10"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة الكيميائية وهندسة المواد</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">يقدم القسم درجة البكالوريوس في الهندسة الكيميائية (ChE) بعد الانتهاء بنجاح من 155 وحدة ائتمانية على مدى خمس سنوات. منذ إنشائها.</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://ce.kau.edu.sa/Default-135004-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/CE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body pl-10"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة المدنية والبيئية</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">ويضم القسم ستة تخصصات: الهندسة الانشائية، هندسة البيئة، هندسة التشييد، هندسة التقنية الأرضية، هندسة موارد، هندسة النقل والمساح</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://meng.kau.edu.sa/Default-135009-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/MENG.png" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body pl-10"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة الميكانيكية</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">يضم القسم هندسة الأنتاج وتصميم النظم الميكانيكية وقسم الهندسة الحرارية وتقنية تحلية المياه</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://ie.kau.edu.sa/Default-135006-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/IE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body pl-10"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة الصناعية</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">يضم القسم خمس تخصصات متنوعة وهي بحوث العمليات ونظم المعلومات والعمليات العشوائي وهندسة العوامل البشرية والأدارة الهندسية</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+					<article class="post clearfix mb-sm-30">
+            <a href="https://mine.kau.edu.sa/Default-135055-ar" target="_blank">
+              <div class="entry-header">
+              <div class="post-thumb thumb"> 
+                <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/MINE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+              </div>
+              </div>
+              <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+              <div class="entry-meta media mt-0 no-bg no-border">
+                <!-- <div class="media-body pl-10"> -->
+                <!-- <div class="event-content pull-left flip"> -->
+                  <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">هندسة التعدين</h4>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+              <!-- <p class="mt-10">يضم القسم ثلاثة برامج رئيسية هندسة المناجم، معالجة الخامات المعدنية، وإدارة واقتصاديات المشاريع التعدينية،</p> -->
+              <div class="clearfix"></div>
+              </div>
+            </a>
+					</article>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+						<article class="post clearfix mb-sm-30">
+              <a href="https://ne.kau.edu.sa/Default-135008-ar" target="_blank">
+                <div class="entry-header">
+                  <div class="post-thumb thumb">
+                    <img src="https://kau.edu.sa/Images/135/New%20website%202024/Deps/NE.jpg" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10" style="border-radius: 0 0 20px 20px; background-color: rgb(31, 107, 46) !important;">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <!-- <div class="media-body pl-10"> -->
+                      <!-- <div class="event-content pull-left flip"> -->
+                        <h4 class="entry-title text-white text-capitalize m-0" style="text-align: center;">الهندسة النووية</h4>
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                  <!-- <p class="mt-10">يضم القسم ثلاثة تخصصات وهي الهندسة النووية وهندسة الفيزياء الطبية وهندسة الوقاية الأشعاعية</p> -->
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+						</article>
+					</div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pb-30 wow mb-sm-0 fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+						<article class="post clearfix mb-sm-30">
+              <div class="entry-header">
+                <div class="post-thumb thumb">
+                  <img src="https://kau.edu.sa/Images/135/New%20website%202024/Logos/eng_brand_logo.png" alt="" class="img-responsive img-fullwidth" style="border-radius: 20px 20px 0 0;"> 
+                </div>
+              </div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>	
+	
+	<section class="divider parallax" data-parallax-ratio="0.7" style="background-color: rgb(31, 107, 46) !important;"> 
+    <div class="container pt-10 pb-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mb-md-50">
+          <div class="funfact text-center">
+            <h3 class="text-white text-uppercase">التصنيف الدولي</h3>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <!-- <i class="fa fa-users mt-5 text-white"></i> -->
+              <h2 data-animation-duration="2000" data-value="1" class="animate-number text-white mt-0 font-38 font-weight-500 appeared">1</h2>
+              <h4 class="text-white text-uppercase">محلياً</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <!-- <i class="fa fa-book mt-5 text-white"></i> -->
+              <h2 data-animation-duration="2000" data-value="1" class="animate-number text-white mt-0 font-38 font-weight-500 appeared">1</h2>
+              <h4 class="text-white text-uppercase">اقليمياً</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <!-- <i class="fa fa-home mt-5 text-white"></i> -->
+              <h2 data-animation-duration="2000" data-value="1" class="animate-number text-white mt-0 font-38 font-weight-500 appeared">1</h2>
+              <h4 class="text-white text-uppercase">عربياً</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <!-- <i class="fa  fa-graduation-cap mt-5 text-white"></i> -->
+              <h2 data-animation-duration="2000" data-value="150" class="animate-number text-white mt-0 font-38 font-weight-500 appeared">160</h2>
+              <h4 class="text-white text-uppercase">عالمياً</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+    </section>
+    
+
+    <!-- Section: Mission -->
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height"  style="background-color: black;">
+          <div class="col-sm-6 col-md-6 pull-right xs-pull-none bg-theme-colored wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="pt-60 pb-40 pl-90 pr-160 p-md-30">
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">رسالة كلية الهندسة</h2>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"> 
+                  <i class="fa fa-certificate text-theme-color-2 font-5"></i> 
+                </a>
+                <div class="mr-120 mr-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">الرؤية</h4>
+                  <p class="text-white">أن نكون معروفين في المنطقة وخارجها كشركة رائدة في التعليم الهندسي والبحوث وخدمات المجتمع</p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-bullseye text-theme-color-2 font-50"></i> 
+                </a>
+                <div class="mr-120 mr-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1"> الهدف</h4>
+                  <p class="text-white">لإعداد مهندسين مؤهلين من خلال التعليم والتدريب وإجراء البحوث رفيعة المستوى للحفاظ على تنمية المجتمع والحفاظ عليه</p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-trophy text-theme-color-2 font-50"></i> 
+                </a>
+                <div class="mr-120 mr-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">الطموح</h4>
+                  <p class="text-white">أن تكون كلية الهندسة من أفضل كليات الهندسة محلياً واقليمياً وعالمياً </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 p-0 hidden-xs">
+            <div class="youtube-container">
+              <img src="https://kau.edu.sa/Images/135/New%20website%202024/imgs/FoE_tree.jpg">
+              <!-- <iframe height="" src="https://www.youtube.com/embed/3nmVjv34TWA?version=3&autoplay=1&mute=1&loop=1&controls=0&modestbranding=0&playsinline=1&rel=0&enablejsapi=1" title="" frameborder="0" allow="autoplay;encrypted-media;loop;"></iframe> -->
+            </div>
+            <!-- <iframe width="" height="550" src="https://www.youtube.com/embed/3nmVjv34TWA?rel=0&controls=0&autoplay=1&loop=1&mute=1&disablekb=1&playsinline=1&modestbranding=0&wmode=transparent" frameborder="0" allow="autoplay; encrypted-media"></iframe> -->
+            <!-- <iframe src="https://drive.google.com/file/d/1AtLCLl_uhQvr1EARwNbi-oQ-Vd1bfhi4/preview" width="640" height="480" allow="autoplay"></iframe> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
+  
+    <!-- Section: events -->
+    <section id="events" class="divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5" >
+      <div class="container pt-70 pb-40">
+        <div class="section-title mb-30">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-white text-uppercase">أخبار الكلية</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mb-15 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400"  style="border-radius: 20px 20px 20px 20px;">
+                <div class="row">
+                  <a href="https://mpc.kau.edu.sa/Pages-University-poet.aspx" target="_blank" class="text-white">
+                    <div class="col-md-6">
+                      <div class="thumb">
+                      <img class="img-fullwidth mb-sm-0" src="https://www.kau.edu.sa/Images/124/In_news/1446/22-12-2024-inner4.JPG" alt=""  style="border-radius: 0 20px 20px 0;">
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-30 pl-sm-50">
+                      <h4 class="mt-0 mb-5 text-white">جامعة الملك عبدالعزيز تدشن مسابقة "شاعر الجامعة" في نسختها الجديدة</h4>
+                      <ul class="list-inline mb-5 text-white">
+                        <li class="pr-0"><i class="fa fa-calendar mr-5"></i> ديسمبر 22, 2024 | </li>
+                        <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>جدة</li>
+                      </ul>
+                      <p class="mb-15 mt-15 text-white">دشن رئيس جامعة الملك عبدالعزيز رئيس مجلس نظارة وقف لغة القرآن الكريم بالجامعة الدكتور طريف بن يوسف الأعمى. مسابقة شاعر جامعة الملك عبدالعزيز في نسختها الجديدة وذلك يوم الجمعة 19 جمادى الثاني 1446 بجناح الجامعة المشارك في معرض جدة للكتاب .</p>
+                    </div>
+                    <!-- <a class="text-white font-weight-600" href="https://mpc.kau.edu.sa/Pages-University-poet.aspx" target="_blank">إقراء المزيد</a> -->
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400"  style="border-radius: 20px 20px 20px 20px;">
+                <div class="row">
+                  <a href="https://mpc.kau.edu.sa/Pages--3-.aspx" target="_blank" class="text-white">
+                    <div class="col-md-6">
+                      <div class="thumb">
+                      <img class="img-fullwidth mb-sm-0" src="https://www.kau.edu.sa/Images/124/In_news/22-1-1445-inner.JPG" alt="" style="border-radius: 0 20px 20px 0;">
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-30 pl-sm-50">
+                      <h4 class="mt-0 mb-5 text-white">سمو محافظ جدة يفتتح 3 مشاريع بجامعة الملك عبدالعزيز</h4>
+                      <ul class="list-inline mb-5 text-white">
+                        <li class="pr-0"><i class="fa fa-calendar mr-5"></i> أغسطس 09, 2024 | </li>
+                        <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>جدة</li>
+                      </ul>
+                      <p class="mb-15 mt-15 text-white">افتتح صاحب السمو الأمير سعود بن عبدالله بن جلوي محافظ جدة اليوم 3 مشاريع بجامعة الملك عبدالعزيز في المدينة الجامعية بحضور رئيسة الجامعة المكلفة أ.د. هناء بنت عبدالله النعيم بتكلفة إجمالية بلغت أكثر من 90 مليون ريال واشتملت على مشروع توسعة المستشفى الجامعي لطب الأسنان ، ومشروع معامل علوم الأشعة بكلية العلوم الطبية التطبيقية، إضافة لمشروع توسعة مركز الملك فيصل للمؤتمرات.</p>
+                      <!-- <a class="text-white font-weight-600" href="https://mpc.kau.edu.sa/Pages--3-.aspx" target="_blank">إقراء المزيد</a> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400"  style="border-radius: 20px 20px 20px 20px;">
+                <div class="row">
+                  <a href="https://mpc.kau.edu.sa/Pages-Defensive-development.aspx" target="_blank" class="text-white">
+                    <div class="col-md-6">
+                      <div class="thumb">
+                      <img class="img-fullwidth mb-sm-0" src="https://www.kau.edu.sa/Images/124/In_news/14-1-1445-inner.jpg" alt="" style="border-radius: 0 20px 20px 0;">
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-30 pl-sm-50">
+                      <h4 class="mt-0 mb-5 text-white">محافظ الهيئة العامة للتطوير الدفاعي يزور جامعة الملك عبدالعزيز</h4>
+                      <ul class="list-inline mb-5 text-white">
+                        <li class="pr-0"><i class="fa fa-calendar mr-5"></i> أغسطس 02, 2024 | </li>
+                        <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>جدة</li>
+                      </ul>
+                      <p class="mb-15 mt-15 text-white">زار معالي محافظ الهيئة العامة للتطوير الدفاعي الدكتور فالح بن عبدالله السليمان جامعة الملك عبدالعزيز وكان في استقباله سعادة رئيسة الجامعة المكلفة الدكتورة هناء بنت عبدالله النعيم ونواب رئيسة الجامعة. وتأتي هذه الزيارة في إطار تعزيز التعاون البحثي والتقني لقطاع التطوير الدفاعي بالمملكة.</p>
+                    </div>
+                    <!-- <a class="text-white font-weight-600" href="https://mpc.kau.edu.sa/Pages-Defensive-development.aspx" target="_blank">إقراء المزيد</a> -->
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400"  style="border-radius: 20px 20px 20px 20px;">
+                <div class="row">
+                  <a href="https://mpc.kau.edu.sa/Pages-talent.aspx" target="_blank" class="text-white">
+                    <div class="col-md-6">
+                      <div class="thumb">
+                      <img class="img-fullwidth mb-sm-0" src="https://www.kau.edu.sa/Images/124/In_news/1-2-1445-inner6.jpg" alt="" style="border-radius: 0 20px 20px 0;">
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-30 pl-sm-50">
+                      <h4 class="mt-0 mb-5 text-white">اختتام أنشطة برنامج " موهبة الإثرائي البحثي" بجامعة المؤسس</h4>
+                      <ul class="list-inline mb-5 text-white">
+                        <li class="pr-0"><i class="fa fa-calendar mr-5"></i> أغسطس 17, 2024 | </li>
+                        <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>جدة</li>
+                      </ul>
+                      <p class="mb-15 mt-15 text-white">اختتمت أنشطة برنامج موهبة الإثرائي  البحثي 2030 ، والذي نظمته جامعة الملك عبدالعزيز بالتعاون مع مؤسسة الملك عبدالعزيز ورجاله للموهبة والإبداع بمشاركة 30 طالبة موهوبة، واستمر لمدة 4 أسابيع.</p>
+                    </div>
+                    <!-- <a class="text-white font-weight-600" href="https://mpc.kau.edu.sa/Pages-talent.aspx" target="_blank">إقراء المزيد</a> -->
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Blog -->
+    <section id="blog">
+      <div class="container pb-70 pt-60 pb-sm-20">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-10 line-height-1 text-uppercase">  <span class="text-theme-color-2">أحداث وفعاليات</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <!-- This Original Work done by Engr. Turky Abdulaziz Saderaldin (Dep. ECE 2024) -->
+              <div class="col-xs-12 col-sm-12 col-md-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+              <article class="post clearfix mb-sm-30">
+                <a class="twitter-timeline" data-chrome="noheader nofooter" data-aria-polite="polite" data-lang="en" data-width="auto" data-height="800" data-dnt="true" data-theme="dark" href="https://twitter.com/EngineeringWeb"></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </article>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+        
+
+  </div>
+  <!-- end main-content -->
+  
+  
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-black-222" data-bg-img="https://fcitweb.kau.edu.sa/center/assetseng/images/footer-bg.png">
+
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <p class="font-11 text-black-777 m-0">Copyright &copy;2023 Dr.Eyad Attar. All Rights Reserved</p> -->
+            <!-- <span class="font-16 m-0" style="color: #BF8948;">المشرف العام على موقع الكلية:<span class="font-16 text-white"> د. إياد عطار</span></span> -->
+            <h4 class="font-14 text-black-777 m-0">جميع الحقوق محفوظة لكلية الهندسة 2024&copy;</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper --> 
+
+<!-- Footer Scripts --> 
+<!-- JS | Custom script for all pages --> 
+<script src="https://fcitweb.kau.edu.sa/center/assetseng/js/custom.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) --> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script> 
+<script type="text/javascript" src="https://fcitweb.kau.edu.sa/center/assetseng/js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+</body>
